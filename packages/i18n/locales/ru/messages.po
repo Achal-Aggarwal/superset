@@ -113,6 +113,10 @@ msgstr "{0, plural, one {Не удалось запустить # автомат
 msgid "{0, plural, one {# changed file} other {# changed files}}"
 msgstr "{0, plural, one {# изменённый файл} few {# изменённых файла} many {# изменённых файлов} other {# изменённых файла}}"
 
+#. placeholder {0}: titles.length
+msgid "{0, plural, one {# chat closed} other {# chats closed}}"
+msgstr "{0, plural, one {# чат закрыт} few {# чата закрыто} many {# чатов закрыто} other {# чата закрыто}}"
+
 #. placeholder {0}: comments.length
 msgid "{0, plural, one {# comment attached} other {# comments attached}}"
 msgstr "{0, plural, one {# комментарий приложен} few {# комментария приложено} many {# комментариев приложено} other {# комментария приложено}}"
@@ -1375,6 +1379,9 @@ msgstr "Свой CDP-эндпоинт для каждой панели"
 
 msgid "A changelog goes out every week. Most new hires ship to users in their first few days."
 msgstr "Changelog выходит каждую неделю. Большинство новых сотрудников выпускают свой первый код для пользователей уже в первые дни."
+
+msgid "A chat can't switch to another provider partway through. Fork this conversation into a new {label} chat instead. This {currentLabel} chat stays open."
+msgstr "Чат нельзя переключить на другого провайдера посреди разговора. Вместо этого создайте ответвление этого разговора в новом чате {label}. Этот чат {currentLabel} останется открытым."
 
 msgid "A chat takes its name from the agent."
 msgstr "Чат получает имя от агента."
@@ -3394,6 +3401,9 @@ msgstr "Канал создан"
 msgid "Chat"
 msgstr "Чат"
 
+msgid "Chat closed"
+msgstr "Чат закрыт"
+
 msgid "Chat is being reworked"
 msgstr "Чат перерабатывается"
 
@@ -4370,6 +4380,9 @@ msgstr "Контекстное меню"
 
 msgid "Continue"
 msgstr "Продолжить"
+
+msgid "Continue in a new {label} chat?"
+msgstr "Продолжить в новом чате {label}?"
 
 msgid "Continue or fork session"
 msgstr "Продолжить или форкнуть сессию"
@@ -7618,6 +7631,9 @@ msgstr "Форкнуть сессию"
 
 msgid "Fork session…"
 msgstr "Форкнуть сессию…"
+
+msgid "Fork to new chat"
+msgstr "Ответвить в новый чат"
 
 msgid "Form controls and field composition"
 msgstr "Элементы формы и композиция полей"
@@ -13645,9 +13661,6 @@ msgstr "Восстановить тариф"
 msgid "restore the agent defaults"
 msgstr "восстановить настройки агента по умолчанию"
 
-msgid "Restore the workspace you just archived"
-msgstr "Восстановить только что заархивированное рабочее пространство"
-
 msgid "Restore this version?"
 msgstr "Восстановить эту версию?"
 
@@ -17624,8 +17637,8 @@ msgstr "Идёт"
 msgid "Undo"
 msgstr "Отменить"
 
-msgid "Undo Archive"
-msgstr "Отменить архивацию"
+msgid "Undo the last archived workspace or closed chats"
+msgstr "Отменить последнюю архивацию рабочей области или закрытие чатов"
 
 msgid "Ungroup"
 msgstr "Убрать из группы"

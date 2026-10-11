@@ -113,6 +113,10 @@ msgstr "{0, plural, one {Nie udało się uruchomić # automatyzacji} few {Nie ud
 msgid "{0, plural, one {# changed file} other {# changed files}}"
 msgstr "{0, plural, one {# zmieniony plik} few {# zmienione pliki} many {# zmienionych plików} other {# zmienionego pliku}}"
 
+#. placeholder {0}: titles.length
+msgid "{0, plural, one {# chat closed} other {# chats closed}}"
+msgstr "{0, plural, one {# czat zamknięty} few {# czaty zamknięte} many {# czatów zamkniętych} other {# czatu zamkniętego}}"
+
 #. placeholder {0}: comments.length
 msgid "{0, plural, one {# comment attached} other {# comments attached}}"
 msgstr "{0, plural, one {Dołączono # komentarz} few {Dołączono # komentarze} many {Dołączono # komentarzy} other {Dołączono # komentarza}}"
@@ -1375,6 +1379,9 @@ msgstr "Endpoint CDP dla każdego panelu"
 
 msgid "A changelog goes out every week. Most new hires ship to users in their first few days."
 msgstr "Co tydzień publikujemy changelog. Większość nowych osób w zespole dostarcza coś użytkownikom już w pierwszych dniach."
+
+msgid "A chat can't switch to another provider partway through. Fork this conversation into a new {label} chat instead. This {currentLabel} chat stays open."
+msgstr "Czat nie może w trakcie rozmowy przełączyć się na innego dostawcę. Zamiast tego rozgałęź tę rozmowę do nowego czatu {label}. Ten czat {currentLabel} pozostanie otwarty."
 
 msgid "A chat takes its name from the agent."
 msgstr "Czat bierze nazwę od agenta."
@@ -3394,6 +3401,9 @@ msgstr "Kanał utworzony"
 msgid "Chat"
 msgstr "Czat"
 
+msgid "Chat closed"
+msgstr "Czat zamknięty"
+
 msgid "Chat is being reworked"
 msgstr "Czat jest przebudowywany"
 
@@ -4370,6 +4380,9 @@ msgstr "Menu kontekstowe"
 
 msgid "Continue"
 msgstr "Kontynuuj"
+
+msgid "Continue in a new {label} chat?"
+msgstr "Kontynuować w nowym czacie {label}?"
 
 msgid "Continue or fork session"
 msgstr "Kontynuuj lub forkuj sesję"
@@ -7618,6 +7631,9 @@ msgstr "Forkuj sesję"
 
 msgid "Fork session…"
 msgstr "Forkuj sesję…"
+
+msgid "Fork to new chat"
+msgstr "Rozgałęź do nowego czatu"
 
 msgid "Form controls and field composition"
 msgstr "Kontrolki formularza i kompozycja pól"
@@ -13645,9 +13661,6 @@ msgstr "Przywróć plan"
 msgid "restore the agent defaults"
 msgstr "przywrócić domyślnych ustawień agenta"
 
-msgid "Restore the workspace you just archived"
-msgstr "Przywróć właśnie zarchiwizowany obszar roboczy"
-
 msgid "Restore this version?"
 msgstr "Przywrócić tę wersję?"
 
@@ -17624,8 +17637,8 @@ msgstr "W toku"
 msgid "Undo"
 msgstr "Cofnij"
 
-msgid "Undo Archive"
-msgstr "Cofnij archiwizację"
+msgid "Undo the last archived workspace or closed chats"
+msgstr "Cofnij ostatnią archiwizację obszaru roboczego lub zamknięcie czatów"
 
 msgid "Ungroup"
 msgstr "Rozgrupuj"

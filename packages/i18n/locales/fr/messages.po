@@ -113,6 +113,10 @@ msgstr "{0, plural, one {# automatisation n'a pas pu être lancée} other {# aut
 msgid "{0, plural, one {# changed file} other {# changed files}}"
 msgstr "{0, plural, one {# fichier modifié} other {# fichiers modifiés}}"
 
+#. placeholder {0}: titles.length
+msgid "{0, plural, one {# chat closed} other {# chats closed}}"
+msgstr "{0, plural, one {# chat fermé} other {# chats fermés}}"
+
 #. placeholder {0}: comments.length
 msgid "{0, plural, one {# comment attached} other {# comments attached}}"
 msgstr "{0, plural, one {# commentaire joint} other {# commentaires joints}}"
@@ -1375,6 +1379,9 @@ msgstr "Un point de terminaison CDP par volet"
 
 msgid "A changelog goes out every week. Most new hires ship to users in their first few days."
 msgstr "Un changelog est publié chaque semaine. La plupart des nouvelles recrues livrent aux utilisateurs dès leurs premiers jours."
+
+msgid "A chat can't switch to another provider partway through. Fork this conversation into a new {label} chat instead. This {currentLabel} chat stays open."
+msgstr "Un chat ne peut pas changer de fournisseur en cours de route. Dupliquez plutôt cette conversation dans un nouveau chat {label}. Ce chat {currentLabel} reste ouvert."
 
 msgid "A chat takes its name from the agent."
 msgstr "Un chat prend son nom de l'agent."
@@ -3394,6 +3401,9 @@ msgstr "Canal créé"
 msgid "Chat"
 msgstr "Chat"
 
+msgid "Chat closed"
+msgstr "Chat fermé"
+
 msgid "Chat is being reworked"
 msgstr "Le chat est en cours de refonte"
 
@@ -4370,6 +4380,9 @@ msgstr "Menu contextuel"
 
 msgid "Continue"
 msgstr "Continuer"
+
+msgid "Continue in a new {label} chat?"
+msgstr "Continuer dans un nouveau chat {label} ?"
 
 msgid "Continue or fork session"
 msgstr "Continuer ou forker la session"
@@ -7618,6 +7631,9 @@ msgstr "Forker la session"
 
 msgid "Fork session…"
 msgstr "Forker la session…"
+
+msgid "Fork to new chat"
+msgstr "Dupliquer dans un nouveau chat"
 
 msgid "Form controls and field composition"
 msgstr "Contrôles de formulaire et composition des champs"
@@ -13645,9 +13661,6 @@ msgstr "Rétablir le forfait"
 msgid "restore the agent defaults"
 msgstr "restaurer les valeurs par défaut de l'agent"
 
-msgid "Restore the workspace you just archived"
-msgstr "Restaurer l'espace de travail que vous venez d'archiver"
-
 msgid "Restore this version?"
 msgstr "Restaurer cette version ?"
 
@@ -17624,8 +17637,8 @@ msgstr "En cours"
 msgid "Undo"
 msgstr "Annuler"
 
-msgid "Undo Archive"
-msgstr "Annuler l'archivage"
+msgid "Undo the last archived workspace or closed chats"
+msgstr "Annuler le dernier espace de travail archivé ou les chats fermés"
 
 msgid "Ungroup"
 msgstr "Dégrouper"

@@ -113,6 +113,10 @@ msgstr "{0, plural, one {# automation couldn't be started} other {# automations 
 msgid "{0, plural, one {# changed file} other {# changed files}}"
 msgstr "{0, plural, one {# changed file} other {# changed files}}"
 
+#. placeholder {0}: titles.length
+msgid "{0, plural, one {# chat closed} other {# chats closed}}"
+msgstr "{0, plural, one {# chat closed} other {# chats closed}}"
+
 #. placeholder {0}: comments.length
 msgid "{0, plural, one {# comment attached} other {# comments attached}}"
 msgstr "{0, plural, one {# comment attached} other {# comments attached}}"
@@ -1375,6 +1379,9 @@ msgstr "A CDP endpoint per pane"
 
 msgid "A changelog goes out every week. Most new hires ship to users in their first few days."
 msgstr "A changelog goes out every week. Most new hires ship to users in their first few days."
+
+msgid "A chat can't switch to another provider partway through. Fork this conversation into a new {label} chat instead. This {currentLabel} chat stays open."
+msgstr "A chat can't switch to another provider partway through. Fork this conversation into a new {label} chat instead. This {currentLabel} chat stays open."
 
 msgid "A chat takes its name from the agent."
 msgstr "A chat takes its name from the agent."
@@ -3394,6 +3401,9 @@ msgstr "Channel created"
 msgid "Chat"
 msgstr "Chat"
 
+msgid "Chat closed"
+msgstr "Chat closed"
+
 msgid "Chat is being reworked"
 msgstr "Chat is being reworked"
 
@@ -4370,6 +4380,9 @@ msgstr "Context Menu"
 
 msgid "Continue"
 msgstr "Continue"
+
+msgid "Continue in a new {label} chat?"
+msgstr "Continue in a new {label} chat?"
 
 msgid "Continue or fork session"
 msgstr "Continue or fork session"
@@ -7618,6 +7631,9 @@ msgstr "Fork session"
 
 msgid "Fork session…"
 msgstr "Fork session…"
+
+msgid "Fork to new chat"
+msgstr "Fork to new chat"
 
 msgid "Form controls and field composition"
 msgstr "Form controls and field composition"
@@ -13645,9 +13661,6 @@ msgstr "Restore plan"
 msgid "restore the agent defaults"
 msgstr "restore the agent defaults"
 
-msgid "Restore the workspace you just archived"
-msgstr "Restore the workspace you just archived"
-
 msgid "Restore this version?"
 msgstr "Restore this version?"
 
@@ -17624,8 +17637,8 @@ msgstr "Underway"
 msgid "Undo"
 msgstr "Undo"
 
-msgid "Undo Archive"
-msgstr "Undo Archive"
+msgid "Undo the last archived workspace or closed chats"
+msgstr "Undo the last archived workspace or closed chats"
 
 msgid "Ungroup"
 msgstr "Ungroup"

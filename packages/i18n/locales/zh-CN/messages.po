@@ -113,6 +113,10 @@ msgstr "{0, plural, one {无法启动 # 个自动化} other {无法启动 # 个�
 msgid "{0, plural, one {# changed file} other {# changed files}}"
 msgstr "{0, plural, one {#个已更改文件} other {#个已更改文件}}"
 
+#. placeholder {0}: titles.length
+msgid "{0, plural, one {# chat closed} other {# chats closed}}"
+msgstr "{0, plural, other {已关闭 # 个聊天}}"
+
 #. placeholder {0}: comments.length
 msgid "{0, plural, one {# comment attached} other {# comments attached}}"
 msgstr "{0, plural, one {已附上#条评论} other {已附上#条评论}}"
@@ -1375,6 +1379,9 @@ msgstr "每个窗格一个 CDP 端点"
 
 msgid "A changelog goes out every week. Most new hires ship to users in their first few days."
 msgstr "我们每周发布一次更新日志。大多数新员工入职头几天就会向用户发布功能。"
+
+msgid "A chat can't switch to another provider partway through. Fork this conversation into a new {label} chat instead. This {currentLabel} chat stays open."
+msgstr "聊天进行中无法切换到其他提供方。请将此对话分叉到新的 {label} 聊天。当前的 {currentLabel} 聊天会保持打开。"
 
 msgid "A chat takes its name from the agent."
 msgstr "聊天的名称来自智能体。"
@@ -3394,6 +3401,9 @@ msgstr "频道已创建"
 msgid "Chat"
 msgstr "聊天"
 
+msgid "Chat closed"
+msgstr "聊天已关闭"
+
 msgid "Chat is being reworked"
 msgstr "聊天功能正在重做"
 
@@ -4370,6 +4380,9 @@ msgstr "右键菜单"
 
 msgid "Continue"
 msgstr "继续"
+
+msgid "Continue in a new {label} chat?"
+msgstr "在新的 {label} 聊天中继续？"
 
 msgid "Continue or fork session"
 msgstr "继续或分叉会话"
@@ -7618,6 +7631,9 @@ msgstr "分叉会话"
 
 msgid "Fork session…"
 msgstr "分叉会话…"
+
+msgid "Fork to new chat"
+msgstr "分叉到新聊天"
 
 msgid "Form controls and field composition"
 msgstr "表单控件与字段组合"
@@ -13645,9 +13661,6 @@ msgstr "恢复方案"
 msgid "restore the agent defaults"
 msgstr "恢复智能体默认设置"
 
-msgid "Restore the workspace you just archived"
-msgstr "恢复刚刚归档的工作区"
-
 msgid "Restore this version?"
 msgstr "恢复这个版本？"
 
@@ -17624,8 +17637,8 @@ msgstr "进行中"
 msgid "Undo"
 msgstr "撤销"
 
-msgid "Undo Archive"
-msgstr "撤销归档"
+msgid "Undo the last archived workspace or closed chats"
+msgstr "撤销上次归档的工作区或关闭的聊天"
 
 msgid "Ungroup"
 msgstr "取消分组"

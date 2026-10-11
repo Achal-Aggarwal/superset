@@ -113,6 +113,10 @@ msgstr "{0, plural, one {# otomatisasi tidak dapat dimulai} other {# otomatisasi
 msgid "{0, plural, one {# changed file} other {# changed files}}"
 msgstr "{0, plural, one {# file berubah} other {# file berubah}}"
 
+#. placeholder {0}: titles.length
+msgid "{0, plural, one {# chat closed} other {# chats closed}}"
+msgstr "{0, plural, other {# chat ditutup}}"
+
 #. placeholder {0}: comments.length
 msgid "{0, plural, one {# comment attached} other {# comments attached}}"
 msgstr "{0, plural, one {# komentar dilampirkan} other {# komentar dilampirkan}}"
@@ -1375,6 +1379,9 @@ msgstr "Satu endpoint CDP per panel"
 
 msgid "A changelog goes out every week. Most new hires ship to users in their first few days."
 msgstr "Changelog terbit setiap minggu. Kebanyakan karyawan baru sudah merilis ke pengguna dalam beberapa hari pertama."
+
+msgid "A chat can't switch to another provider partway through. Fork this conversation into a new {label} chat instead. This {currentLabel} chat stays open."
+msgstr "Chat tidak dapat beralih ke penyedia lain di tengah percakapan. Sebagai gantinya, cabangkan percakapan ini ke chat {label} baru. Chat {currentLabel} ini tetap terbuka."
 
 msgid "A chat takes its name from the agent."
 msgstr "Chat mengambil namanya dari agen."
@@ -3394,6 +3401,9 @@ msgstr "Channel dibuat"
 msgid "Chat"
 msgstr "Chat"
 
+msgid "Chat closed"
+msgstr "Chat ditutup"
+
 msgid "Chat is being reworked"
 msgstr "Chat sedang dirombak"
 
@@ -4370,6 +4380,9 @@ msgstr "Menu Konteks"
 
 msgid "Continue"
 msgstr "Lanjutkan"
+
+msgid "Continue in a new {label} chat?"
+msgstr "Lanjutkan di chat {label} baru?"
 
 msgid "Continue or fork session"
 msgstr "Lanjutkan atau fork sesi"
@@ -7618,6 +7631,9 @@ msgstr "Fork sesi"
 
 msgid "Fork session…"
 msgstr "Fork sesi…"
+
+msgid "Fork to new chat"
+msgstr "Cabangkan ke chat baru"
 
 msgid "Form controls and field composition"
 msgstr "Kontrol form dan komposisi field"
@@ -13645,9 +13661,6 @@ msgstr "Pulihkan paket"
 msgid "restore the agent defaults"
 msgstr "memulihkan setelan bawaan agen"
 
-msgid "Restore the workspace you just archived"
-msgstr "Pulihkan ruang kerja yang baru saja Anda arsipkan"
-
 msgid "Restore this version?"
 msgstr "Pulihkan versi ini?"
 
@@ -17624,8 +17637,8 @@ msgstr "Sedang berjalan"
 msgid "Undo"
 msgstr "Undo"
 
-msgid "Undo Archive"
-msgstr "Batalkan arsip"
+msgid "Undo the last archived workspace or closed chats"
+msgstr "Batalkan workspace terakhir yang diarsipkan atau chat yang ditutup"
 
 msgid "Ungroup"
 msgstr "Keluarkan dari grup"
