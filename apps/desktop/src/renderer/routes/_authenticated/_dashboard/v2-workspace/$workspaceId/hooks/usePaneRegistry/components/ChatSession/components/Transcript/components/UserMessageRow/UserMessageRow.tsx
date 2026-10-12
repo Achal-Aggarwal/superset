@@ -12,7 +12,7 @@ import {
 	type MessageSegment,
 	splitByElements,
 } from "../../../../utils/messageElements";
-import { AttachmentImage } from "./components/AttachmentImage";
+import { AttachmentImage } from "../AttachmentImage";
 import { UserMessageText } from "./components/UserMessageText";
 import { useFitsOneLine } from "./hooks/useFitsOneLine";
 
