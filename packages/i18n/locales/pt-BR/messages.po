@@ -15965,6 +15965,9 @@ msgstr "O Superset é desenvolvido no Superset, então somos nossos próprios us
 msgid "Superset is designed to work with your existing tool, we natively support deep-linking to IDEs like Cursor so you can open your workspaces and files in your IDE."
 msgstr "O Superset foi feito para funcionar com a ferramenta que você já usa. Temos suporte nativo a deep links para IDEs como o Cursor, então dá para abrir suas áreas de trabalho e arquivos direto na sua IDE."
 
+msgid "Superset is getting a new name soon"
+msgstr "O Superset vai ganhar um novo nome em breve"
+
 msgid "Superset is open source. If it's helped you today, a GitHub star helps other developers find it."
 msgstr "O Superset é de código aberto. Se ele te ajudou hoje, uma estrela no GitHub ajuda outras pessoas a encontrá-lo."
 
@@ -16000,9 +16003,6 @@ msgstr "Diff de código do Superset Mobile no iPhone"
 
 msgid "Superset mobile gives me the power of my desktop anywhere I go."
 msgstr "O Superset mobile me dá o poder do meu desktop onde quer que eu vá."
-
-msgid "Superset Mobile is here"
-msgstr "Superset Mobile chegou"
 
 msgid "Superset Mobile is part of Pro"
 msgstr "O Superset Mobile faz parte do Pro"
