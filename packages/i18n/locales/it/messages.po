@@ -3728,6 +3728,12 @@ msgstr "Clicca qui se non vieni reindirizzato"
 msgid "Click the “↑ update” pill to see the pre-update confirm"
 msgstr "Fai clic su «↑ update» per vedere la conferma prima dell’aggiornamento"
 
+msgid "Click the chip to open the issue"
+msgstr "Fai clic sul chip per aprire la issue"
+
+msgid "Click the chip to open the pull request"
+msgstr "Fai clic sul chip per aprire la pull request"
+
 msgid "Click to copy the session ID (resume with `claude --resume <id>`)."
 msgstr "Clicca per copiare l'ID della sessione (riprendi con `claude --resume <id>`)."
 
@@ -3901,6 +3907,10 @@ msgstr "Chiudi il workspace"
 msgid "Close Workspace"
 msgstr "Chiudi workspace"
 
+msgid "Closed"
+msgstr "Chiusa"
+
+msgctxt "pull request or issue state"
 msgid "Closed"
 msgstr "Chiusa"
 
@@ -5926,6 +5936,9 @@ msgstr "Scollegata"
 msgid "Details"
 msgstr "Dettagli"
 
+msgid "Details are not available here, but the link still opens."
+msgstr "I dettagli non sono disponibili qui, ma il link si apre comunque."
+
 msgid "Dev"
 msgstr "Dev"
 
@@ -6251,6 +6264,10 @@ msgstr "Download..."
 msgid "Downloads"
 msgstr "Download"
 
+msgid "Draft"
+msgstr "Bozza"
+
+msgctxt "pull request state"
 msgid "Draft"
 msgstr "Bozza"
 
@@ -8827,6 +8844,13 @@ msgstr "Esiste un piano gratuito?"
 msgid "Isolation"
 msgstr "Isolamento"
 
+msgid "Issue"
+msgstr "Issue"
+
+#. placeholder {0}: link.number
+msgid "Issue #{0}"
+msgstr "Issue #{0}"
+
 msgid "Issue archived"
 msgstr "Issue archiviata"
 
@@ -9455,6 +9479,9 @@ msgstr "Caricamento dei file..."
 msgid "Loading fonts..."
 msgstr "Caricamento dei font..."
 
+msgid "Loading GitHub details"
+msgstr "Caricamento dei dettagli GitHub"
+
 msgid "Loading groups…"
 msgstr "Caricamento dei gruppi…"
 
@@ -9868,6 +9895,10 @@ msgstr "Stato del merge"
 msgid "Merge status unknown"
 msgstr "Stato del merge sconosciuto"
 
+msgid "Merged"
+msgstr "Unita"
+
+msgctxt "pull request state"
 msgid "Merged"
 msgstr "Unita"
 
@@ -11360,6 +11391,10 @@ msgstr "apri"
 msgid "Open"
 msgstr "Apri"
 
+msgctxt "pull request or issue state"
+msgid "Open"
+msgstr "Aperta"
+
 msgctxt "status"
 msgid "Open"
 msgstr "Aperta"
@@ -12424,6 +12459,10 @@ msgstr "Pubblica la risposta"
 
 msgid "PR"
 msgstr "PR"
+
+#. placeholder {0}: link.number
+msgid "PR #{0}"
+msgstr "PR #{0}"
 
 #. placeholder {0}: pullRequest.number
 #. placeholder {1}: i18n._(PR_STATE_LABEL[pullRequest.state])
@@ -17936,6 +17975,10 @@ msgstr "aggiornare il prefisso dei branch"
 
 msgid "Updated"
 msgstr "Aggiornato"
+
+#. placeholder {0}: formatRelativeTime(new Date(item.updatedAt))
+msgid "Updated {0}"
+msgstr "Ultimo aggiornamento {0}"
 
 msgid "Updated {date}"
 msgstr "Aggiornato il {date}"

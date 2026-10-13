@@ -3728,6 +3728,12 @@ msgstr "Pokud nedojde k přesměrování, klikněte sem"
 msgid "Click the “↑ update” pill to see the pre-update confirm"
 msgstr "Kliknutím na „↑ update“ zobrazíte potvrzení před aktualizací"
 
+msgid "Click the chip to open the issue"
+msgstr "Kliknutím na štítek otevřete issue"
+
+msgid "Click the chip to open the pull request"
+msgstr "Kliknutím na štítek otevřete pull request"
+
 msgid "Click to copy the session ID (resume with `claude --resume <id>`)."
 msgstr "Kliknutím zkopírujete ID relace (pokračování přes `claude --resume <id>`)."
 
@@ -3903,6 +3909,10 @@ msgstr "Zavřít pracovní prostor"
 
 msgid "Closed"
 msgstr "Uzavřený"
+
+msgctxt "pull request or issue state"
+msgid "Closed"
+msgstr "Uzavřeno"
 
 msgid "Closing these ports will end the processes using them."
 msgstr "Zavřením těchto portů ukončíte procesy, které je používají."
@@ -5926,6 +5936,9 @@ msgstr "Odpojeno"
 msgid "Details"
 msgstr "Podrobnosti"
 
+msgid "Details are not available here, but the link still opens."
+msgstr "Podrobnosti zde nejsou k dispozici, ale odkaz se přesto otevře."
+
 msgid "Dev"
 msgstr "Vývoj"
 
@@ -6251,6 +6264,10 @@ msgstr "Stahuji..."
 msgid "Downloads"
 msgstr "Stahování"
 
+msgid "Draft"
+msgstr "Koncept"
+
+msgctxt "pull request state"
 msgid "Draft"
 msgstr "Koncept"
 
@@ -8827,6 +8844,13 @@ msgstr "Existuje bezplatný tarif?"
 msgid "Isolation"
 msgstr "Izolace"
 
+msgid "Issue"
+msgstr "Issue"
+
+#. placeholder {0}: link.number
+msgid "Issue #{0}"
+msgstr "Issue #{0}"
+
 msgid "Issue archived"
 msgstr "Issue archivována"
 
@@ -9455,6 +9479,9 @@ msgstr "Načítám soubory..."
 msgid "Loading fonts..."
 msgstr "Načítám fonty..."
 
+msgid "Loading GitHub details"
+msgstr "Načítání podrobností z GitHubu"
+
 msgid "Loading groups…"
 msgstr "Načítám skupiny…"
 
@@ -9870,6 +9897,10 @@ msgstr "Stav sloučení neznámý"
 
 msgid "Merged"
 msgstr "Sloučený"
+
+msgctxt "pull request state"
+msgid "Merged"
+msgstr "Sloučeno"
 
 #. placeholder {0}: mergedBy.login
 msgid "Merged by {0}"
@@ -11360,6 +11391,10 @@ msgstr "otevřít"
 msgid "Open"
 msgstr "Otevřít"
 
+msgctxt "pull request or issue state"
+msgid "Open"
+msgstr "Otevřeno"
+
 msgctxt "status"
 msgid "Open"
 msgstr "Otevřený"
@@ -12424,6 +12459,10 @@ msgstr "Odeslat odpověď"
 
 msgid "PR"
 msgstr "PR"
+
+#. placeholder {0}: link.number
+msgid "PR #{0}"
+msgstr "PR #{0}"
 
 #. placeholder {0}: pullRequest.number
 #. placeholder {1}: i18n._(PR_STATE_LABEL[pullRequest.state])
@@ -17936,6 +17975,10 @@ msgstr "aktualizovat prefix větve"
 
 msgid "Updated"
 msgstr "Aktualizováno"
+
+#. placeholder {0}: formatRelativeTime(new Date(item.updatedAt))
+msgid "Updated {0}"
+msgstr "Aktualizováno {0}"
 
 msgid "Updated {date}"
 msgstr "Aktualizováno {date}"
