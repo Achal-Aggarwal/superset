@@ -2252,6 +2252,9 @@ msgstr "匿名装配工"
 msgid "another device"
 msgstr "另一台设备"
 
+msgid "Answer any questions in the terminal below, such as a password."
+msgstr "请在下方终端中回答提问，例如输入密码。"
+
 msgid "Answer this question on desktop, or skip it."
 msgstr "请在桌面端回答此问题，或跳过。"
 
@@ -8686,6 +8689,9 @@ msgstr "安装方式"
 msgid "Installing..."
 msgstr "正在安装..."
 
+msgid "Installs Superset on a machine you can reach with ssh, signs Superset in to your account, and keeps it running as a service."
+msgstr "在可通过 ssh 访问的机器上安装 Superset，将 Superset 登录到你的账户，并让它作为服务持续运行。"
+
 msgid "Instructions"
 msgstr "说明"
 
@@ -11455,6 +11461,9 @@ msgstr "从文件夹打开"
 
 msgid "Open full screen"
 msgstr "全屏打开"
+
+msgid "Open host"
+msgstr "打开主机"
 
 msgid "Open importer"
 msgstr "打开导入器"
@@ -14815,6 +14824,9 @@ msgstr "设置"
 msgid "Set up {0}"
 msgstr "设置 {0}"
 
+msgid "Set up a host over SSH"
+msgstr "通过 SSH 设置主机"
+
 msgid "Set up an automation"
 msgstr "设置自动化"
 
@@ -14856,6 +14868,9 @@ msgstr "初始化"
 
 msgid "Setup script"
 msgstr "设置脚本"
+
+msgid "Setup stopped. The reason is in the output below."
+msgstr "设置已停止。原因见下方输出。"
 
 msgid "Sexual content"
 msgstr "色情内容"
@@ -15509,6 +15524,9 @@ msgstr "压缩并合并"
 
 msgid "SS"
 msgstr "SS"
+
+msgid "SSH destination"
+msgstr "SSH 目标"
 
 msgid "SSO/SAML"
 msgstr "SSO/SAML"
@@ -16666,6 +16684,9 @@ msgstr "主机未在十五分钟内恢复。"
 
 msgid "The host hasn't answered."
 msgstr "主机未响应。"
+
+msgid "The host is online. Pick it when you create a workspace."
+msgstr "主机已在线。创建工作区时选择它。"
 
 msgid "The host isn't connected to the Superset relay. If it's this device, turn on \"Allow remote access to this device via relay\" in Settings > Remote Access, then try again."
 msgstr "该主机没有连接到Superset中继。如果就是此设备，请在“设置>远程访问”中打开“允许通过中继远程访问本设备”，然后重试。"
@@ -18079,6 +18100,9 @@ msgstr "未找到用户"
 
 msgid "user@example.com"
 msgstr "user@example.com"
+
+msgid "user@host, ssh://user@host:2222, or an ssh config alias"
+msgstr "user@host、ssh://user@host:2222 或 ssh 配置中的别名"
 
 msgid "Using random branch name (AI generation timed out)"
 msgstr "使用随机分支名（AI生成超时）"

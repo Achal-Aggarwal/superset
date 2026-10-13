@@ -2252,6 +2252,9 @@ msgstr "Anonymous Assembler"
 msgid "another device"
 msgstr "another device"
 
+msgid "Answer any questions in the terminal below, such as a password."
+msgstr "Answer any questions in the terminal below, such as a password."
+
 msgid "Answer this question on desktop, or skip it."
 msgstr "Answer this question on desktop, or skip it."
 
@@ -8686,6 +8689,9 @@ msgstr "Installed via"
 msgid "Installing..."
 msgstr "Installing..."
 
+msgid "Installs Superset on a machine you can reach with ssh, signs Superset in to your account, and keeps it running as a service."
+msgstr "Installs Superset on a machine you can reach with ssh, signs Superset in to your account, and keeps it running as a service."
+
 msgid "Instructions"
 msgstr "Instructions"
 
@@ -11455,6 +11461,9 @@ msgstr "Open from folder"
 
 msgid "Open full screen"
 msgstr "Open full screen"
+
+msgid "Open host"
+msgstr "Open host"
 
 msgid "Open importer"
 msgstr "Open importer"
@@ -14815,6 +14824,9 @@ msgstr "Set up"
 msgid "Set up {0}"
 msgstr "Set up {0}"
 
+msgid "Set up a host over SSH"
+msgstr "Set up a host over SSH"
+
 msgid "Set up an automation"
 msgstr "Set up an automation"
 
@@ -14856,6 +14868,9 @@ msgstr "Setup"
 
 msgid "Setup script"
 msgstr "Setup script"
+
+msgid "Setup stopped. The reason is in the output below."
+msgstr "Setup stopped. The reason is in the output below."
 
 msgid "Sexual content"
 msgstr "Sexual content"
@@ -15509,6 +15524,9 @@ msgstr "Squash and merge"
 
 msgid "SS"
 msgstr "SS"
+
+msgid "SSH destination"
+msgstr "SSH destination"
 
 msgid "SSO/SAML"
 msgstr "SSO/SAML"
@@ -16666,6 +16684,9 @@ msgstr "The host did not come back within fifteen minutes."
 
 msgid "The host hasn't answered."
 msgstr "The host hasn't answered."
+
+msgid "The host is online. Pick it when you create a workspace."
+msgstr "The host is online. Pick it when you create a workspace."
 
 msgid "The host isn't connected to the Superset relay. If it's this device, turn on \"Allow remote access to this device via relay\" in Settings > Remote Access, then try again."
 msgstr "The host isn't connected to the Superset relay. If it's this device, turn on \"Allow remote access to this device via relay\" in Settings > Remote Access, then try again."
@@ -18079,6 +18100,9 @@ msgstr "User not found"
 
 msgid "user@example.com"
 msgstr "user@example.com"
+
+msgid "user@host, ssh://user@host:2222, or an ssh config alias"
+msgstr "user@host, ssh://user@host:2222, or an ssh config alias"
 
 msgid "Using random branch name (AI generation timed out)"
 msgstr "Using random branch name (AI generation timed out)"

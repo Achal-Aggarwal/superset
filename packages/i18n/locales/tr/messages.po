@@ -2252,6 +2252,9 @@ msgstr "Anonim Montajcı"
 msgid "another device"
 msgstr "başka bir cihaz"
 
+msgid "Answer any questions in the terminal below, such as a password."
+msgstr "Aşağıdaki terminalde parola gibi soruları yanıtla."
+
 msgid "Answer this question on desktop, or skip it."
 msgstr "Bu soruyu masaüstünde yanıtlayın veya atlayın."
 
@@ -8686,6 +8689,9 @@ msgstr "Kurulum yolu"
 msgid "Installing..."
 msgstr "Kuruluyor..."
 
+msgid "Installs Superset on a machine you can reach with ssh, signs Superset in to your account, and keeps it running as a service."
+msgstr "ssh ile erişebildiğin bir makineye Superset'i kurar, Superset'te hesabınla oturum açar ve Superset'i bir hizmet olarak çalışır durumda tutar."
+
 msgid "Instructions"
 msgstr "Yönergeler"
 
@@ -11455,6 +11461,9 @@ msgstr "Klasörden aç"
 
 msgid "Open full screen"
 msgstr "Tam ekranda aç"
+
+msgid "Open host"
+msgstr "Host'u aç"
 
 msgid "Open importer"
 msgstr "İçe aktarıcıyı aç"
@@ -14815,6 +14824,9 @@ msgstr "Kur"
 msgid "Set up {0}"
 msgstr "{0} kurulumu"
 
+msgid "Set up a host over SSH"
+msgstr "SSH ile host kur"
+
 msgid "Set up an automation"
 msgstr "Bir otomasyon kur"
 
@@ -14856,6 +14868,9 @@ msgstr "Kurulum"
 
 msgid "Setup script"
 msgstr "Kurulum betiği"
+
+msgid "Setup stopped. The reason is in the output below."
+msgstr "Kurulum durdu. Nedeni aşağıdaki çıktıda."
 
 msgid "Sexual content"
 msgstr "Cinsel içerik"
@@ -15509,6 +15524,9 @@ msgstr "Squash ve birleştir"
 
 msgid "SS"
 msgstr "SS"
+
+msgid "SSH destination"
+msgstr "SSH hedefi"
 
 msgid "SSO/SAML"
 msgstr "SSO/SAML"
@@ -16666,6 +16684,9 @@ msgstr "Ana makine on beş dakika içinde geri gelmedi."
 
 msgid "The host hasn't answered."
 msgstr "Host yanıt vermedi."
+
+msgid "The host is online. Pick it when you create a workspace."
+msgstr "Host çevrimiçi. Bir çalışma alanı oluştururken onu seç."
 
 msgid "The host isn't connected to the Superset relay. If it's this device, turn on \"Allow remote access to this device via relay\" in Settings > Remote Access, then try again."
 msgstr "Host, Superset rölesine bağlı değil. Bu cihazsa Ayarlar > Uzaktan erişim bölümünde \"Uzaktan erişimnın bu cihaza röle üzerinden erişmesine izin ver\" seçeneğini açıp yeniden deneyin."
@@ -18079,6 +18100,9 @@ msgstr "Kullanıcı bulunamadı"
 
 msgid "user@example.com"
 msgstr "user@example.com"
+
+msgid "user@host, ssh://user@host:2222, or an ssh config alias"
+msgstr "kullanıcı@host, ssh://kullanıcı@host:2222 veya bir ssh yapılandırma takma adı"
 
 msgid "Using random branch name (AI generation timed out)"
 msgstr "Rastgele dal adı kullanılıyor (AI üretimi zaman aşımına uğradı)"

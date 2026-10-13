@@ -2252,6 +2252,9 @@ msgstr "匿名の組立工"
 msgid "another device"
 msgstr "別のデバイス"
 
+msgid "Answer any questions in the terminal below, such as a password."
+msgstr "パスワードなど、下のターミナルでの質問に答えてください。"
+
 msgid "Answer this question on desktop, or skip it."
 msgstr "この質問はデスクトップで回答するか、スキップしてください。"
 
@@ -8686,6 +8689,9 @@ msgstr "インストール方法"
 msgid "Installing..."
 msgstr "インストール中..."
 
+msgid "Installs Superset on a machine you can reach with ssh, signs Superset in to your account, and keeps it running as a service."
+msgstr "ssh で接続できるマシンに Superset をインストールし、Superset をあなたのアカウントにサインインさせ、サービスとして実行し続けます。"
+
 msgid "Instructions"
 msgstr "指示"
 
@@ -11455,6 +11461,9 @@ msgstr "フォルダから開く"
 
 msgid "Open full screen"
 msgstr "全画面で開く"
+
+msgid "Open host"
+msgstr "ホストを開く"
 
 msgid "Open importer"
 msgstr "インポーターを開く"
@@ -14815,6 +14824,9 @@ msgstr "設定する"
 msgid "Set up {0}"
 msgstr "{0} をセットアップ"
 
+msgid "Set up a host over SSH"
+msgstr "SSH でホストを設定"
+
 msgid "Set up an automation"
 msgstr "自動化を設定する"
 
@@ -14856,6 +14868,9 @@ msgstr "セットアップ"
 
 msgid "Setup script"
 msgstr "セットアップスクリプト"
+
+msgid "Setup stopped. The reason is in the output below."
+msgstr "設定が停止しました。理由は下の出力に表示されています。"
 
 msgid "Sexual content"
 msgstr "性的なコンテンツ"
@@ -15509,6 +15524,9 @@ msgstr "スカッシュしてマージ"
 
 msgid "SS"
 msgstr "SS"
+
+msgid "SSH destination"
+msgstr "SSH の接続先"
 
 msgid "SSO/SAML"
 msgstr "SSO/SAML"
@@ -16666,6 +16684,9 @@ msgstr "ホストが15分以内に復帰しませんでした。"
 
 msgid "The host hasn't answered."
 msgstr "ホストからの応答がありません。"
+
+msgid "The host is online. Pick it when you create a workspace."
+msgstr "ホストはオンラインです。ワークスペースを作成するときに選択してください。"
 
 msgid "The host isn't connected to the Superset relay. If it's this device, turn on \"Allow remote access to this device via relay\" in Settings > Remote Access, then try again."
 msgstr "ホストがSupersetリレーに接続されていません。このデバイスの場合は、設定 > リモートアクセスで「リレー経由でこのデバイスへのリモートアクセスを許可」をオンにしてから再試行してください。"
@@ -18079,6 +18100,9 @@ msgstr "ユーザーが見つかりません"
 
 msgid "user@example.com"
 msgstr "user@example.com"
+
+msgid "user@host, ssh://user@host:2222, or an ssh config alias"
+msgstr "user@host、ssh://user@host:2222、または ssh config のエイリアス"
 
 msgid "Using random branch name (AI generation timed out)"
 msgstr "ランダムなブランチ名を使用します(AI生成がタイムアウトしました)"

@@ -2252,6 +2252,9 @@ msgstr "Perakit Anonim"
 msgid "another device"
 msgstr "perangkat lain"
 
+msgid "Answer any questions in the terminal below, such as a password."
+msgstr "Jawab pertanyaan di terminal di bawah, misalnya kata sandi."
+
 msgid "Answer this question on desktop, or skip it."
 msgstr "Jawab pertanyaan ini di desktop, atau lewati."
 
@@ -8686,6 +8689,9 @@ msgstr "Diinstal melalui"
 msgid "Installing..."
 msgstr "Memasang..."
 
+msgid "Installs Superset on a machine you can reach with ssh, signs Superset in to your account, and keeps it running as a service."
+msgstr "Memasang Superset di mesin yang bisa Anda jangkau dengan ssh, menghubungkan Superset ke akun Anda, dan menjaga Superset tetap berjalan sebagai layanan."
+
 msgid "Instructions"
 msgstr "Instruksi"
 
@@ -11455,6 +11461,9 @@ msgstr "Buka dari folder"
 
 msgid "Open full screen"
 msgstr "Buka layar penuh"
+
+msgid "Open host"
+msgstr "Buka host"
 
 msgid "Open importer"
 msgstr "Buka importer"
@@ -14815,6 +14824,9 @@ msgstr "Siapkan"
 msgid "Set up {0}"
 msgstr "Siapkan {0}"
 
+msgid "Set up a host over SSH"
+msgstr "Siapkan host lewat SSH"
+
 msgid "Set up an automation"
 msgstr "Siapkan otomatisasi"
 
@@ -14856,6 +14868,9 @@ msgstr "Setup"
 
 msgid "Setup script"
 msgstr "Skrip setup"
+
+msgid "Setup stopped. The reason is in the output below."
+msgstr "Penyiapan berhenti. Alasannya ada di output di bawah."
 
 msgid "Sexual content"
 msgstr "Konten seksual"
@@ -15509,6 +15524,9 @@ msgstr "Squash dan merge"
 
 msgid "SS"
 msgstr "SS"
+
+msgid "SSH destination"
+msgstr "Tujuan SSH"
 
 msgid "SSO/SAML"
 msgstr "SSO/SAML"
@@ -16666,6 +16684,9 @@ msgstr "Host tidak kembali dalam lima belas menit."
 
 msgid "The host hasn't answered."
 msgstr "Host tidak merespons."
+
+msgid "The host is online. Pick it when you create a workspace."
+msgstr "Host sudah online. Pilih host ini saat membuat workspace."
 
 msgid "The host isn't connected to the Superset relay. If it's this device, turn on \"Allow remote access to this device via relay\" in Settings > Remote Access, then try again."
 msgstr "Host tidak terhubung ke relay Superset. Kalau ini perangkatnya, aktifkan \"Izinkan akses jarak jauh ke perangkat ini melalui relay\" di Pengaturan > Akses Jarak Jauh, lalu coba lagi."
@@ -18079,6 +18100,9 @@ msgstr "Pengguna tidak ditemukan"
 
 msgid "user@example.com"
 msgstr "user@example.com"
+
+msgid "user@host, ssh://user@host:2222, or an ssh config alias"
+msgstr "user@host, ssh://user@host:2222, atau alias dari konfigurasi ssh"
 
 msgid "Using random branch name (AI generation timed out)"
 msgstr "Memakai nama branch acak (pembuatan AI kehabisan waktu)"
