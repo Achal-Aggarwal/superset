@@ -2788,9 +2788,6 @@ msgstr "Kembali ke otomatisasi"
 msgid "Back to billing"
 msgstr "Kembali ke penagihan"
 
-msgid "Back to Blog"
-msgstr "Kembali ke Blog"
-
 msgid "Back to Changelog"
 msgstr "Kembali ke Changelog"
 

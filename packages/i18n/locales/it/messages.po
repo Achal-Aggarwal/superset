@@ -2788,9 +2788,6 @@ msgstr "Torna alle automazioni"
 msgid "Back to billing"
 msgstr "Torna alla fatturazione"
 
-msgid "Back to Blog"
-msgstr "Torna al blog"
-
 msgid "Back to Changelog"
 msgstr "Torna al changelog"
 
