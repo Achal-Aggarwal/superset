@@ -811,6 +811,9 @@ msgstr "{count} Hosts führen einen älteren Host-Dienst aus als diese App"
 msgid "{count}/day"
 msgstr "{count}/Tag"
 
+msgid "{current} of {total}"
+msgstr "{current} von {total}"
+
 msgid "{currentPage} of {totalBranches}"
 msgstr "{currentPage} von {totalBranches}"
 
@@ -3764,6 +3767,9 @@ msgstr "Wird geklont…"
 
 msgid "Close"
 msgstr "Schließen"
+
+msgid "Close (Esc)"
+msgstr "Schließen (Esc)"
 
 #. placeholder {0}: row.title
 msgid "Close {0}"
@@ -10358,6 +10364,9 @@ msgstr "Neuigkeiten, Updates und Einblicke vom Superset-Team zu parallelen Codin
 msgid "Next"
 msgstr "Weiter"
 
+msgid "Next (Enter)"
+msgstr "Weiter (Eingabetaste)"
+
 msgid "Next branch"
 msgstr "Nächster Branch"
 
@@ -12535,6 +12544,9 @@ msgstr "Vorschau: GitHub-Stern-Erinnerung"
 
 msgid "Previous"
 msgstr "Zurück"
+
+msgid "Previous (Shift+Enter)"
+msgstr "Zurück (Umschalt+Eingabetaste)"
 
 msgid "Previous branch"
 msgstr "Vorheriger Branch"

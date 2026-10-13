@@ -811,6 +811,9 @@ msgstr "{count} ana makine bu uygulamadan daha eski bir ana makine hizmeti çal�
 msgid "{count}/day"
 msgstr "{count}/gün"
 
+msgid "{current} of {total}"
+msgstr "{current} / {total}"
+
 msgid "{currentPage} of {totalBranches}"
 msgstr "{totalBranches} içinden {currentPage}"
 
@@ -3764,6 +3767,9 @@ msgstr "Klonlanıyor…"
 
 msgid "Close"
 msgstr "Kapat"
+
+msgid "Close (Esc)"
+msgstr "Kapat (Esc)"
 
 #. placeholder {0}: row.title
 msgid "Close {0}"
@@ -10358,6 +10364,9 @@ msgstr "Superset ekibinden paralel kodlama ajanları ve geliştirici verimliliğ
 msgid "Next"
 msgstr "Sonraki"
 
+msgid "Next (Enter)"
+msgstr "Sonraki (Enter)"
+
 msgid "Next branch"
 msgstr "Sonraki dal"
 
@@ -12535,6 +12544,9 @@ msgstr "Önizleme: GitHub yıldız hatırlatma bildirimi"
 
 msgid "Previous"
 msgstr "Önceki"
+
+msgid "Previous (Shift+Enter)"
+msgstr "Önceki (Shift+Enter)"
 
 msgid "Previous branch"
 msgstr "Önceki dal"
