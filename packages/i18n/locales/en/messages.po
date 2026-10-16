@@ -7969,9 +7969,6 @@ msgstr "GitHub installation not found"
 msgid "GitHub integration"
 msgstr "GitHub integration"
 
-msgid "GitHub is refusing API calls for this machine's credential until {until}. Existing pull request links stay; new pull requests appear once the limit resets."
-msgstr "GitHub is refusing API calls for this machine's credential until {until}. Existing pull request links stay; new pull requests appear once the limit resets."
-
 msgid "GitHub issues"
 msgstr "GitHub issues"
 
@@ -7980,9 +7977,6 @@ msgstr "GitHub rate limit reached"
 
 msgid "GitHub refused the merge"
 msgstr "GitHub refused the merge"
-
-msgid "GitHub rejected this machine's credentials, so pull requests cannot be detected. Run \"gh auth login\" or fix GITHUB_TOKEN; the next retry is at {until}."
-msgstr "GitHub rejected this machine's credentials, so pull requests cannot be detected. Run \"gh auth login\" or fix GITHUB_TOKEN; the next retry is at {until}."
 
 msgid "GitHub sign-in needed"
 msgstr "GitHub sign-in needed"
@@ -13804,6 +13798,9 @@ msgstr "Reset zoom"
 msgid "Reset Zoom"
 msgstr "Reset Zoom"
 
+msgid "Resets at {until}"
+msgstr "Resets at {until}"
+
 msgid "Resets in {countdown} · {absolute}"
 msgstr "Resets in {countdown} · {absolute}"
 
@@ -14017,6 +14014,9 @@ msgstr "Retry in a few seconds; if it persists, restart Superset."
 msgid "Retry in a few seconds."
 msgstr "Retry in a few seconds."
 
+msgid "Retrying at {until}"
+msgstr "Retrying at {until}"
+
 msgid "Retrying…"
 msgstr "Retrying…"
 
@@ -14191,6 +14191,9 @@ msgstr "Rows changed"
 
 msgid "Run"
 msgstr "Run"
+
+msgid "Run \"gh auth login\" or set GITHUB_TOKEN"
+msgstr "Run \"gh auth login\" or set GITHUB_TOKEN"
 
 #. placeholder {0}: automation.name
 msgid "Run {0} now"
@@ -16165,9 +16168,6 @@ msgstr "Superset Automations"
 msgid "superset browser cdp prints an endpoint for that pane only. Point Playwright or browser-use at it."
 msgstr "superset browser cdp prints an endpoint for that pane only. Point Playwright or browser-use at it."
 
-msgid "Superset cannot reach api.github.com from this machine. Pull request status retries at {until}."
-msgstr "Superset cannot reach api.github.com from this machine. Pull request status retries at {until}."
-
 msgid "Superset CLI"
 msgstr "Superset CLI"
 
@@ -17325,6 +17325,9 @@ msgstr "This looks like a binary file. Opening it as text may show garbled outpu
 
 msgid "This Mac"
 msgstr "This Mac"
+
+msgid "This machine"
+msgstr "This machine"
 
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
