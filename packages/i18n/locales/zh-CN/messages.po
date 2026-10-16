@@ -923,6 +923,9 @@ msgstr "{level} · {gate} · {statusLabel}"
 msgid "{level} {gate}: {statusLabel}"
 msgstr "{level} {gate}：{statusLabel}"
 
+msgid "{lines, plural, one {# line} other {# lines}}"
+msgstr "{lines, plural, other {# 行}}"
+
 msgid "{localHostName} (this device)"
 msgstr "{localHostName}（此设备）"
 
@@ -8285,6 +8288,9 @@ msgstr "隐藏审查评论"
 msgid "Hide sessions"
 msgstr "隐藏会话"
 
+msgid "Hide text"
+msgstr "隐藏文本"
+
 msgid "Hide unchanged regions"
 msgstr "隐藏未更改区域"
 
@@ -13621,6 +13627,9 @@ msgstr "移除提及"
 msgid "Remove mention {path}"
 msgstr "移除提及{path}"
 
+msgid "Remove pasted text"
+msgstr "移除粘贴的文本"
+
 msgid "Remove PR Link"
 msgstr "移除PR链接"
 
@@ -15371,6 +15380,9 @@ msgstr "在图表中显示"
 msgid "Show in folder"
 msgstr "在文件夹中显示"
 
+msgid "Show in text field"
+msgstr "在输入框中显示"
+
 msgid "Show items in all states"
 msgstr "显示所有状态的条目"
 
@@ -15433,6 +15445,9 @@ msgstr "显示会话"
 
 msgid "Show status and send notifications for this agent."
 msgstr "为此智能体显示状态并发送通知。"
+
+msgid "Show text"
+msgstr "显示文本"
 
 msgid "Show the triggering payload"
 msgstr "显示触发负载"

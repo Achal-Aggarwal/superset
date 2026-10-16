@@ -923,6 +923,9 @@ msgstr "{level} · {gate} · {statusLabel}"
 msgid "{level} {gate}: {statusLabel}"
 msgstr "{level} {gate}: {statusLabel}"
 
+msgid "{lines, plural, one {# line} other {# lines}}"
+msgstr "{lines, plural, one {# wiersz} few {# wiersze} many {# wierszy} other {# wiersza}}"
+
 msgid "{localHostName} (this device)"
 msgstr "{localHostName} (to urządzenie)"
 
@@ -8285,6 +8288,9 @@ msgstr "Ukryj komentarze przeglądu"
 msgid "Hide sessions"
 msgstr "Ukryj sesje"
 
+msgid "Hide text"
+msgstr "Ukryj tekst"
+
 msgid "Hide unchanged regions"
 msgstr "Ukryj niezmienione fragmenty"
 
@@ -13621,6 +13627,9 @@ msgstr "Usuń wzmiankę"
 msgid "Remove mention {path}"
 msgstr "Usuń wzmiankę {path}"
 
+msgid "Remove pasted text"
+msgstr "Usuń wklejony tekst"
+
 msgid "Remove PR Link"
 msgstr "Usuń powiązanie z PR"
 
@@ -15371,6 +15380,9 @@ msgstr "Pokaż na wykresie"
 msgid "Show in folder"
 msgstr "Pokaż w folderze"
 
+msgid "Show in text field"
+msgstr "Pokaż w polu tekstowym"
+
 msgid "Show items in all states"
 msgstr "Pokaż elementy we wszystkich stanach"
 
@@ -15433,6 +15445,9 @@ msgstr "Pokaż sesje"
 
 msgid "Show status and send notifications for this agent."
 msgstr "Pokazuj status i wysyłaj powiadomienia dla tego agenta."
+
+msgid "Show text"
+msgstr "Pokaż tekst"
 
 msgid "Show the triggering payload"
 msgstr "Pokaż ładunek wyzwalający"
