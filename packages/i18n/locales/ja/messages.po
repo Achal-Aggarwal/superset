@@ -1053,6 +1053,12 @@ msgstr "{reason}"
 msgid "{received} of {total}"
 msgstr "{received}/{total}"
 
+msgid "{repositoryFullName} isn't on {installedAccountLogin}, where this organization's GitHub App is installed."
+msgstr "{repositoryFullName} は、この組織の GitHub App がインストールされている {installedAccountLogin} にありません。"
+
+msgid "{repositoryFullName} isn't shared with the Superset GitHub App yet."
+msgstr "{repositoryFullName} はまだ Superset の GitHub App と共有されていません。"
+
 msgid "{seconds}s ago"
 msgstr "{seconds}秒前"
 
@@ -1751,6 +1757,9 @@ msgstr "フォルダからプロジェクトを追加..."
 
 msgid "Add prompt e.g. look for crashes in $sentry"
 msgstr "プロンプトを追加 例: $sentryでクラッシュを探す"
+
+msgid "Add repository"
+msgstr "リポジトリを追加"
 
 msgid "Add script"
 msgstr "スクリプトを追加"
@@ -3012,9 +3021,6 @@ msgstr "下部ドロワー。タッチデバイスではスワイプで操作で
 msgid "Box"
 msgstr "Box"
 
-msgid "Boxes run where the environment was made; a snapshot only exists in its region."
-msgstr "ボックスは環境が作成されたリージョンで動作します。スナップショットはそのリージョンにしか存在しません。"
-
 msgid "Branch"
 msgstr "ブランチ"
 
@@ -3784,6 +3790,9 @@ msgstr "クリックでセッションIDをコピーします(`claude --resume <
 msgid "Click to open on GitHub"
 msgstr "クリックしてGitHubで開く"
 
+msgid "Click to open the pull request"
+msgstr "クリックしてプルリクエストを開く"
+
 msgid "Click two commits to define the range."
 msgstr "2つのコミットをクリックして範囲を指定してください。"
 
@@ -3998,8 +4007,17 @@ msgstr "クラウドワークスペースはこの変数を無視します。エ
 msgid "Cloud workspaces need a paid plan. Upgrade in Settings, Billing to start one."
 msgstr "クラウドワークスペースには有料プランが必要です。「設定」の「請求」でアップグレードすると起動できます。"
 
+msgid "Cloud workspaces need a project for now"
+msgstr "現在、クラウドワークスペースにはプロジェクトが必要です"
+
+msgid "Cloud workspaces under their projects, a local and cloud filter, and the redesigned workspace row."
+msgstr "クラウドワークスペースをプロジェクトの下に表示し、ローカル/クラウドの絞り込みと新しいワークスペース行を追加します。"
+
 msgid "Cloud workspaces will stop running {agentLabel} with it."
 msgstr "クラウドワークスペースはこれを使って{agentLabel}を実行しなくなります。"
+
+msgid "Cloud workspaces without a project are coming. Pick a project for now."
+msgstr "プロジェクトなしのクラウドワークスペースは近日対応予定です。今はプロジェクトを選択してください。"
 
 msgid "Co-founder & CTO, TrainLoop (YC W25)"
 msgstr "共同創業者兼CTO、TrainLoop (YC W25)"
@@ -4214,9 +4232,6 @@ msgstr "component-showcase"
 msgid "Composable form layout — pairs with @superset/ui/form for react-hook-form"
 msgstr "組み合わせ可能なフォームレイアウト — react-hook-form用の@superset/ui/formと合わせて使います"
 
-msgid "Config location"
-msgstr "設定の場所"
-
 msgid "Configure"
 msgstr "設定"
 
@@ -4231,6 +4246,12 @@ msgstr "アプリの全般設定"
 
 msgid "Configure git branch and worktree behavior"
 msgstr "gitブランチとワークツリーの動作を設定"
+
+msgid "Configure GitHub App"
+msgstr "GitHub App を設定"
+
+msgid "Configure GitHub App…"
+msgstr "GitHub App を設定…"
 
 msgid "Configure how tasks sync between Superset and Linear."
 msgstr "SupersetとLinearの間でタスクをどう同期するかを設定します。"
@@ -4295,6 +4316,12 @@ msgstr "外部サービスを接続して組織とデータを同期します。
 
 msgid "Connect external services to sync data."
 msgstr "外部サービスを接続してデータを同期します。"
+
+msgid "Connect GitHub in Integrations to add {repositoryFullName}."
+msgstr "{repositoryFullName} を追加するには、連携で GitHub を接続してください。"
+
+msgid "Connect GitHub…"
+msgstr "GitHub を接続…"
 
 msgid "Connect Google"
 msgstr "Googleを接続"
@@ -5286,6 +5313,9 @@ msgstr "もう一度作成"
 msgid "Create an account"
 msgstr "アカウントを作成"
 
+msgid "Create environment"
+msgstr "環境を作成"
+
 msgid "Create failed: {message}"
 msgstr "作成に失敗しました: {message}"
 
@@ -5489,6 +5519,9 @@ msgstr "ワークツリーを作成中"
 
 msgid "Creating..."
 msgstr "作成中..."
+
+msgid "Creating…"
+msgstr "作成中…"
 
 msgid "Creative Manager, Valid"
 msgstr "クリエイティブマネージャー、Valid"
@@ -7603,6 +7636,9 @@ msgstr "完了"
 msgid "finished · worked for 7s"
 msgstr "完了 · 7秒稼働"
 
+msgid "First repository by name"
+msgstr "名前順で最初のリポジトリ"
+
 msgid "Fix all failing checks"
 msgstr "失敗したチェックをすべて修正"
 
@@ -7827,6 +7863,9 @@ msgstr "{price}/ユーザー/月〜"
 
 msgid "From a hackathon project to the workspace for parallel coding agents."
 msgstr "ハッカソンのプロジェクトから、並列コーディングエージェントのためのワークスペースへ。"
+
+msgid "From GitHub"
+msgstr "GitHub から"
 
 msgid "Front matter hidden — switch to Markdown to edit it"
 msgstr "フロントマターは非表示です — 編集するにはMarkdownに切り替えてください"
@@ -9576,6 +9615,9 @@ msgstr "会話を読み込み中..."
 msgid "Loading diff…"
 msgstr "差分を読み込み中…"
 
+msgid "Loading environments…"
+msgstr "環境を読み込み中…"
+
 msgid "Loading files..."
 msgstr "ファイルを読み込み中..."
 
@@ -10325,9 +10367,6 @@ msgstr "ナビゲーション"
 msgid "Navigation Menu"
 msgstr "Navigation Menu"
 
-msgid "Nearest to you."
-msgstr "あなたに最も近いリージョンです。"
-
 msgid "Need app-level wiring (form state, chart data, app shell)"
 msgstr "アプリ側の配線が必要です(フォームの状態、チャートのデータ、アプリシェル)"
 
@@ -10452,6 +10491,9 @@ msgstr "新規セッション"
 
 msgid "New shell"
 msgstr "新しいシェル"
+
+msgid "New sidebar"
+msgstr "新しいサイドバー"
 
 msgid "New stars"
 msgstr "新規スター"
@@ -10663,6 +10705,9 @@ msgstr "Chrome、Brave、ArcなどのChromiumブラウザが見つかりませ�
 msgid "No Claude or Codex usage found on this machine yet. Join now and you'll appear once you've used an agent."
 msgstr "このマシンでClaudeやCodexの使用がまだ見つかりません。今参加すれば、エージェントを使い始めた時点で表示されます。"
 
+msgid "No cloud workspaces"
+msgstr "クラウドワークスペースはありません"
+
 msgid "No cloud workspaces match these filters"
 msgstr "これらのフィルターに一致するクラウドワークスペースはありません"
 
@@ -10732,11 +10777,17 @@ msgstr "ダウンロードはまだありません"
 msgid "No emoji found"
 msgstr "絵文字が見つかりません"
 
+msgid "No environment for {repositoryFullName}"
+msgstr "{repositoryFullName} の環境はありません"
+
 msgid "No environments available"
 msgstr "利用可能な環境はありません"
 
 msgid "No environments found."
 msgstr "環境が見つかりません。"
+
+msgid "No environments yet"
+msgstr "環境はまだありません"
 
 msgid "No environments yet."
 msgstr "環境はまだありません。作成すると、そこからクラウドワークスペースを起動できます。"
@@ -10828,6 +10879,9 @@ msgstr "コメントを受け取るエージェントはいません"
 msgid "No live sessions"
 msgstr "ライブセッションはありません"
 
+msgid "No local workspaces"
+msgstr "ローカルワークスペースはありません"
+
 msgid "No log lines yet"
 msgstr "ログ行はまだありません"
 
@@ -10851,6 +10905,9 @@ msgstr "一致する組織メンバーがいません。"
 
 msgid "No matching pages"
 msgstr "一致するページはありません"
+
+msgid "No matching repositories."
+msgstr "一致するリポジトリがありません。"
 
 msgid "No members yet"
 msgstr "メンバーはまだいません"
@@ -11969,6 +12026,9 @@ msgstr "ワークツリーを開いています..."
 msgid "Opens a cloud workspace where an agent installs what the project needs and writes its .superset/config.json"
 msgstr "クラウドワークスペースを開き、エージェントがプロジェクトに必要なものをインストールして .superset/config.json を書き込みます"
 
+msgid "Opens on"
+msgstr "開くリポジトリ"
+
 msgid "Operator"
 msgstr "オペレーター"
 
@@ -12910,6 +12970,9 @@ msgstr "プロジェクトのホストに到達できません — 今は名前�
 msgid "Projects"
 msgstr "プロジェクト"
 
+msgid "Promoted from a workspace, so its repositories and region are fixed. Promote a workspace again to change them."
+msgstr "ワークスペースから昇格したため、リポジトリとリージョンは固定です。変更するには再度ワークスペースを昇格してください。"
+
 msgid "Prompt"
 msgstr "プロンプト"
 
@@ -13482,6 +13545,9 @@ msgstr "{0}を削除"
 
 msgid "Remove {label}?"
 msgstr "{label}を削除しますか?"
+
+msgid "Remove {repositoryName}"
+msgstr "{repositoryName} を削除"
 
 msgid "Remove attachment"
 msgstr "添付ファイルを削除"
@@ -14799,6 +14865,9 @@ msgstr "エージェントを選択"
 msgid "Select an editor from the dropdown"
 msgstr "ドロップダウンからエディタを選択してください"
 
+msgid "Select an environment"
+msgstr "環境を選択してください"
+
 msgid "Select an organization"
 msgstr "組織を選択"
 
@@ -15062,6 +15131,9 @@ msgstr "SSH でホストを設定"
 msgid "Set up an automation"
 msgstr "自動化を設定する"
 
+msgid "Set up environment"
+msgstr "環境をセットアップ"
+
 msgid "Set up project on {hostName}"
 msgstr "{hostName}でプロジェクトをセットアップ"
 
@@ -15070,6 +15142,9 @@ msgstr "プロジェクトをセットアップ…"
 
 msgid "Set up this project for Superset"
 msgstr "このプロジェクトをSuperset向けにセットアップ"
+
+msgid "Set up with an agent"
+msgstr "エージェントでセットアップ"
 
 msgid "Set up your organization to get started"
 msgstr "組織をセットアップして始めましょう"
@@ -15525,9 +15600,6 @@ msgstr "スキルはSupersetプラグインに同梱され、使用するすべ�
 msgid "Skip"
 msgstr "スキップ"
 
-msgid "Skip & save"
-msgstr "スキップして保存"
-
 msgid "Skip All"
 msgstr "すべてスキップ"
 
@@ -15664,6 +15736,9 @@ msgstr "ワークスペースを並べ替え"
 
 msgid "Sort workspaces ({currentLabel})"
 msgstr "ワークスペースを並べ替え（{currentLabel}）"
+
+msgid "Sort workspaces ({currentLabel}) · {hostLabel}"
+msgstr "ワークスペースを並べ替え（{currentLabel}） · {hostLabel}"
 
 msgid "Sounds and ringtone for completed tasks"
 msgstr "タスク完了時のサウンドと着信音"
@@ -15869,9 +15944,6 @@ msgstr "セッションを開始"
 
 msgid "Start a workspace straight from a Linear ticket. The agent picks it up and reports back with a PR."
 msgstr "Linearのチケットからそのままワークスペースを作れます。エージェントが引き受け、PRとして返してきます。"
-
-msgid "Start agent"
-msgstr "エージェントを開始"
 
 msgid "Start agents, follow them live, and review the diff from your iPhone or iPad. Your code stays on your machines."
 msgstr "iPhone や iPad からエージェントを起動し、ライブで見守り、差分をレビュー。コードはあなたのマシンに残ります。"
@@ -17045,9 +17117,6 @@ msgstr "復元期間は終了しました。support@superset.shまでご連絡�
 msgid "The remote branch has diverged. Pull before continuing."
 msgstr "リモートブランチが分岐しています。続ける前にpullしてください。"
 
-msgid "The repositories a cloud workspace checks out, and which one's .superset/config.json it acts on. The workspace opens on the config location, or on the first repository by name."
-msgstr "クラウドワークスペースがチェックアウトするリポジトリと、どのリポジトリの .superset/config.json を適用するか。ワークスペースは設定の場所、なければ名前順で最初のリポジトリで開きます。"
-
 msgid "The request failed."
 msgstr "リクエストに失敗しました。"
 
@@ -17124,8 +17193,8 @@ msgstr "ワークスペースは作成されている可能性があります。
 msgid "The workspace this automation is pinned to no longer exists on its host. Pin a different one in the automation's settings."
 msgstr "このオートメーションがピン留めされているワークスペースは、ホスト上に存在しなくなりました。オートメーションの設定で別のワークスペースをピン留めしてください。"
 
-msgid "The workspace's repositories, as they are checked out now."
-msgstr "現在チェックアウトされている状態のワークスペースのリポジトリ。"
+msgid "The workspace's repositories, as they are checked out now. Boxes run in its region."
+msgstr "ワークスペースのリポジトリ（現在チェックアウトされている状態）。ボックスはそのリージョンで実行されます。"
 
 msgid "The worktree and any uncommitted changes will be removed. This cannot be undone."
 msgstr "ワークツリーと未コミットの変更が削除されます。この操作は元に戻せません。"
@@ -17268,9 +17337,6 @@ msgstr "このメールアドレスは別のサインイン方法で既に登録
 
 msgid "This environment has no repositories. Create an environment with repositories in Settings, then start the workspace from it"
 msgstr "この環境にはリポジトリがありません。設定でリポジトリを含む環境を作成し、その環境からワークスペースを開始してください"
-
-msgid "This environment was promoted from a workspace, so its repositories are fixed. Promote a workspace again to change them."
-msgstr "この環境はワークスペースから昇格されたため、リポジトリは固定されています。変更するにはワークスペースを再度昇格してください。"
 
 msgid "This environment's repositories are fixed; promote a workspace again to change them"
 msgstr "この環境のリポジトリは固定されています。変更するにはワークスペースを再度昇格してください"
@@ -18529,6 +18595,9 @@ msgstr "使用量を表示"
 
 msgid "Violence or harassment"
 msgstr "暴力または嫌がらせ"
+
+msgid "Visible to"
+msgstr "公開範囲"
 
 msgid "Voice"
 msgstr "音声"
