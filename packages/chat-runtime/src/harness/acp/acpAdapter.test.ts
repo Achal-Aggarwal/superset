@@ -348,9 +348,9 @@ function startAdapter(
 	adapterOptions: Pick<
 		AcpAdapterOptions,
 		| "defaultModeId"
+		| "requestTimeoutMs"
 		| "clientApprovalModes"
 		| "shellPollMs"
-		| "selectionWaitMs"
 		| "backgroundDetailIntervalMs"
 		| "startupTimeoutMs"
 	> = {},
@@ -2054,7 +2054,7 @@ describe("AcpAdapter on protocol v2", () => {
 		await adapter.dispose();
 	});
 
-	it("says so when a prompt goes out before a change is confirmed", async () => {
+	it("keeps an unanswered change selected after it times out, and sends the prompt", async () => {
 		const agent = new FakeAcpAgent();
 		agent.holdSelections = true;
 		agent.newSessionConfigOptions = [
@@ -2074,21 +2074,65 @@ describe("AcpAdapter on protocol v2", () => {
 			agent,
 			undefined,
 			{},
-			{ defaultModeId: "bypassPermissions", selectionWaitMs: 5 },
+			{ defaultModeId: "bypassPermissions", requestTimeoutMs: 5 },
 		);
 		adapter.prompt([{ type: "text", text: "go" }]);
-		await Bun.sleep(20);
-		await flush();
+		await flush(16);
+		expect(agent.sent.map((f) => f.method)).not.toContain("session/prompt");
 
+		await Bun.sleep(20);
+		await flush(16);
 		expect(agent.sent.map((f) => f.method)).toContain("session/prompt");
 		expect(
+			sessionsOf(events)
+				.filter((session) => session.modeId !== undefined)
+				.pop()?.modeId,
+		).toBe("bypassPermissions");
+		expect(
 			itemsOf(events).some(
-				(item) =>
-					item.kind === "notice" &&
-					typeof item.text === "string" &&
-					item.text.includes("did not confirm a mode or model change"),
+				(item) => item.kind === "notice" && item.noticeKind === "error",
 			),
 		).toBe(true);
+
+		await adapter.dispose();
+	});
+
+	it("drops a prompt held for an unanswered change when the turn is cancelled", async () => {
+		const agent = new FakeAcpAgent();
+		agent.holdSelections = true;
+		agent.newSessionConfigOptions = [
+			{
+				configId: "mode",
+				name: "Mode",
+				type: "select",
+				category: "mode",
+				currentValue: "default",
+				options: [
+					{ value: "default", name: "Ask for approval" },
+					{ value: "bypassPermissions", name: "Full access" },
+				],
+			},
+		];
+		const { adapter, events } = startAdapter(
+			agent,
+			undefined,
+			{},
+			{ defaultModeId: "bypassPermissions" },
+		);
+		adapter.prompt([{ type: "text", text: "go" }]);
+		await flush(16);
+		const turns = () =>
+			events.flatMap((event) => (event.kind === "turn" ? [event.turn] : []));
+		expect(turns().pop()?.status).toBe("running");
+
+		adapter.cancelTurn();
+		agent.releaseSelections();
+		await flush(16);
+
+		const methods = agent.sent.map((f) => f.method);
+		expect(methods).not.toContain("session/prompt");
+		expect(methods).not.toContain("session/cancel");
+		expect(turns().pop()?.status).toBe("interrupted");
 
 		await adapter.dispose();
 	});

@@ -48,7 +48,12 @@ import type {
 	AcpTransportHandlers,
 	SpawnAcpOptions,
 } from "./rpcClient";
-import { AcpRpcClient, AcpRpcError, spawnAcpTransport } from "./rpcClient";
+import {
+	AcpRpcClient,
+	AcpRpcError,
+	AcpTimeoutError,
+	spawnAcpTransport,
+} from "./rpcClient";
 import type { AcpConfigSelectOption, AcpElicitationProperty } from "./wire";
 import {
 	ACP_STEERING_METHOD,
@@ -99,6 +104,10 @@ const TOOL_KIND_BY_ACP: Record<string, ToolKind> = {
 	switch_mode: "other",
 	other: "other",
 };
+
+function unconfirmedSelectionMessage(error: AcpTimeoutError): string {
+	return `${error.message}. The agent can still apply the change, so the selection stays as you set it.`;
+}
 
 function commandCategory(
 	category: unknown,
@@ -203,7 +212,6 @@ export type AcpImageStoreContext = {
 	replaying: boolean;
 };
 
-const SELECTION_WAIT_MS = 5000;
 const STARTUP_TIMEOUT_MS = 120_000;
 const REQUEST_TIMEOUT_MS = 30_000;
 const STDERR_TAIL_CHARS = 4000;
@@ -232,8 +240,6 @@ export type AcpAdapterOptions = SpawnAcpOptions & {
 	defaultModeId?: string;
 	clientApprovalModes?: boolean;
 	shellPollMs?: number;
-	/** How long a prompt waits for mode and option changes the agent has not answered. */
-	selectionWaitMs?: number;
 	startupTimeoutMs?: number;
 	requestTimeoutMs?: number;
 	resolveAttachment?: (attachmentId: string) => Promise<AcpAttachment | null>;
@@ -458,6 +464,7 @@ export class AcpAdapter implements HarnessAdapter {
 	private dead = false;
 	private stderrTail = "";
 	private customAnswer: string | null = null;
+	private heldTurnId: string | null = null;
 	private readonly shellPids = new Map<string, number>();
 	private shellPoll: ReturnType<typeof setInterval> | null = null;
 
@@ -500,7 +507,11 @@ export class AcpAdapter implements HarnessAdapter {
 	}
 
 	canSteer(): boolean {
-		return this.supportsSteering && this.currentTurn?.status === "running";
+		return (
+			this.supportsSteering &&
+			this.currentTurn?.status === "running" &&
+			this.heldTurnId !== this.currentTurn.id
+		);
 	}
 
 	async steer(content: UserContent[]): Promise<boolean> {
@@ -524,6 +535,16 @@ export class AcpAdapter implements HarnessAdapter {
 	cancelTurn(): void {
 		if (!this.client || !this.sessionId) return;
 		if (this.currentTurn?.status !== "running") return;
+		if (this.heldTurnId === this.currentTurn.id) {
+			this.heldTurnId = null;
+			this.emitTurn({
+				...this.currentTurn,
+				status: "interrupted",
+				completedAtMs: this.now(),
+			});
+			this.emitSession({ status: "idle" });
+			return;
+		}
 		this.client.notify("session/cancel", { sessionId: this.sessionId });
 		if (this.cancelPendingApprovals(this.currentTurn.id)) {
 			this.emitSession({ status: "running" });
@@ -597,6 +618,10 @@ export class AcpAdapter implements HarnessAdapter {
 					);
 		this.trackSelection(pending);
 		void pending.catch((error: Error) => {
+			if (error instanceof AcpTimeoutError) {
+				this.emitNotice("error", unconfirmedSelectionMessage(error));
+				return;
+			}
 			if (previous && this.modeId === modeId) {
 				this.emitSession({ modeId: previous });
 			}
@@ -616,23 +641,7 @@ export class AcpAdapter implements HarnessAdapter {
 	/** An agent may run a prompt before it applies a mode or model it was just sent. */
 	private async selectionsApplied(): Promise<void> {
 		if (this.selectionsInFlight.size === 0) return;
-		let timer: ReturnType<typeof setTimeout> | undefined;
-		const confirmed = await Promise.race([
-			Promise.all(this.selectionsInFlight).then(() => true),
-			new Promise<boolean>((resolve) => {
-				timer = setTimeout(
-					() => resolve(false),
-					this.options.selectionWaitMs ?? SELECTION_WAIT_MS,
-				);
-			}),
-		]);
-		clearTimeout(timer);
-		if (!confirmed) {
-			this.emitNotice(
-				"error",
-				"The agent did not confirm a mode or model change. This turn can run with the previous setting.",
-			);
-		}
+		await Promise.all(this.selectionsInFlight);
 	}
 
 	setConfigOption(configId: string, value: string): void {
@@ -663,6 +672,10 @@ export class AcpAdapter implements HarnessAdapter {
 		request
 			.then((response) => this.handleConfigOptions(response))
 			.catch((error: Error) => {
+				if (error instanceof AcpTimeoutError) {
+					this.emitNotice("error", unconfirmedSelectionMessage(error));
+					return;
+				}
 				this.configOptions = previous;
 				this.emitSession({
 					configOptions: previous,
@@ -903,12 +916,16 @@ export class AcpAdapter implements HarnessAdapter {
 	}
 
 	private async runTurn(content: UserContent[]): Promise<void> {
-		await this.selectionsApplied();
-		const client = this.client;
-		if (!client || !this.sessionId) return;
+		if (!this.client || !this.sessionId) return;
 		const turnId = this.mintId();
 		this.emitTurn({ id: turnId, status: "running", startedAtMs: this.now() });
 		this.emitSession({ status: "running" });
+		this.heldTurnId = turnId;
+		await this.selectionsApplied();
+		if (this.heldTurnId !== turnId) return;
+		this.heldTurnId = null;
+		const client = this.client;
+		if (!client || !this.sessionId || this.currentTurn?.id !== turnId) return;
 		try {
 			const response = await client.request("session/prompt", {
 				sessionId: this.sessionId,
