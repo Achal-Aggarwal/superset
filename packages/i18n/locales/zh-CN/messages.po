@@ -5083,6 +5083,9 @@ msgstr "没能完成工作区的删除"
 msgid "Couldn't hand this to an agent"
 msgstr "无法交给智能体处理"
 
+msgid "Couldn't load {filename}"
+msgstr "无法加载 {filename}"
+
 #. placeholder {0}: configsQuery.error instanceof Error ? configsQuery.error.message : hostServiceUnavailableMessage
 msgid "Couldn't load agent settings: {0}"
 msgstr "无法加载智能体设置：{0}"
@@ -10576,6 +10579,9 @@ msgstr "下一条评论"
 msgid "Next file"
 msgstr "下一个文件"
 
+msgid "Next image"
+msgstr "下一张图片"
+
 msgid "Next match"
 msgstr "下一个匹配"
 
@@ -12818,6 +12824,9 @@ msgstr "上一条评论"
 
 msgid "Previous file"
 msgstr "上一个文件"
+
+msgid "Previous image"
+msgstr "上一张图片"
 
 msgid "Previous match"
 msgstr "上一个匹配"

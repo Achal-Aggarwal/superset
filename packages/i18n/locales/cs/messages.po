@@ -5083,6 +5083,9 @@ msgstr "Mazání pracovních prostorů se nepodařilo dokončit"
 msgid "Couldn't hand this to an agent"
 msgstr "Nepodařilo se předat agentovi"
 
+msgid "Couldn't load {filename}"
+msgstr "Soubor {filename} se nepodařilo načíst"
+
 #. placeholder {0}: configsQuery.error instanceof Error ? configsQuery.error.message : hostServiceUnavailableMessage
 msgid "Couldn't load agent settings: {0}"
 msgstr "Nepodařilo se načíst nastavení agenta: {0}"
@@ -10576,6 +10579,9 @@ msgstr "Další komentář"
 msgid "Next file"
 msgstr "Další soubor"
 
+msgid "Next image"
+msgstr "Další obrázek"
+
 msgid "Next match"
 msgstr "Další shoda"
 
@@ -12818,6 +12824,9 @@ msgstr "Předchozí komentář"
 
 msgid "Previous file"
 msgstr "Předchozí soubor"
+
+msgid "Previous image"
+msgstr "Předchozí obrázek"
 
 msgid "Previous match"
 msgstr "Předchozí shoda"

@@ -5083,6 +5083,9 @@ msgstr "Impossibile completare l'eliminazione dei workspace"
 msgid "Couldn't hand this to an agent"
 msgstr "Impossibile affidare questo a un agente"
 
+msgid "Couldn't load {filename}"
+msgstr "Impossibile caricare {filename}"
+
 #. placeholder {0}: configsQuery.error instanceof Error ? configsQuery.error.message : hostServiceUnavailableMessage
 msgid "Couldn't load agent settings: {0}"
 msgstr "Impossibile caricare le impostazioni degli agenti: {0}"
@@ -10576,6 +10579,9 @@ msgstr "Commento successivo"
 msgid "Next file"
 msgstr "File successivo"
 
+msgid "Next image"
+msgstr "Immagine successiva"
+
 msgid "Next match"
 msgstr "Corrispondenza successiva"
 
@@ -12818,6 +12824,9 @@ msgstr "Commento precedente"
 
 msgid "Previous file"
 msgstr "File precedente"
+
+msgid "Previous image"
+msgstr "Immagine precedente"
 
 msgid "Previous match"
 msgstr "Corrispondenza precedente"

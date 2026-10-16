@@ -5083,6 +5083,9 @@ msgstr "Çalışma alanlarını silme işlemi tamamlanamadı"
 msgid "Couldn't hand this to an agent"
 msgstr "Bu bir ajana devredilemedi"
 
+msgid "Couldn't load {filename}"
+msgstr "{filename} yüklenemedi"
+
 #. placeholder {0}: configsQuery.error instanceof Error ? configsQuery.error.message : hostServiceUnavailableMessage
 msgid "Couldn't load agent settings: {0}"
 msgstr "Ajan ayarları yüklenemedi: {0}"
@@ -10576,6 +10579,9 @@ msgstr "Sonraki yorum"
 msgid "Next file"
 msgstr "Sonraki dosya"
 
+msgid "Next image"
+msgstr "Sonraki görsel"
+
 msgid "Next match"
 msgstr "Sonraki eşleşme"
 
@@ -12818,6 +12824,9 @@ msgstr "Önceki yorum"
 
 msgid "Previous file"
 msgstr "Önceki dosya"
+
+msgid "Previous image"
+msgstr "Önceki görsel"
 
 msgid "Previous match"
 msgstr "Önceki eşleşme"

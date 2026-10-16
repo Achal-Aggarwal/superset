@@ -5083,6 +5083,9 @@ msgstr "Tidak bisa menyelesaikan penghapusan workspace"
 msgid "Couldn't hand this to an agent"
 msgstr "Tidak dapat menyerahkan ini ke agen"
 
+msgid "Couldn't load {filename}"
+msgstr "Tidak dapat memuat {filename}"
+
 #. placeholder {0}: configsQuery.error instanceof Error ? configsQuery.error.message : hostServiceUnavailableMessage
 msgid "Couldn't load agent settings: {0}"
 msgstr "Tidak bisa memuat pengaturan agen: {0}"
@@ -10576,6 +10579,9 @@ msgstr "Komentar berikutnya"
 msgid "Next file"
 msgstr "File berikutnya"
 
+msgid "Next image"
+msgstr "Gambar berikutnya"
+
 msgid "Next match"
 msgstr "Kecocokan berikutnya"
 
@@ -12818,6 +12824,9 @@ msgstr "Komentar sebelumnya"
 
 msgid "Previous file"
 msgstr "File sebelumnya"
+
+msgid "Previous image"
+msgstr "Gambar sebelumnya"
 
 msgid "Previous match"
 msgstr "Kecocokan sebelumnya"

@@ -5083,6 +5083,9 @@ msgstr "Nie udało się dokończyć usuwania obszarów roboczych"
 msgid "Couldn't hand this to an agent"
 msgstr "Nie udało się przekazać tego agentowi"
 
+msgid "Couldn't load {filename}"
+msgstr "Nie udało się wczytać {filename}"
+
 #. placeholder {0}: configsQuery.error instanceof Error ? configsQuery.error.message : hostServiceUnavailableMessage
 msgid "Couldn't load agent settings: {0}"
 msgstr "Nie udało się wczytać ustawień agenta: {0}"
@@ -10576,6 +10579,9 @@ msgstr "Następny komentarz"
 msgid "Next file"
 msgstr "Następny plik"
 
+msgid "Next image"
+msgstr "Następny obraz"
+
 msgid "Next match"
 msgstr "Następne dopasowanie"
 
@@ -12818,6 +12824,9 @@ msgstr "Poprzedni komentarz"
 
 msgid "Previous file"
 msgstr "Poprzedni plik"
+
+msgid "Previous image"
+msgstr "Poprzedni obraz"
 
 msgid "Previous match"
 msgstr "Poprzednie dopasowanie"

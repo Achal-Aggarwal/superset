@@ -5083,6 +5083,9 @@ msgstr "Das Löschen der Arbeitsbereiche konnte nicht abgeschlossen werden"
 msgid "Couldn't hand this to an agent"
 msgstr "Konnte nicht an einen Agenten übergeben werden"
 
+msgid "Couldn't load {filename}"
+msgstr "{filename} konnte nicht geladen werden"
+
 #. placeholder {0}: configsQuery.error instanceof Error ? configsQuery.error.message : hostServiceUnavailableMessage
 msgid "Couldn't load agent settings: {0}"
 msgstr "Agenten-Einstellungen konnten nicht geladen werden: {0}"
@@ -10576,6 +10579,9 @@ msgstr "Nächster Kommentar"
 msgid "Next file"
 msgstr "Nächste Datei"
 
+msgid "Next image"
+msgstr "Nächstes Bild"
+
 msgid "Next match"
 msgstr "Nächster Treffer"
 
@@ -12818,6 +12824,9 @@ msgstr "Vorheriger Kommentar"
 
 msgid "Previous file"
 msgstr "Vorherige Datei"
+
+msgid "Previous image"
+msgstr "Vorheriges Bild"
 
 msgid "Previous match"
 msgstr "Vorheriger Treffer"
