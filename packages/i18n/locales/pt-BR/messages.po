@@ -1990,6 +1990,10 @@ msgstr "Ativa"
 msgid "All"
 msgstr "Todas"
 
+msgctxt "log scope"
+msgid "All"
+msgstr "Todos"
+
 #. placeholder {0}: history.projects.length
 msgid "All {0} →"
 msgstr "Todas as {0} →"
@@ -2372,6 +2376,10 @@ msgstr "equivalente em API"
 msgid "API-equivalent cost"
 msgstr "Custo equivalente de API"
 
+msgctxt "log scope"
+msgid "App"
+msgstr "App"
+
 msgid "app {appVersion}"
 msgstr "app {appVersion}"
 
@@ -2383,6 +2391,9 @@ msgstr "Idioma de exibição do app. Automático segue o idioma do seu sistema."
 
 msgid "App icon"
 msgstr "Ícone do app"
+
+msgid "App path"
+msgstr "Caminho do app"
 
 msgid "Appearance"
 msgstr "Aparência"
@@ -2791,6 +2802,10 @@ msgstr "Aguardando revisão sua ou da sua equipe"
 msgid "Back"
 msgstr "Voltar"
 
+msgctxt "Android back button"
+msgid "Back"
+msgstr "Voltar"
+
 msgid "Back to About"
 msgstr "Voltar para Sobre"
 
@@ -2963,6 +2978,9 @@ msgstr "Blog"
 msgid "Blue"
 msgstr "Azul"
 
+msgid "Blue/Yellow (Tritanopia)"
+msgstr "Azul/amarelo (tritanopia)"
+
 msgid "Board"
 msgstr "Quadro"
 
@@ -2971,6 +2989,13 @@ msgstr "Visualização em quadro"
 
 msgid "Bold"
 msgstr "Negrito"
+
+msgid "Bold Text"
+msgstr "Texto em negrito"
+
+#. placeholder {0}: selected.name
+msgid "Booting {0}…"
+msgstr "Iniciando {0}…"
 
 msgid "Border"
 msgstr "Borda"
@@ -3563,6 +3588,9 @@ msgstr "Verificações ignoradas"
 msgid "Choose a {pluginLabel} account"
 msgstr "Escolha uma conta do {pluginLabel}"
 
+msgid "Choose a device"
+msgstr "Escolha um dispositivo"
+
 msgid "Choose a fighter"
 msgstr "Escolha um lutador"
 
@@ -3628,6 +3656,13 @@ msgstr "Limpe os TODOs antigos…"
 
 msgid "Cleaner, denser sidebar"
 msgstr "Barra lateral mais limpa e densa"
+
+msgid "Clear"
+msgstr "Limpar"
+
+msgctxt "Liquid Glass style"
+msgid "Clear"
+msgstr "Transparente"
 
 msgid "Clear all"
 msgstr "Limpar tudo"
@@ -3834,6 +3869,9 @@ msgstr "Fechar arquivo"
 msgid "Close find bar"
 msgstr "Fechar a barra de busca"
 
+msgid "Close logs"
+msgstr "Fechar logs"
+
 msgid "Close menu"
 msgstr "Fechar menu"
 
@@ -4014,6 +4052,9 @@ msgstr "Coletando…"
 
 msgid "Color"
 msgstr "Cor"
+
+msgid "Color Filter"
+msgstr "Filtro de cor"
 
 msgid "Combine all commits"
 msgstr "Combina todos os commits"
@@ -4628,6 +4669,9 @@ msgstr "Copiar localhost:{0}"
 
 msgid "Copy log"
 msgstr "Copiar log"
+
+msgid "Copy logs"
+msgstr "Copiar logs"
 
 msgid "Copy Markdown"
 msgstr "Copiar Markdown"
@@ -6156,6 +6200,9 @@ msgstr "descartou a revisão"
 msgid "Display"
 msgstr "Exibição"
 
+msgid "Display Size"
+msgstr "Tamanho da exibição"
+
 msgid "Displays the mobile sidebar."
 msgstr "Exibe a barra lateral no celular."
 
@@ -6244,6 +6291,9 @@ msgstr "Baixar para macOS"
 
 msgid "Download image"
 msgstr "Baixar imagem"
+
+msgid "Download logs"
+msgstr "Baixar logs"
 
 msgid "Download Manually"
 msgstr "Baixar manualmente"
@@ -6529,6 +6579,9 @@ msgstr "Vazio"
 msgid "Empty command"
 msgstr "Comando vazio"
 
+msgid "Emulator"
+msgstr "Emulador"
+
 msgid "Enable"
 msgstr "Ativar"
 
@@ -6632,6 +6685,9 @@ msgstr "esc para dispensar"
 msgid "esc to exit"
 msgstr "esc para sair"
 
+msgid "Event log"
+msgstr "Log de eventos"
+
 msgid "Event triggered"
 msgstr "Disparada por evento"
 
@@ -6716,6 +6772,9 @@ msgstr "Tudo o que você precisa para escrever sobre o Superset: descrição da 
 msgid "Everything you've published is deleted, not hidden. You can rejoin later and it will rebuild from the transcripts still on this machine."
 msgstr "Tudo o que você publicou é apagado, não ocultado. Você pode voltar depois e o histórico é reconstruído a partir das transcrições que ainda estiverem nesta máquina."
 
+msgid "Executable"
+msgstr "Executável"
+
 msgid "Existing repo path"
 msgstr "Caminho do repositório existente"
 
@@ -6737,6 +6796,9 @@ msgstr "Sair do modo design (esc)"
 
 msgid "Exit device toolbar"
 msgstr "Sair da barra de dispositivos"
+
+msgid "Exit full screen"
+msgstr "Sair da tela cheia"
 
 msgid "Exited"
 msgstr "Encerrada"
@@ -7337,6 +7399,9 @@ msgstr "Rápido"
 msgid "Fatal"
 msgstr "Fatal"
 
+msgid "Fault"
+msgstr "Falha"
+
 msgid "Favorites"
 msgstr "Favoritos"
 
@@ -7462,6 +7527,9 @@ msgstr "Filtrar hosts"
 
 msgid "Filter hosts..."
 msgstr "Filtrar hosts..."
+
+msgid "Filter logs"
+msgstr "Filtrar logs"
 
 msgid "Filter pages"
 msgstr "Filtrar páginas"
@@ -7778,6 +7846,9 @@ msgstr "Acesso Total ao Disco"
 msgid "Full name"
 msgstr "Nome completo"
 
+msgid "Full screen"
+msgstr "Tela cheia"
+
 msgid "Full self-driving"
 msgstr "Autonomia total"
 
@@ -7991,8 +8062,14 @@ msgstr "Conceda as permissões do sistema de que o Superset precisa."
 msgid "Granted"
 msgstr "Concedida"
 
+msgid "Grayscale"
+msgstr "Escala de cinza"
+
 msgid "Green"
 msgstr "Verde"
+
+msgid "Green/Red (Deuteranopia)"
+msgstr "Verde/vermelho (deuteranopia)"
 
 msgid "Grepped"
 msgstr "Grep feito"
@@ -8053,6 +8130,9 @@ msgstr "acontecendo agora"
 
 msgid "Hard reload"
 msgstr "Recarregar do zero"
+
+msgid "Hardware Keyboard"
+msgstr "Teclado físico"
 
 msgid "Has conflicts"
 msgstr "Tem conflitos"
@@ -8181,6 +8261,10 @@ msgstr "histórico"
 msgid "History"
 msgstr "Histórico"
 
+msgid "Home"
+msgstr "Início"
+
+msgctxt "device home button"
 msgid "Home"
 msgstr "Início"
 
@@ -8601,6 +8685,9 @@ msgstr "Inclui a variante box específica do Superset"
 
 msgid "Incognito Operator"
 msgstr "Operador Incógnito"
+
+msgid "Increase Contrast"
+msgstr "Aumentar contraste"
 
 msgid "Indigo"
 msgstr "Índigo"
@@ -9387,6 +9474,9 @@ msgstr "Vincular esta tarefa"
 msgid "Linked {slug} to workspace"
 msgstr "{slug} vinculada à área de trabalho"
 
+msgid "Liquid Glass"
+msgstr "Liquid Glass"
+
 msgid "List"
 msgstr "Lista"
 
@@ -9579,6 +9669,9 @@ msgstr "Local"
 msgid "Location & checkout"
 msgstr "Local e checkout"
 
+msgid "Log levels"
+msgstr "Níveis de log"
+
 msgid "Log out"
 msgstr "Sair"
 
@@ -9605,6 +9698,9 @@ msgstr "Logotipo, claro"
 
 msgid "Logos"
 msgstr "Logotipos"
+
+msgid "Logs"
+msgstr "Logs"
 
 msgid "Long-horizon reliability crosses a threshold. Work assigned at 6pm is mergeable at 9am often enough that not scheduling the overnight shift feels like leaving a factory idle."
 msgstr "A confiabilidade em horizontes longos cruza um limiar. O trabalho atribuído às 18h está pronto para merge às 9h com frequência suficiente para que não agendar o turno da noite pareça deixar uma fábrica parada."
@@ -9961,6 +10057,12 @@ msgstr "Meados de 2026"
 msgid "Mid 2027"
 msgstr "Meados de 2027"
 
+msgid "Min iOS"
+msgstr "iOS mínimo"
+
+msgid "Min SDK"
+msgstr "SDK mínimo"
+
 msgid "Mine"
 msgstr "Minhas"
 
@@ -10268,6 +10370,9 @@ msgstr "Precisa de você"
 
 msgid "Nerd Fonts"
 msgstr "Nerd Fonts"
+
+msgid "Network"
+msgstr "Rede"
 
 msgid "Network Changed"
 msgstr "A rede mudou"
@@ -10618,6 +10723,9 @@ msgstr "Nenhuma descrição fornecida."
 msgid "No desktop session is running in this sandbox."
 msgstr "Nenhuma sessão de área de trabalho está em execução neste sandbox."
 
+msgid "No device is running."
+msgstr "Nenhum dispositivo em execução."
+
 msgid "No devices yet"
 msgstr "Nenhum dispositivo ainda"
 
@@ -10635,6 +10743,9 @@ msgstr "Nenhum ambiente encontrado."
 
 msgid "No environments yet."
 msgstr "Nenhum ambiente ainda. Crie um para iniciar uma área de trabalho na nuvem a partir dele."
+
+msgid "No events yet"
+msgstr "Nenhum evento ainda"
 
 msgid "No extended thinking"
 msgstr "Sem raciocínio estendido"
@@ -10719,6 +10830,9 @@ msgstr "Nenhum agente recebendo comentários"
 
 msgid "No live sessions"
 msgstr "Nenhuma sessão ativa"
+
+msgid "No log lines yet"
+msgstr "Nenhuma linha de log ainda"
 
 msgid "no logins"
 msgstr "sem logins"
@@ -11283,6 +11397,9 @@ msgstr "Ao alterar a janela"
 
 msgid "On your machine. Repos, worktrees, terminal output, and agent sessions stay local by default; cloud sync covers account and organization metadata only. Superset doesn't proxy any API calls."
 msgstr "Na sua máquina. Repositórios, worktrees, saída de terminal e sessões de agente ficam locais por padrão; a sincronização na nuvem cobre só metadados de conta e organização. O Superset não faz proxy de nenhuma chamada de API."
+
+msgid "On-screen Keyboard"
+msgstr "Teclado na tela"
 
 msgid "Onboarding redesign"
 msgstr "Redesenho do onboarding"
@@ -13055,6 +13172,9 @@ msgstr "Alcançado"
 msgid "React layer of the shared pane/workspace layout engine"
 msgstr "Camada React do motor de layout compartilhado de painéis e áreas de trabalho"
 
+msgid "React Native"
+msgstr "React Native"
+
 msgid "Reaction added"
 msgstr "Reação adicionada"
 
@@ -13149,6 +13269,9 @@ msgstr "Rebase e merge"
 msgid "Recent Activity"
 msgstr "Atividade recente"
 
+msgid "Recent apps"
+msgstr "Apps recentes"
+
 msgid "Recent invoices"
 msgstr "Faturas recentes"
 
@@ -13212,6 +13335,9 @@ msgstr "Gravando"
 msgid "Red"
 msgstr "Vermelho"
 
+msgid "Red/Green (Protanopia)"
+msgstr "Vermelho/verde (protanopia)"
+
 msgid "Redacted Riveter"
 msgstr "Rebitador Reservado"
 
@@ -13223,6 +13349,12 @@ msgstr "Redirecionando..."
 
 msgid "Redo"
 msgstr "Refazer"
+
+msgid "Reduce Motion"
+msgstr "Reduzir movimento"
+
+msgid "Reduce Transparency"
+msgstr "Reduzir transparência"
 
 msgid "Referenced, not demoed"
 msgstr "Referenciados, não demonstrados"
@@ -14030,6 +14162,9 @@ msgstr "Cargo atualizado"
 msgid "Roll back an agent session to any checkpoint, conversation and file changes together."
 msgstr "Volte uma sessão de agente para qualquer checkpoint, conversa e alterações de arquivo juntas."
 
+msgid "Rotate"
+msgstr "Girar"
+
 msgid "Rotate device"
 msgstr "Girar o dispositivo"
 
@@ -14323,6 +14458,9 @@ msgstr "Escopo"
 #. placeholder {0}: String(MIN_ACTIVE_DAYS)
 msgid "Scoring starts once the board can see {0} days of usage."
 msgstr "A pontuação começa quando o quadro tem {0} dias de uso."
+
+msgid "Screenshot"
+msgstr "Captura de tela"
 
 msgid "Screenshot copied to clipboard"
 msgstr "Captura de tela copiada para a área de transferência"
@@ -14942,6 +15080,9 @@ msgstr "Configurações ({settingsHotkey})"
 msgid "Settings → Remote Access → “Allow remote access to this device via relay”."
 msgstr "Configurações → Acesso remoto → “Permitir acesso remoto a este dispositivo via relay”."
 
+msgid "Settings are not available for this device"
+msgstr "As configurações não estão disponíveis para este dispositivo"
+
 msgid "Settings..."
 msgstr "Configurações..."
 
@@ -15061,6 +15202,9 @@ msgstr "Mostrar todos os comentários"
 
 msgid "Show all lines"
 msgstr "Mostrar todas as linhas"
+
+msgid "Show Borders"
+msgstr "Mostrar bordas"
 
 msgid "Show checks"
 msgstr "Mostrar verificações"
@@ -15194,6 +15338,10 @@ msgstr "Exibido na barra lateral e na lista de tarefas."
 msgid "Shown publicly alongside your name."
 msgstr "Exibido publicamente junto ao seu nome."
 
+#. placeholder {0}: selected.name
+msgid "Shut down {0}"
+msgstr "Desligar {0}"
+
 msgid "Side by Side"
 msgstr "Lado a lado"
 
@@ -15322,6 +15470,9 @@ msgstr "Simular atualização: erro"
 
 msgid "Simulate update: ready"
 msgstr "Simular atualização: pronta"
+
+msgid "Simulator"
+msgstr "Simulador"
 
 msgid "Since 2025"
 msgstr "Desde 2025"
@@ -16598,6 +16749,9 @@ msgstr "Texto"
 msgid "Text input with emoji picker support"
 msgstr "Campo de texto com suporte a seletor de emoji"
 
+msgid "Text Size"
+msgstr "Tamanho do texto"
+
 msgid "Text style"
 msgstr "Estilo de texto"
 
@@ -17400,6 +17554,9 @@ msgstr "Tempo"
 
 msgid "Times use your time zone."
 msgstr "Os horários usam o seu fuso horário."
+
+msgid "Tinted"
+msgstr "Colorido"
 
 msgid "Tip"
 msgstr "Dica"
@@ -18376,6 +18533,9 @@ msgstr "O modo de voz encontrou um problema. Tente novamente."
 msgid "Voice settings"
 msgstr "Configurações de voz"
 
+msgid "VoiceOver"
+msgstr "VoiceOver"
+
 msgid "Volume"
 msgstr "Volume"
 
@@ -18389,6 +18549,9 @@ msgstr "Esperar o setup da área de trabalho antes de iniciar os agentes"
 #. placeholder {1}: names.b
 msgid "waiting for {0} and {1}…"
 msgstr "aguardando {0} e {1}…"
+
+msgid "Waiting for activity data"
+msgstr "Aguardando dados de atividade"
 
 msgid "Waiting for Checks"
 msgstr "Aguardando as verificações"
