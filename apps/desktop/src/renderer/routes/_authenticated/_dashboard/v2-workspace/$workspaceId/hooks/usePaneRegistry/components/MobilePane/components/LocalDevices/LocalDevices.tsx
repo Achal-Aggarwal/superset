@@ -3,9 +3,9 @@ import { errorMessage } from "@superset/i18n/errors";
 import { Button } from "@superset/ui/button";
 import { workspaceTrpc } from "@superset/workspace-client";
 import { useState } from "react";
+import { PaneMessage } from "../PaneMessage";
 import { DevicePicker, type LocalDevice } from "./components/DevicePicker";
 import { DeviceSession } from "./components/DeviceSession";
-import { PaneMessage } from "./components/PaneMessage";
 
 // Simulators on different iOS runtimes can share a name. An emulator's id
 // is its serial, which only exists while it runs, so it is keyed by name.
