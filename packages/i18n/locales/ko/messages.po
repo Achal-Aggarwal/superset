@@ -4091,6 +4091,10 @@ msgstr "코드 블록"
 msgid "Code Block"
 msgstr "코드 블록"
 
+#. Homepage headline, line 2 of 2, after “Run an Army of”.
+msgid "Coding Agents"
+msgstr "실행하세요"
+
 msgid "Collapse"
 msgstr "접기"
 
@@ -12442,6 +12446,10 @@ msgstr "병렬 에이전트 worktree"
 msgid "Parallel agents"
 msgstr "병렬 에이전트"
 
+#. Homepage headline, line 2 of 2, after “The IDE for”.
+msgid "Parallel Agents"
+msgstr "IDE"
+
 msgid "Parallel agents guide"
 msgstr "병렬 에이전트 가이드"
 
@@ -14459,6 +14467,10 @@ msgstr "다시 실행"
 
 msgid "Run agents side by side"
 msgstr "에이전트를 나란히 실행"
+
+#. Homepage headline, line 1 of 2. Line 2 is “Coding Agents”; reorder the two lines if the language needs it.
+msgid "Run an Army of"
+msgstr "코딩 에이전트 군단을"
 
 msgid "Run an iOS simulator in a workspace pane so you and your agents can test mobile apps."
 msgstr "워크스페이스 패널에서 iOS 시뮬레이터를 실행해 나와 에이전트가 모바일 앱을 테스트할 수 있습니다."
@@ -17260,6 +17272,10 @@ msgstr "호스트가 이전 빌드로 돌아갔습니다."
 
 msgid "The human reads every line before it merges."
 msgstr "사람이 머지 전에 모든 줄을 읽습니다."
+
+#. Homepage headline, line 1 of 2. Line 2 is “Parallel Agents”; reorder the two lines if the language needs it.
+msgid "The IDE for"
+msgstr "병렬 에이전트를 위한"
 
 msgid "The image upload expired — attach it again"
 msgstr "이미지 업로드가 만료되었습니다 — 다시 첨부하세요"

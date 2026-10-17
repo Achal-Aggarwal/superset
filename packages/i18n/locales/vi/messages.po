@@ -4091,6 +4091,10 @@ msgstr "Khối mã"
 msgid "Code Block"
 msgstr "Code Block"
 
+#. Homepage headline, line 2 of 2, after “Run an Army of”.
+msgid "Coding Agents"
+msgstr "agent lập trình"
+
 msgid "Collapse"
 msgstr "Thu gọn"
 
@@ -12442,6 +12446,10 @@ msgstr "Worktree agent chạy song song"
 msgid "Parallel agents"
 msgstr "Agent song song"
 
+#. Homepage headline, line 2 of 2, after “The IDE for”.
+msgid "Parallel Agents"
+msgstr "agent song song"
+
 msgid "Parallel agents guide"
 msgstr "Hướng dẫn agent song song"
 
@@ -14459,6 +14467,10 @@ msgstr "Chạy lại"
 
 msgid "Run agents side by side"
 msgstr "Chạy các agent cạnh nhau"
+
+#. Homepage headline, line 1 of 2. Line 2 is “Coding Agents”; reorder the two lines if the language needs it.
+msgid "Run an Army of"
+msgstr "Chạy cả một đội quân"
 
 msgid "Run an iOS simulator in a workspace pane so you and your agents can test mobile apps."
 msgstr "Chạy trình mô phỏng iOS trong một ngăn của workspace để bạn và các agent có thể kiểm thử ứng dụng di động."
@@ -17260,6 +17272,10 @@ msgstr "Máy chủ đã quay lại bản dựng trước."
 
 msgid "The human reads every line before it merges."
 msgstr "Con người đọc từng dòng trước khi merge."
+
+#. Homepage headline, line 1 of 2. Line 2 is “Parallel Agents”; reorder the two lines if the language needs it.
+msgid "The IDE for"
+msgstr "IDE dành cho"
 
 msgid "The image upload expired — attach it again"
 msgstr "Lượt tải lên hình ảnh đã hết hạn — hãy đính kèm lại"

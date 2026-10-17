@@ -4091,6 +4091,10 @@ msgstr "代码块"
 msgid "Code Block"
 msgstr "代码块"
 
+#. Homepage headline, line 2 of 2, after “Run an Army of”.
+msgid "Coding Agents"
+msgstr "编程智能体大军"
+
 msgid "Collapse"
 msgstr "折叠"
 
@@ -12442,6 +12446,10 @@ msgstr "并行的智能体worktree"
 msgid "Parallel agents"
 msgstr "并行智能体"
 
+#. Homepage headline, line 2 of 2, after “The IDE for”.
+msgid "Parallel Agents"
+msgstr "专属 IDE"
+
 msgid "Parallel agents guide"
 msgstr "并行智能体指南"
 
@@ -14459,6 +14467,10 @@ msgstr "重新运行"
 
 msgid "Run agents side by side"
 msgstr "并排运行智能体"
+
+#. Homepage headline, line 1 of 2. Line 2 is “Coding Agents”; reorder the two lines if the language needs it.
+msgid "Run an Army of"
+msgstr "调动一支"
 
 msgid "Run an iOS simulator in a workspace pane so you and your agents can test mobile apps."
 msgstr "在工作区窗格中运行 iOS 模拟器，让你和你的智能体测试移动应用。"
@@ -17260,6 +17272,10 @@ msgstr "主机已回退到之前的版本。"
 
 msgid "The human reads every line before it merges."
 msgstr "合并前人类会逐行阅读。"
+
+#. Homepage headline, line 1 of 2. Line 2 is “Parallel Agents”; reorder the two lines if the language needs it.
+msgid "The IDE for"
+msgstr "并行智能体"
 
 msgid "The image upload expired — attach it again"
 msgstr "图片上传已过期 — 请重新附加"

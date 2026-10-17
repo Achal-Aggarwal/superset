@@ -4091,6 +4091,10 @@ msgstr "Bloc de code"
 msgid "Code Block"
 msgstr "Bloc de code"
 
+#. Homepage headline, line 2 of 2, after “Run an Army of”.
+msgid "Coding Agents"
+msgstr "d'agents de code"
+
 msgid "Collapse"
 msgstr "Réduire"
 
@@ -12442,6 +12446,10 @@ msgstr "Worktrees d'agents en parallèle"
 msgid "Parallel agents"
 msgstr "Agents en parallèle"
 
+#. Homepage headline, line 2 of 2, after “The IDE for”.
+msgid "Parallel Agents"
+msgstr "agents en parallèle"
+
 msgid "Parallel agents guide"
 msgstr "Guide des agents en parallèle"
 
@@ -14459,6 +14467,10 @@ msgstr "Relancer"
 
 msgid "Run agents side by side"
 msgstr "Exécutez des agents côte à côte"
+
+#. Homepage headline, line 1 of 2. Line 2 is “Coding Agents”; reorder the two lines if the language needs it.
+msgid "Run an Army of"
+msgstr "Lancez une armée"
 
 msgid "Run an iOS simulator in a workspace pane so you and your agents can test mobile apps."
 msgstr "Exécutez un simulateur iOS dans un volet de l'espace de travail pour que vous et vos agents puissiez tester des applications mobiles."
@@ -17260,6 +17272,10 @@ msgstr "L'hôte est revenu à sa version précédente."
 
 msgid "The human reads every line before it merges."
 msgstr "L'humain lit chaque ligne avant la fusion."
+
+#. Homepage headline, line 1 of 2. Line 2 is “Parallel Agents”; reorder the two lines if the language needs it.
+msgid "The IDE for"
+msgstr "L'IDE pour"
 
 msgid "The image upload expired — attach it again"
 msgstr "Le téléversement de l'image a expiré — joignez-la à nouveau"

@@ -4091,6 +4091,10 @@ msgstr "Codeblok"
 msgid "Code Block"
 msgstr "Codeblok"
 
+#. Homepage headline, line 2 of 2, after “Run an Army of”.
+msgid "Coding Agents"
+msgstr "coding agents"
+
 msgid "Collapse"
 msgstr "Inklappen"
 
@@ -12442,6 +12446,10 @@ msgstr "Parallelle agent-worktrees"
 msgid "Parallel agents"
 msgstr "Parallelle agents"
 
+#. Homepage headline, line 2 of 2, after “The IDE for”.
+msgid "Parallel Agents"
+msgstr "parallelle agents"
+
 msgid "Parallel agents guide"
 msgstr "Gids voor parallelle agents"
 
@@ -14459,6 +14467,10 @@ msgstr "Opnieuw uitvoeren"
 
 msgid "Run agents side by side"
 msgstr "Draai agents naast elkaar"
+
+#. Homepage headline, line 1 of 2. Line 2 is “Coding Agents”; reorder the two lines if the language needs it.
+msgid "Run an Army of"
+msgstr "Draai een leger"
 
 msgid "Run an iOS simulator in a workspace pane so you and your agents can test mobile apps."
 msgstr "Draai een iOS-simulator in een deelvenster van de werkruimte, zodat jij en je agents mobiele apps kunnen testen."
@@ -17260,6 +17272,10 @@ msgstr "De host is teruggegaan naar de vorige build."
 
 msgid "The human reads every line before it merges."
 msgstr "De mens leest elke regel voordat het merget."
+
+#. Homepage headline, line 1 of 2. Line 2 is “Parallel Agents”; reorder the two lines if the language needs it.
+msgid "The IDE for"
+msgstr "De IDE voor"
 
 msgid "The image upload expired — attach it again"
 msgstr "De upload van de afbeelding is verlopen — voeg deze opnieuw toe"

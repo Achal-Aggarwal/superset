@@ -4091,6 +4091,10 @@ msgstr "Kod bloğu"
 msgid "Code Block"
 msgstr "Kod bloğu"
 
+#. Homepage headline, line 2 of 2, after “Run an Army of”.
+msgid "Coding Agents"
+msgstr "bir ordu çalıştırın"
+
 msgid "Collapse"
 msgstr "Daralt"
 
@@ -12442,6 +12446,10 @@ msgstr "Paralel ajan worktree'leri"
 msgid "Parallel agents"
 msgstr "Paralel ajanlar"
 
+#. Homepage headline, line 2 of 2, after “The IDE for”.
+msgid "Parallel Agents"
+msgstr "IDE"
+
 msgid "Parallel agents guide"
 msgstr "Paralel ajanlar rehberi"
 
@@ -14459,6 +14467,10 @@ msgstr "Yeniden çalıştır"
 
 msgid "Run agents side by side"
 msgstr "Ajanları yan yana çalıştırın"
+
+#. Homepage headline, line 1 of 2. Line 2 is “Coding Agents”; reorder the two lines if the language needs it.
+msgid "Run an Army of"
+msgstr "Kodlama ajanlarından"
 
 msgid "Run an iOS simulator in a workspace pane so you and your agents can test mobile apps."
 msgstr "Siz ve ajanlarınız mobil uygulamaları test edebilsin diye bir çalışma alanı bölmesinde iOS simülatörü çalıştırın."
@@ -17260,6 +17272,10 @@ msgstr "Ana makine önceki derlemesine geri döndü."
 
 msgid "The human reads every line before it merges."
 msgstr "İnsan, birleştirilmeden önce her satırı okur."
+
+#. Homepage headline, line 1 of 2. Line 2 is “Parallel Agents”; reorder the two lines if the language needs it.
+msgid "The IDE for"
+msgstr "Paralel ajanlar için"
 
 msgid "The image upload expired — attach it again"
 msgstr "Görsel yüklemesinin süresi doldu — yeniden ekleyin"
