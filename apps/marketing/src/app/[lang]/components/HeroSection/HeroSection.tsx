@@ -10,7 +10,7 @@ import { DownloadButton } from "../DownloadButton";
 import { WaitlistModal } from "../WaitlistModal";
 import { BoidsBackground } from "./components/BoidsBackground";
 import { ProductDemo } from "./components/ProductDemo";
-import { TypewriterText } from "./components/TypewriterText";
+import { RiseHeadline } from "./components/RiseHeadline";
 
 export function HeroSection() {
 	const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
@@ -24,32 +24,6 @@ export function HeroSection() {
 		);
 	}, []);
 	const { t, i18n } = useLingui();
-
-	const headlineSegments = [
-		{
-			id: "lead",
-			// Typed newline, not a space: the headline is always two lines, and
-			// the break arrives as part of the animation (the caret drops to the
-			// second line) instead of the second segment starting on line one and
-			// reflowing down once it outgrows the width. Needs the h1's
-			// whitespace-pre-line to render.
-			text: `${t({
-				message: "Bring Any Agent",
-			})}\n`,
-		},
-		{
-			id: "emphasis",
-			text: t({
-				message: "Orchestrate Them All",
-			}),
-			// Beat on the empty second line before the payoff line types
-			delayBefore: 450,
-			// Plain inline (not inline-block): vertical padding on inline boxes
-			// paints the brackets without affecting line height, so the line
-			// can't jump when this segment mounts mid-animation
-			className: "corner-brackets px-[0.2em] py-[0.06em] whitespace-nowrap",
-		},
-	];
 
 	return (
 		<div>
@@ -80,31 +54,11 @@ export function HeroSection() {
 							</span>
 						</Link>
 						<div className="space-y-4 sm:space-y-6">
-							<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-[1.1] [word-spacing:0.15em] whitespace-pre-line text-foreground relative max-w-6xl mx-auto">
-								{/* Real headline for screen readers and no-JS crawlers; the
-								    typewriter below is purely visual */}
-								<span className="sr-only">
-									{headlineSegments.map((segment) => segment.text).join("")}
-								</span>
-								{/* Sizer must mirror the visible segments' styling so wrapping matches */}
-								<span className="invisible" aria-hidden="true">
-									{headlineSegments.map((segment) => (
-										<span key={segment.id} className={segment.className}>
-											{segment.text}
-										</span>
-									))}
-								</span>
-								<span className="absolute inset-0" aria-hidden="true">
-									<TypewriterText
-										segments={headlineSegments}
-										speed={40}
-										delay={600}
-										// Caret matches the corner-bracket box height (1.30em) for the
-										// whole animation; drawn via scale-y so its layout height stays
-										// 0.72em and can't inflate the line box
-										cursorClassName="inline-block ml-0.5 w-3 -mr-3.5 h-[0.72em] origin-bottom scale-y-[1.806] translate-y-[0.268em] bg-brand"
-									/>
-								</span>
+							<h1 className="text-[min(2.25rem,8.6vw)] sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-[1.1] [word-spacing:0.15em] whitespace-pre-line text-foreground relative max-w-6xl mx-auto">
+								<RiseHeadline
+									lead={t({ message: "Bring Any Agent" })}
+									emphasis={t({ message: "Orchestrate Them All" })}
+								/>
 							</h1>
 							<p
 								id="hero-subheadline"
