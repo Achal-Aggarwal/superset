@@ -4,6 +4,7 @@ import type { CloudAgentLaunch } from "@superset/shared/cloud-agent-launch";
 import { and, eq, inArray, isNull } from "drizzle-orm";
 import { acpChatEnabled } from "../../lib/acp-chat";
 import { anchorAttachments } from "../../lib/attachments";
+import { resolveMachineSize } from "../../lib/billing/plan";
 import {
 	githubRepositoriesOutOfReach,
 	githubUserTokenFor,
@@ -56,6 +57,24 @@ export async function loadUsableEnvironment(args: {
 	return environment;
 }
 
+export function machineSizeNotAvailable(name: string | undefined) {
+	return userError({
+		code: "BAD_REQUEST",
+		message: `Machine size "${name}" is not available for this organization`,
+		i18nKey: "serverError.cloudWorkspace.machineSizeNotAvailable",
+	});
+}
+
+export async function assertMachineSizeOffered(
+	organizationId: string,
+	name: string | null | undefined,
+): Promise<void> {
+	if (!name) return;
+	if (!(await resolveMachineSize(organizationId, name))) {
+		throw machineSizeNotAvailable(name);
+	}
+}
+
 /**
  * Records a cloud workspace and hands the sandbox off to a background job.
  *
@@ -82,6 +101,7 @@ export async function startCloudWorkspace(args: {
 	launch?: CloudAgentLaunch;
 	taskIds?: string[];
 	attachmentFileIds?: string[];
+	machineSize?: string;
 	beforeProvision?: (workspaceId: string) => Promise<void>;
 }) {
 	// The sandbox's Codex is older than the codex-acp floor, so only Claude chats.
@@ -90,7 +110,10 @@ export async function startCloudWorkspace(args: {
 			? acpChatEnabled(args.userId)
 			: Promise.resolve(false);
 	const environment = await loadUsableEnvironment(args);
-	await assertMayBoot(args.organizationId);
+	const size = await resolveMachineSize(args.organizationId, args.machineSize);
+	if (!size) throw machineSizeNotAvailable(args.machineSize);
+	const machineSize = size.name;
+	await assertMayBoot(args.organizationId, size.vcpus);
 
 	// A workspace is started from an environment, and the environment's
 	// repositories are its checkouts.
@@ -138,6 +161,7 @@ export async function startCloudWorkspace(args: {
 			id,
 			organizationId: args.organizationId,
 			name,
+			machineSize,
 			branch: workspaceBranchName({ id, name }),
 			baseBranch: branch,
 			provider: "vercel",

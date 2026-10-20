@@ -963,6 +963,9 @@ msgstr "1ユーザーあたり月額{monthlyPrice}（月払い）、または{ye
 msgid "{months}mo ago"
 msgstr "{months}か月前"
 
+msgid "{multiple}× the cost of Medium"
+msgstr "中の {multiple} 倍のコスト"
+
 msgid "{myFailedCount} of your automations failed their last run"
 msgstr "自分のオートメーションのうち{myFailedCount}件が前回の実行に失敗しました"
 
@@ -1161,6 +1164,9 @@ msgstr "{uploading, plural, other {# 件のファイルをアップロード中�
 msgid "{used} used"
 msgstr "{used} 使用済み"
 
+msgid "{vcpuCount} vCPU · {memory} GB"
+msgstr "{vcpuCount} vCPU · {memory} GB"
+
 msgid "{waiting} Waiting"
 msgstr "{waiting}件待機中"
 
@@ -1344,6 +1350,10 @@ msgstr "2027年"
 
 msgid "2h ago"
 msgstr "2時間前"
+
+msgctxt "machine size"
+msgid "2X-Large"
+msgstr "2X-大"
 
 msgid "3 archived workspaces"
 msgstr "アーカイブ済みワークスペース3件"
@@ -4054,6 +4064,9 @@ msgstr "クラウドサンドボックス"
 #. js-lingui-explicit-id
 msgid "serverError.cloudWorkspace.cloudSandboxesAreInternalOnly"
 msgstr "クラウドサンドボックスは {account} では有効になっていません。Superset チームにアクセス権をリクエストしてください。"
+
+msgid "Cloud usage"
+msgstr "クラウド使用量"
 
 msgid "Cloud workspace"
 msgstr "クラウドワークスペース"
@@ -7976,6 +7989,15 @@ msgstr "ゲート"
 msgid "Gates open"
 msgstr "通過したゲート"
 
+msgid "GB-hours over the plan: {overage}"
+msgstr "プランを超えた GB 時間: {overage}"
+
+msgid "GB-hours used: {used}"
+msgstr "使用した GB 時間: {used}"
+
+msgid "GB-hours used: {used} of {included}"
+msgstr "使用した GB 時間: {included} のうち {used}"
+
 msgid "General"
 msgstr "全般"
 
@@ -9315,6 +9337,10 @@ msgstr "言語はこのデバイスに保存しましたが、アカウントへ
 msgid "Large"
 msgstr "大"
 
+msgctxt "machine size"
+msgid "Large"
+msgstr "大"
+
 msgid "Large numbers of persistent terminals can increase CPU/memory usage. Consider killing old sessions if you notice slowdowns."
 msgstr "多数の永続ターミナルはCPU/メモリ使用量を増やす可能性があります。動作が遅い場合は古いセッションの終了を検討してください。"
 
@@ -9894,6 +9920,9 @@ msgstr "重要度: 低"
 msgid "Machine resources"
 msgstr "マシンリソース"
 
+msgid "Machine size: {label}"
+msgstr "マシンサイズ: {label}"
+
 msgid "Machine-unbound cloud workspaces that spin up in seconds and can be shared with teammates."
 msgstr "マシンに縛られないクラウドワークスペース。数秒で立ち上がり、チームメイトと共有できます。"
 
@@ -10088,6 +10117,10 @@ msgstr "定型作業のチケットから本番までの時間が中央値で1�
 msgid "Medical and dental at no cost to you, a 401(k), unlimited time off, a $5K desk stipend, and free meals in the office."
 msgstr "自己負担なしの医療・歯科保険、401(k)、無制限の休暇、$5Kのデスク手当、オフィスでの無料の食事。"
 
+msgid "Medium"
+msgstr "中"
+
+msgctxt "machine size"
 msgid "Medium"
 msgstr "中"
 
@@ -14091,6 +14124,9 @@ msgstr "ズームをリセット"
 msgid "Reset Zoom"
 msgstr "ズームをリセット"
 
+msgid "Resets {resetDate}"
+msgstr "{resetDate} にリセット"
+
 msgid "Resets at {until}"
 msgstr "{until} にリセット"
 
@@ -15892,6 +15928,10 @@ msgstr "スラッグ"
 msgid "Small"
 msgstr "小"
 
+msgctxt "machine size"
+msgid "Small"
+msgstr "小"
+
 msgid "Smoother onboarding"
 msgstr "よりスムーズなオンボーディング"
 
@@ -17690,6 +17730,9 @@ msgstr "このMac"
 
 msgid "This machine"
 msgstr "このマシン"
+
+msgid "This machine size is not available for your organization. Pick another size"
+msgstr "このマシンサイズは組織で利用できません。別のサイズを選んでください"
 
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "このMicrosoftテナントは{detail}がすでに接続しています。先に接続を解除してもらってください。"
@@ -19512,6 +19555,10 @@ msgstr "書き込み"
 
 msgid "X handle"
 msgstr "X ハンドル"
+
+msgctxt "machine size"
+msgid "X-Large"
+msgstr "X-大"
 
 msgid "xs · sm · default · lg · icon-xs → icon-lg"
 msgstr "xs · sm · default · lg · icon-xs → icon-lg"

@@ -963,6 +963,9 @@ msgstr "{monthlyPrice} pro Nutzer/Mon. bei monatlicher Abrechnung oder {yearlyPr
 msgid "{months}mo ago"
 msgstr "vor {months} Mon."
 
+msgid "{multiple}× the cost of Medium"
+msgstr "{multiple}× die Kosten von Mittel"
+
 msgid "{myFailedCount} of your automations failed their last run"
 msgstr "Bei {myFailedCount} deiner Automatisierungen ist der letzte Lauf fehlgeschlagen"
 
@@ -1161,6 +1164,9 @@ msgstr "{uploading, plural, one {# Datei wird hochgeladen…} other {# Dateien w
 msgid "{used} used"
 msgstr "{used} verbraucht"
 
+msgid "{vcpuCount} vCPU · {memory} GB"
+msgstr "{vcpuCount} vCPU · {memory} GB"
+
 msgid "{waiting} Waiting"
 msgstr "{waiting} ausstehend"
 
@@ -1344,6 +1350,10 @@ msgstr "2027"
 
 msgid "2h ago"
 msgstr "vor 2 Std."
+
+msgctxt "machine size"
+msgid "2X-Large"
+msgstr "2X-Groß"
 
 msgid "3 archived workspaces"
 msgstr "3 archivierte Arbeitsbereiche"
@@ -4054,6 +4064,9 @@ msgstr "Cloud-Sandboxes"
 #. js-lingui-explicit-id
 msgid "serverError.cloudWorkspace.cloudSandboxesAreInternalOnly"
 msgstr "Cloud-Sandboxes sind für {account} nicht aktiviert. Bitte den Zugang beim Superset-Team anfragen."
+
+msgid "Cloud usage"
+msgstr "Cloud-Nutzung"
 
 msgid "Cloud workspace"
 msgstr "Cloud-Arbeitsbereich"
@@ -7976,6 +7989,15 @@ msgstr "Schwellen"
 msgid "Gates open"
 msgstr "Offene Schwellen"
 
+msgid "GB-hours over the plan: {overage}"
+msgstr "GB-Stunden über dem Plan: {overage}"
+
+msgid "GB-hours used: {used}"
+msgstr "Genutzte GB-Stunden: {used}"
+
+msgid "GB-hours used: {used} of {included}"
+msgstr "Genutzte GB-Stunden: {used} von {included}"
+
 msgid "General"
 msgstr "Allgemein"
 
@@ -9315,6 +9337,10 @@ msgstr "Sprache auf diesem Gerät gespeichert, aber die Synchronisierung mit dei
 msgid "Large"
 msgstr "Groß"
 
+msgctxt "machine size"
+msgid "Large"
+msgstr "Groß"
+
 msgid "Large numbers of persistent terminals can increase CPU/memory usage. Consider killing old sessions if you notice slowdowns."
 msgstr "Viele dauerhafte Terminals können CPU- und Speicherverbrauch erhöhen. Beende alte Sitzungen, wenn dir Verzögerungen auffallen."
 
@@ -9894,6 +9920,9 @@ msgstr "Niedriger Schweregrad"
 msgid "Machine resources"
 msgstr "Rechnerressourcen"
 
+msgid "Machine size: {label}"
+msgstr "Maschinengröße: {label}"
+
 msgid "Machine-unbound cloud workspaces that spin up in seconds and can be shared with teammates."
 msgstr "Maschinenunabhängige Cloud-Arbeitsbereiche, die in Sekunden hochfahren und sich mit dem Team teilen lassen."
 
@@ -10088,6 +10117,10 @@ msgstr "Mediane Zeit vom Ticket zur Produktion unter einem Tag bei Routinearbeit
 msgid "Medical and dental at no cost to you, a 401(k), unlimited time off, a $5K desk stipend, and free meals in the office."
 msgstr "Kostenlose Kranken- und Zahnversicherung, ein 401(k), unbegrenzter Urlaub, ein $5K-Budget für deinen Arbeitsplatz und kostenloses Essen im Büro."
 
+msgid "Medium"
+msgstr "Mittel"
+
+msgctxt "machine size"
 msgid "Medium"
 msgstr "Mittel"
 
@@ -14091,6 +14124,9 @@ msgstr "Zoom zurücksetzen"
 msgid "Reset Zoom"
 msgstr "Zoom zurücksetzen"
 
+msgid "Resets {resetDate}"
+msgstr "Wird am {resetDate} zurückgesetzt"
+
 msgid "Resets at {until}"
 msgstr "Wird um {until} zurückgesetzt"
 
@@ -15892,6 +15928,10 @@ msgstr "Slug"
 msgid "Small"
 msgstr "Klein"
 
+msgctxt "machine size"
+msgid "Small"
+msgstr "Klein"
+
 msgid "Smoother onboarding"
 msgstr "Reibungsloseres Onboarding"
 
@@ -17690,6 +17730,9 @@ msgstr "Dieser Mac"
 
 msgid "This machine"
 msgstr "Dieser Rechner"
+
+msgid "This machine size is not available for your organization. Pick another size"
+msgstr "Diese Maschinengröße ist für Ihre Organisation nicht verfügbar. Wählen Sie eine andere Größe"
 
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "Dieser Microsoft-Tenant wurde bereits von {detail} verbunden. Bitte diese Person, die Verbindung zuerst zu trennen."
@@ -19512,6 +19555,10 @@ msgstr "Geschrieben"
 
 msgid "X handle"
 msgstr "X-Handle"
+
+msgctxt "machine size"
+msgid "X-Large"
+msgstr "X-Groß"
 
 msgid "xs · sm · default · lg · icon-xs → icon-lg"
 msgstr "xs · sm · default · lg · icon-xs → icon-lg"

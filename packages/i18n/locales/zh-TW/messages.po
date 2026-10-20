@@ -963,6 +963,9 @@ msgstr "按月計費每使用者每月 {monthlyPrice}，按年計費為 {yearlyP
 msgid "{months}mo ago"
 msgstr "{months}個月前"
 
+msgid "{multiple}× the cost of Medium"
+msgstr "中型的 {multiple} 倍費用"
+
 msgid "{myFailedCount} of your automations failed their last run"
 msgstr "你有{myFailedCount}個自動化上次執行失敗"
 
@@ -1161,6 +1164,9 @@ msgstr "{uploading, plural, other {正在上傳 # 個檔案…}}"
 msgid "{used} used"
 msgstr "已使用 {used}"
 
+msgid "{vcpuCount} vCPU · {memory} GB"
+msgstr "{vcpuCount} vCPU · {memory} GB"
+
 msgid "{waiting} Waiting"
 msgstr "{waiting}人等待"
 
@@ -1344,6 +1350,10 @@ msgstr "2027"
 
 msgid "2h ago"
 msgstr "2小時前"
+
+msgctxt "machine size"
+msgid "2X-Large"
+msgstr "2X-大型"
 
 msgid "3 archived workspaces"
 msgstr "3個已歸檔的工作區"
@@ -4054,6 +4064,9 @@ msgstr "雲端沙箱"
 #. js-lingui-explicit-id
 msgid "serverError.cloudWorkspace.cloudSandboxesAreInternalOnly"
 msgstr "{account} 尚未啟用雲端沙箱。請向 Superset 團隊申請存取權限。"
+
+msgid "Cloud usage"
+msgstr "雲端用量"
 
 msgid "Cloud workspace"
 msgstr "雲端工作區"
@@ -7976,6 +7989,15 @@ msgstr "關卡"
 msgid "Gates open"
 msgstr "已開啟關卡"
 
+msgid "GB-hours over the plan: {overage}"
+msgstr "超出方案的 GB 小時：{overage}"
+
+msgid "GB-hours used: {used}"
+msgstr "已用 GB 小時：{used}"
+
+msgid "GB-hours used: {used} of {included}"
+msgstr "已用 GB 小時：{used} / {included}"
+
 msgid "General"
 msgstr "通用"
 
@@ -9315,6 +9337,10 @@ msgstr "語言已在此裝置上儲存，但同步到你的帳戶失敗。"
 msgid "Large"
 msgstr "大"
 
+msgctxt "machine size"
+msgid "Large"
+msgstr "大型"
+
 msgid "Large numbers of persistent terminals can increase CPU/memory usage. Consider killing old sessions if you notice slowdowns."
 msgstr "大量持久化終端會增加CPU/記憶體佔用。如果發現變慢，可以考慮終止舊會話。"
 
@@ -9894,6 +9920,9 @@ msgstr "低嚴重性"
 msgid "Machine resources"
 msgstr "機器資源"
 
+msgid "Machine size: {label}"
+msgstr "機器規格：{label}"
+
 msgid "Machine-unbound cloud workspaces that spin up in seconds and can be shared with teammates."
 msgstr "不繫結機器的雲端工作區，幾秒即可啟動，還能分享給隊友。"
 
@@ -10090,6 +10119,10 @@ msgstr "免費的醫療與牙科保險、401(k)、無限休假、$5K 辦公設�
 
 msgid "Medium"
 msgstr "中"
+
+msgctxt "machine size"
+msgid "Medium"
+msgstr "中型"
 
 msgid "Medium severity"
 msgstr "中嚴重性"
@@ -14091,6 +14124,9 @@ msgstr "重置縮放"
 msgid "Reset Zoom"
 msgstr "重置縮放"
 
+msgid "Resets {resetDate}"
+msgstr "{resetDate} 重設"
+
 msgid "Resets at {until}"
 msgstr "將於 {until} 重設"
 
@@ -15892,6 +15928,10 @@ msgstr "Slug"
 msgid "Small"
 msgstr "小"
 
+msgctxt "machine size"
+msgid "Small"
+msgstr "小型"
+
 msgid "Smoother onboarding"
 msgstr "更順暢的上手流程"
 
@@ -17690,6 +17730,9 @@ msgstr "這台Mac"
 
 msgid "This machine"
 msgstr "本機"
+
+msgid "This machine size is not available for your organization. Pick another size"
+msgstr "你的組織不提供此機器規格。請選擇其他規格"
 
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "這個Microsoft租戶已被{detail}連線。請讓對方先斷開連線。"
@@ -19512,6 +19555,10 @@ msgstr "已寫入"
 
 msgid "X handle"
 msgstr "X 帳號名稱"
+
+msgctxt "machine size"
+msgid "X-Large"
+msgstr "X-大型"
 
 msgid "xs · sm · default · lg · icon-xs → icon-lg"
 msgstr "xs · sm · default · lg · icon-xs → icon-lg"

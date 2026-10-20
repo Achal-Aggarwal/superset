@@ -963,6 +963,9 @@ msgstr "{monthlyPrice} par utilisateur/mois en facturation mensuelle, ou {yearly
 msgid "{months}mo ago"
 msgstr "il y a {months} mois"
 
+msgid "{multiple}× the cost of Medium"
+msgstr "{multiple}× le coût de Moyenne"
+
 msgid "{myFailedCount} of your automations failed their last run"
 msgstr "Vos automatisations en échec lors de leur dernière exécution : {myFailedCount}"
 
@@ -1161,6 +1164,9 @@ msgstr "{uploading, plural, one {Envoi de # fichier…} other {Envoi de # fichie
 msgid "{used} used"
 msgstr "{used} utilisés"
 
+msgid "{vcpuCount} vCPU · {memory} GB"
+msgstr "{vcpuCount} vCPU · {memory} Go"
+
 msgid "{waiting} Waiting"
 msgstr "{waiting} en attente"
 
@@ -1344,6 +1350,10 @@ msgstr "2027"
 
 msgid "2h ago"
 msgstr "il y a 2 h"
+
+msgctxt "machine size"
+msgid "2X-Large"
+msgstr "2X-Grande"
 
 msgid "3 archived workspaces"
 msgstr "3 espaces de travail archivés"
@@ -4054,6 +4064,9 @@ msgstr "Bacs à sable cloud"
 #. js-lingui-explicit-id
 msgid "serverError.cloudWorkspace.cloudSandboxesAreInternalOnly"
 msgstr "Les bacs à sable cloud ne sont pas activés pour {account}. Demandez l'accès à l'équipe Superset."
+
+msgid "Cloud usage"
+msgstr "Utilisation du cloud"
 
 msgid "Cloud workspace"
 msgstr "Espace de travail cloud"
@@ -7976,6 +7989,15 @@ msgstr "Portes"
 msgid "Gates open"
 msgstr "Portes ouvertes"
 
+msgid "GB-hours over the plan: {overage}"
+msgstr "GB-heures au-delà du forfait : {overage}"
+
+msgid "GB-hours used: {used}"
+msgstr "GB-heures utilisées : {used}"
+
+msgid "GB-hours used: {used} of {included}"
+msgstr "GB-heures utilisées : {used} sur {included}"
+
 msgid "General"
 msgstr "Général"
 
@@ -9315,6 +9337,10 @@ msgstr "Langue enregistrée sur cet appareil, mais sa synchronisation avec votre
 msgid "Large"
 msgstr "Grand"
 
+msgctxt "machine size"
+msgid "Large"
+msgstr "Grande"
+
 msgid "Large numbers of persistent terminals can increase CPU/memory usage. Consider killing old sessions if you notice slowdowns."
 msgstr "Un grand nombre de terminaux persistants peut augmenter l'utilisation du CPU et de la mémoire. Envisagez d'arrêter les anciennes sessions si vous constatez des ralentissements."
 
@@ -9894,6 +9920,9 @@ msgstr "Gravité faible"
 msgid "Machine resources"
 msgstr "Ressources de la machine"
 
+msgid "Machine size: {label}"
+msgstr "Taille de la machine : {label}"
+
 msgid "Machine-unbound cloud workspaces that spin up in seconds and can be shared with teammates."
 msgstr "Des espaces de travail cloud, détachés de toute machine, qui démarrent en quelques secondes et se partagent avec vos coéquipiers."
 
@@ -10088,6 +10117,10 @@ msgstr "Délai médian du ticket à la production inférieur à un jour pour le 
 msgid "Medical and dental at no cost to you, a 401(k), unlimited time off, a $5K desk stipend, and free meals in the office."
 msgstr "Mutuelle santé et dentaire sans frais pour vous, un 401(k), des congés illimités, une allocation de 5 000 $ pour équiper votre poste de travail et des repas gratuits au bureau."
 
+msgid "Medium"
+msgstr "Moyenne"
+
+msgctxt "machine size"
 msgid "Medium"
 msgstr "Moyenne"
 
@@ -14091,6 +14124,9 @@ msgstr "Réinitialiser le zoom"
 msgid "Reset Zoom"
 msgstr "Réinitialiser le zoom"
 
+msgid "Resets {resetDate}"
+msgstr "Réinitialisation le {resetDate}"
+
 msgid "Resets at {until}"
 msgstr "Réinitialisation à {until}"
 
@@ -15892,6 +15928,10 @@ msgstr "Slug"
 msgid "Small"
 msgstr "Petit"
 
+msgctxt "machine size"
+msgid "Small"
+msgstr "Petite"
+
 msgid "Smoother onboarding"
 msgstr "Prise en main plus fluide"
 
@@ -17690,6 +17730,9 @@ msgstr "Ce Mac"
 
 msgid "This machine"
 msgstr "Cette machine"
+
+msgid "This machine size is not available for your organization. Pick another size"
+msgstr "Cette taille de machine n’est pas disponible pour votre organisation. Choisissez une autre taille"
 
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "Ce tenant Microsoft est déjà connecté par {detail}. Demandez-lui de le déconnecter d'abord."
@@ -19512,6 +19555,10 @@ msgstr "Écrit"
 
 msgid "X handle"
 msgstr "Identifiant X"
+
+msgctxt "machine size"
+msgid "X-Large"
+msgstr "X-Grande"
 
 msgid "xs · sm · default · lg · icon-xs → icon-lg"
 msgstr "xs · sm · default · lg · icon-xs → icon-lg"

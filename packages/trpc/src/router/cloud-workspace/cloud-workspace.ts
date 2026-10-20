@@ -7,6 +7,7 @@ import {
 	githubRepositories,
 	users,
 } from "@superset/db/schema";
+import { MACHINE_SIZES, machineSpec } from "@superset/shared/billing";
 import {
 	CLOUD_AGENT_PROMPT_MAX_LENGTH,
 	isCloudAgentId,
@@ -15,6 +16,7 @@ import type { TRPCRouterRecord } from "@trpc/server";
 import { TRPCError } from "@trpc/server";
 import { and, asc, desc, eq, isNotNull, ne } from "drizzle-orm";
 import { z } from "zod";
+import { organizationMachineSizes } from "../../lib/billing/plan";
 import { assertCloudAccess, assertMember } from "../../lib/cloud-guards";
 import { nudge } from "../../lib/realtime";
 import {
@@ -260,6 +262,19 @@ export const cloudWorkspaceRouter = {
 			}));
 		}),
 
+	machineSizes: jwtProcedure
+		.input(z.object({ organizationId: z.string().uuid() }))
+		.query(async ({ ctx, input }) => {
+			assertMember(ctx.organizationIds, input.organizationId);
+			const { sizes, defaultSize } = await organizationMachineSizes(
+				input.organizationId,
+			);
+			return {
+				defaultSize,
+				sizes: sizes.map((name) => ({ name, ...machineSpec(name) })),
+			};
+		}),
+
 	listBranches: jwtProcedure
 		.input(
 			z.object({
@@ -313,6 +328,8 @@ export const cloudWorkspaceRouter = {
 				typedPrompt: z.string().max(20000).optional(),
 				/** Tasks the composer linked; each must be in this organization. */
 				taskIds: z.array(z.string().uuid()).max(10).optional(),
+				/** A size the organization offers (see `machineSizes`); omitted = its default. */
+				machineSize: z.enum(MACHINE_SIZES).optional(),
 			}),
 		)
 		.mutation(async ({ ctx, input }) => {
@@ -356,6 +373,7 @@ export const cloudWorkspaceRouter = {
 				typedPrompt: input.typedPrompt,
 				taskIds: input.taskIds,
 				attachmentFileIds: input.attachmentFileIds,
+				machineSize: input.machineSize,
 				...(input.agent
 					? {
 							launch: {

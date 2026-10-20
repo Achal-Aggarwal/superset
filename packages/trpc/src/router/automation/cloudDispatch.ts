@@ -9,6 +9,7 @@ import { CLOUD_AGENT_PROMPT_MAX_LENGTH } from "@superset/shared/cloud-agent-laun
 import { SUPERSET_USER_ID_HEADER } from "@superset/shared/host-routing";
 import { and, eq } from "drizzle-orm";
 import { acpChatEnabled } from "../../lib/acp-chat";
+import { resolveMachineSize } from "../../lib/billing/plan";
 import { cloudAccess } from "../../lib/cloud-guards";
 import {
 	environmentRepositoryRows,
@@ -104,6 +105,12 @@ export async function runInCloud(
 		name: automation.name.slice(0, 200),
 		branch: launch.branch,
 		launch: { agent: automation.agent, prompt, automationRunId: runId },
+		machineSize: (
+			await resolveMachineSize(
+				automation.organizationId,
+				automation.machineSize,
+			)
+		)?.name,
 		beforeProvision: async (workspaceId) => {
 			placed({ cloudWorkspaceId: workspaceId });
 			const bound = await db

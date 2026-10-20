@@ -963,6 +963,9 @@ msgstr "{monthlyPrice} mỗi người/tháng khi thanh toán theo tháng, hoặc
 msgid "{months}mo ago"
 msgstr "{months} tháng trước"
 
+msgid "{multiple}× the cost of Medium"
+msgstr "{multiple}× chi phí của Vừa"
+
 msgid "{myFailedCount} of your automations failed their last run"
 msgstr "{myFailedCount} tự động hóa của bạn thất bại ở lần chạy gần nhất"
 
@@ -1161,6 +1164,9 @@ msgstr "{uploading, plural, other {Đang tải lên # tệp…}}"
 msgid "{used} used"
 msgstr "Đã dùng {used}"
 
+msgid "{vcpuCount} vCPU · {memory} GB"
+msgstr "{vcpuCount} vCPU · {memory} GB"
+
 msgid "{waiting} Waiting"
 msgstr "{waiting} đang chờ"
 
@@ -1344,6 +1350,10 @@ msgstr "2027"
 
 msgid "2h ago"
 msgstr "2 giờ trước"
+
+msgctxt "machine size"
+msgid "2X-Large"
+msgstr "2X-Lớn"
 
 msgid "3 archived workspaces"
 msgstr "3 workspace đã lưu trữ"
@@ -4054,6 +4064,9 @@ msgstr "Sandbox trên cloud"
 #. js-lingui-explicit-id
 msgid "serverError.cloudWorkspace.cloudSandboxesAreInternalOnly"
 msgstr "Sandbox trên cloud chưa được bật cho {account}. Hãy yêu cầu nhóm Superset cấp quyền truy cập."
+
+msgid "Cloud usage"
+msgstr "Mức sử dụng đám mây"
 
 msgid "Cloud workspace"
 msgstr "Workspace cloud"
@@ -7976,6 +7989,15 @@ msgstr "Cổng"
 msgid "Gates open"
 msgstr "Cổng còn mở"
 
+msgid "GB-hours over the plan: {overage}"
+msgstr "GB-giờ vượt gói: {overage}"
+
+msgid "GB-hours used: {used}"
+msgstr "GB-giờ đã dùng: {used}"
+
+msgid "GB-hours used: {used} of {included}"
+msgstr "GB-giờ đã dùng: {used} trên {included}"
+
 msgid "General"
 msgstr "Chung"
 
@@ -9315,6 +9337,10 @@ msgstr "Đã lưu ngôn ngữ trên thiết bị này, nhưng không đồng b�
 msgid "Large"
 msgstr "Lớn"
 
+msgctxt "machine size"
+msgid "Large"
+msgstr "Lớn"
+
 msgid "Large numbers of persistent terminals can increase CPU/memory usage. Consider killing old sessions if you notice slowdowns."
 msgstr "Quá nhiều terminal duy trì có thể làm tăng mức dùng CPU/bộ nhớ. Hãy cân nhắc kết thúc các phiên cũ nếu thấy máy chậm."
 
@@ -9894,6 +9920,9 @@ msgstr "Mức độ nghiêm trọng thấp"
 msgid "Machine resources"
 msgstr "Tài nguyên máy"
 
+msgid "Machine size: {label}"
+msgstr "Kích thước máy: {label}"
+
 msgid "Machine-unbound cloud workspaces that spin up in seconds and can be shared with teammates."
 msgstr "Workspace trên cloud không phụ thuộc máy, dựng trong vài giây và chia sẻ được với đồng đội."
 
@@ -10090,6 +10119,10 @@ msgstr "Bảo hiểm y tế và nha khoa miễn phí cho bạn, 401(k), nghỉ p
 
 msgid "Medium"
 msgstr "Trung bình"
+
+msgctxt "machine size"
+msgid "Medium"
+msgstr "Vừa"
 
 msgid "Medium severity"
 msgstr "Mức độ nghiêm trọng trung bình"
@@ -14091,6 +14124,9 @@ msgstr "Đặt lại thu phóng"
 msgid "Reset Zoom"
 msgstr "Đặt lại thu phóng"
 
+msgid "Resets {resetDate}"
+msgstr "Đặt lại vào {resetDate}"
+
 msgid "Resets at {until}"
 msgstr "Đặt lại lúc {until}"
 
@@ -15892,6 +15928,10 @@ msgstr "Slug"
 msgid "Small"
 msgstr "Nhỏ"
 
+msgctxt "machine size"
+msgid "Small"
+msgstr "Nhỏ"
+
 msgid "Smoother onboarding"
 msgstr "Onboarding mượt hơn"
 
@@ -17690,6 +17730,9 @@ msgstr "Mac này"
 
 msgid "This machine"
 msgstr "Máy này"
+
+msgid "This machine size is not available for your organization. Pick another size"
+msgstr "Kích thước máy này không có cho tổ chức của bạn. Hãy chọn kích thước khác"
 
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "Tenant Microsoft này đã được {detail} kết nối. Hãy nhờ họ ngắt kết nối trước."
@@ -19512,6 +19555,10 @@ msgstr "Đã ghi"
 
 msgid "X handle"
 msgstr "Handle X"
+
+msgctxt "machine size"
+msgid "X-Large"
+msgstr "X-Lớn"
 
 msgid "xs · sm · default · lg · icon-xs → icon-lg"
 msgstr "xs · sm · default · lg · icon-xs → icon-lg"

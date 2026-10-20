@@ -963,6 +963,9 @@ msgstr "Aylık faturalandırmada kullanıcı başına ayda {monthlyPrice}, yıll
 msgid "{months}mo ago"
 msgstr "{months}ay önce"
 
+msgid "{multiple}× the cost of Medium"
+msgstr "Ortanın {multiple}× maliyeti"
+
 msgid "{myFailedCount} of your automations failed their last run"
 msgstr "Otomasyonlarınızdan {myFailedCount} tanesi son çalıştırmasında başarısız oldu"
 
@@ -1161,6 +1164,9 @@ msgstr "{uploading, plural, other {# dosya yükleniyor…}}"
 msgid "{used} used"
 msgstr "{used} kullanıldı"
 
+msgid "{vcpuCount} vCPU · {memory} GB"
+msgstr "{vcpuCount} vCPU · {memory} GB"
+
 msgid "{waiting} Waiting"
 msgstr "{waiting} bekliyor"
 
@@ -1344,6 +1350,10 @@ msgstr "2027"
 
 msgid "2h ago"
 msgstr "2sa önce"
+
+msgctxt "machine size"
+msgid "2X-Large"
+msgstr "2X-Büyük"
 
 msgid "3 archived workspaces"
 msgstr "3 arşivlenmiş çalışma alanı"
@@ -4054,6 +4064,9 @@ msgstr "Bulut sandbox'ları"
 #. js-lingui-explicit-id
 msgid "serverError.cloudWorkspace.cloudSandboxesAreInternalOnly"
 msgstr "Bulut sandbox'ları {account} için etkin değil. Erişim için Superset ekibine başvurun."
+
+msgid "Cloud usage"
+msgstr "Bulut kullanımı"
 
 msgid "Cloud workspace"
 msgstr "Bulut çalışma alanı"
@@ -7976,6 +7989,15 @@ msgstr "Eşikler"
 msgid "Gates open"
 msgstr "Açık eşikler"
 
+msgid "GB-hours over the plan: {overage}"
+msgstr "Plan dışı GB-saat: {overage}"
+
+msgid "GB-hours used: {used}"
+msgstr "Kullanılan GB-saat: {used}"
+
+msgid "GB-hours used: {used} of {included}"
+msgstr "Kullanılan GB-saat: {used} / {included}"
+
 msgid "General"
 msgstr "Genel"
 
@@ -9315,6 +9337,10 @@ msgstr "Dil bu cihaza kaydedildi, ancak hesabınıza eşitlenemedi."
 msgid "Large"
 msgstr "Büyük"
 
+msgctxt "machine size"
+msgid "Large"
+msgstr "Büyük"
+
 msgid "Large numbers of persistent terminals can increase CPU/memory usage. Consider killing old sessions if you notice slowdowns."
 msgstr "Çok sayıda kalıcı terminal CPU/bellek kullanımını artırabilir. Yavaşlama fark ederseniz eski oturumları sonlandırmayı düşünün."
 
@@ -9894,6 +9920,9 @@ msgstr "Düşük önem"
 msgid "Machine resources"
 msgstr "Makine kaynakları"
 
+msgid "Machine size: {label}"
+msgstr "Makine boyutu: {label}"
+
 msgid "Machine-unbound cloud workspaces that spin up in seconds and can be shared with teammates."
 msgstr "Saniyeler içinde açılan ve takım arkadaşlarınızla paylaşılabilen, makineye bağlı olmayan bulut çalışma alanları."
 
@@ -10088,6 +10117,10 @@ msgstr "Rutin işler için medyan bilet-üretim süresi bir günün altında."
 msgid "Medical and dental at no cost to you, a 401(k), unlimited time off, a $5K desk stipend, and free meals in the office."
 msgstr "Size hiçbir maliyeti olmayan sağlık ve diş sigortası, 401(k), sınırsız izin, $5K masa bütçesi ve ofiste ücretsiz yemek."
 
+msgid "Medium"
+msgstr "Orta"
+
+msgctxt "machine size"
 msgid "Medium"
 msgstr "Orta"
 
@@ -14091,6 +14124,9 @@ msgstr "Yakınlaştırmayı sıfırla"
 msgid "Reset Zoom"
 msgstr "Yakınlaştırmayı sıfırla"
 
+msgid "Resets {resetDate}"
+msgstr "{resetDate} tarihinde sıfırlanır"
+
 msgid "Resets at {until}"
 msgstr "{until} saatinde sıfırlanır"
 
@@ -15892,6 +15928,10 @@ msgstr "Slug"
 msgid "Small"
 msgstr "Küçük"
 
+msgctxt "machine size"
+msgid "Small"
+msgstr "Küçük"
+
 msgid "Smoother onboarding"
 msgstr "Daha akıcı ilk kurulum"
 
@@ -17690,6 +17730,9 @@ msgstr "Bu Mac"
 
 msgid "This machine"
 msgstr "Bu bilgisayar"
+
+msgid "This machine size is not available for your organization. Pick another size"
+msgstr "Bu makine boyutu kuruluşunuz için kullanılamıyor. Başka bir boyut seçin"
 
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "Bu Microsoft kiracısı {detail} tarafından zaten bağlanmış. Önce bağlantıyı kesmesini isteyin."
@@ -19512,6 +19555,10 @@ msgstr "Yazıldı"
 
 msgid "X handle"
 msgstr "X kullanıcı adı"
+
+msgctxt "machine size"
+msgid "X-Large"
+msgstr "X-Büyük"
 
 msgid "xs · sm · default · lg · icon-xs → icon-lg"
 msgstr "xs · sm · default · lg · icon-xs → icon-lg"

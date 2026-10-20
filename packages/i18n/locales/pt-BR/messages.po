@@ -963,6 +963,9 @@ msgstr "{monthlyPrice} por usuário/mês com cobrança mensal, ou {yearlyPrice} 
 msgid "{months}mo ago"
 msgstr "há {months}mês"
 
+msgid "{multiple}× the cost of Medium"
+msgstr "{multiple}× o custo de Média"
+
 msgid "{myFailedCount} of your automations failed their last run"
 msgstr "Suas automações com falha na última execução: {myFailedCount}"
 
@@ -1161,6 +1164,9 @@ msgstr "{uploading, plural, one {Enviando # arquivo…} other {Enviando # arquiv
 msgid "{used} used"
 msgstr "{used} usado"
 
+msgid "{vcpuCount} vCPU · {memory} GB"
+msgstr "{vcpuCount} vCPU · {memory} GB"
+
 msgid "{waiting} Waiting"
 msgstr "{waiting} aguardando"
 
@@ -1344,6 +1350,10 @@ msgstr "2027"
 
 msgid "2h ago"
 msgstr "há 2h"
+
+msgctxt "machine size"
+msgid "2X-Large"
+msgstr "2X-Grande"
 
 msgid "3 archived workspaces"
 msgstr "3 áreas de trabalho arquivadas"
@@ -4054,6 +4064,9 @@ msgstr "Sandboxes na nuvem"
 #. js-lingui-explicit-id
 msgid "serverError.cloudWorkspace.cloudSandboxesAreInternalOnly"
 msgstr "Os sandboxes na nuvem não estão habilitados para {account}. Peça acesso à equipe da Superset."
+
+msgid "Cloud usage"
+msgstr "Uso da nuvem"
 
 msgid "Cloud workspace"
 msgstr "Área de trabalho na nuvem"
@@ -7976,6 +7989,15 @@ msgstr "Portões"
 msgid "Gates open"
 msgstr "Portões abertos"
 
+msgid "GB-hours over the plan: {overage}"
+msgstr "GB-horas acima do plano: {overage}"
+
+msgid "GB-hours used: {used}"
+msgstr "GB-horas usadas: {used}"
+
+msgid "GB-hours used: {used} of {included}"
+msgstr "GB-horas usadas: {used} de {included}"
+
 msgid "General"
 msgstr "Geral"
 
@@ -9315,6 +9337,10 @@ msgstr "O idioma foi salvo neste dispositivo, mas a sincronização com sua cont
 msgid "Large"
 msgstr "Grande"
 
+msgctxt "machine size"
+msgid "Large"
+msgstr "Grande"
+
 msgid "Large numbers of persistent terminals can increase CPU/memory usage. Consider killing old sessions if you notice slowdowns."
 msgstr "Muitos terminais persistentes podem aumentar o uso de CPU e memória. Considere encerrar sessões antigas se notar lentidão."
 
@@ -9894,6 +9920,9 @@ msgstr "Gravidade baixa"
 msgid "Machine resources"
 msgstr "Recursos da máquina"
 
+msgid "Machine size: {label}"
+msgstr "Tamanho da máquina: {label}"
+
 msgid "Machine-unbound cloud workspaces that spin up in seconds and can be shared with teammates."
 msgstr "Áreas de trabalho na nuvem sem máquina fixa, que sobem em segundos e podem ser compartilhadas com o time."
 
@@ -10088,6 +10117,10 @@ msgstr "Tempo mediano do ticket à produção abaixo de um dia para trabalho rot
 msgid "Medical and dental at no cost to you, a 401(k), unlimited time off, a $5K desk stipend, and free meals in the office."
 msgstr "Plano médico e odontológico sem custo para você, um 401(k), folgas ilimitadas, $5K para montar seu espaço de trabalho e refeições grátis no escritório."
 
+msgid "Medium"
+msgstr "Média"
+
+msgctxt "machine size"
 msgid "Medium"
 msgstr "Média"
 
@@ -14091,6 +14124,9 @@ msgstr "Redefinir o zoom"
 msgid "Reset Zoom"
 msgstr "Redefinir o zoom"
 
+msgid "Resets {resetDate}"
+msgstr "Redefine em {resetDate}"
+
 msgid "Resets at {until}"
 msgstr "Zera às {until}"
 
@@ -15892,6 +15928,10 @@ msgstr "Slug"
 msgid "Small"
 msgstr "Pequeno"
 
+msgctxt "machine size"
+msgid "Small"
+msgstr "Pequena"
+
 msgid "Smoother onboarding"
 msgstr "Introdução mais fluida"
 
@@ -17690,6 +17730,9 @@ msgstr "Este Mac"
 
 msgid "This machine"
 msgstr "Esta máquina"
+
+msgid "This machine size is not available for your organization. Pick another size"
+msgstr "Este tamanho de máquina não está disponível para sua organização. Escolha outro tamanho"
 
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "Este tenant da Microsoft já está conectado por {detail}. Peça para essa pessoa desconectar primeiro."
@@ -19512,6 +19555,10 @@ msgstr "Escreveu"
 
 msgid "X handle"
 msgstr "Handle no X"
+
+msgctxt "machine size"
+msgid "X-Large"
+msgstr "X-Grande"
 
 msgid "xs · sm · default · lg · icon-xs → icon-lg"
 msgstr "xs · sm · default · lg · icon-xs → icon-lg"

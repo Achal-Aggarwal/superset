@@ -963,6 +963,9 @@ msgstr "{monthlyPrice} per user/mo billed monthly, or {yearlyPrice} billed yearl
 msgid "{months}mo ago"
 msgstr "{months}mo ago"
 
+msgid "{multiple}× the cost of Medium"
+msgstr "{multiple}× the cost of Medium"
+
 msgid "{myFailedCount} of your automations failed their last run"
 msgstr "{myFailedCount} of your automations failed their last run"
 
@@ -1161,6 +1164,9 @@ msgstr "{uploading, plural, one {Uploading # file…} other {Uploading # files�
 msgid "{used} used"
 msgstr "{used} used"
 
+msgid "{vcpuCount} vCPU · {memory} GB"
+msgstr "{vcpuCount} vCPU · {memory} GB"
+
 msgid "{waiting} Waiting"
 msgstr "{waiting} Waiting"
 
@@ -1344,6 +1350,10 @@ msgstr "2027"
 
 msgid "2h ago"
 msgstr "2h ago"
+
+msgctxt "machine size"
+msgid "2X-Large"
+msgstr "2X-Large"
 
 msgid "3 archived workspaces"
 msgstr "3 archived workspaces"
@@ -4054,6 +4064,9 @@ msgstr "Cloud sandboxes"
 #. js-lingui-explicit-id
 msgid "serverError.cloudWorkspace.cloudSandboxesAreInternalOnly"
 msgstr "Cloud sandboxes are not enabled for {account}. Ask the Superset team for access."
+
+msgid "Cloud usage"
+msgstr "Cloud usage"
 
 msgid "Cloud workspace"
 msgstr "Cloud workspace"
@@ -7976,6 +7989,15 @@ msgstr "Gates"
 msgid "Gates open"
 msgstr "Gates open"
 
+msgid "GB-hours over the plan: {overage}"
+msgstr "GB-hours over the plan: {overage}"
+
+msgid "GB-hours used: {used}"
+msgstr "GB-hours used: {used}"
+
+msgid "GB-hours used: {used} of {included}"
+msgstr "GB-hours used: {used} of {included}"
+
 msgid "General"
 msgstr "General"
 
@@ -9315,6 +9337,10 @@ msgstr "Language saved on this device, but syncing it to your account failed."
 msgid "Large"
 msgstr "Large"
 
+msgctxt "machine size"
+msgid "Large"
+msgstr "Large"
+
 msgid "Large numbers of persistent terminals can increase CPU/memory usage. Consider killing old sessions if you notice slowdowns."
 msgstr "Large numbers of persistent terminals can increase CPU/memory usage. Consider killing old sessions if you notice slowdowns."
 
@@ -9894,6 +9920,9 @@ msgstr "Low severity"
 msgid "Machine resources"
 msgstr "Machine resources"
 
+msgid "Machine size: {label}"
+msgstr "Machine size: {label}"
+
 msgid "Machine-unbound cloud workspaces that spin up in seconds and can be shared with teammates."
 msgstr "Machine-unbound cloud workspaces that spin up in seconds and can be shared with teammates."
 
@@ -10088,6 +10117,10 @@ msgstr "Median ticket-to-production time under one day for routine work."
 msgid "Medical and dental at no cost to you, a 401(k), unlimited time off, a $5K desk stipend, and free meals in the office."
 msgstr "Medical and dental at no cost to you, a 401(k), unlimited time off, a $5K desk stipend, and free meals in the office."
 
+msgid "Medium"
+msgstr "Medium"
+
+msgctxt "machine size"
 msgid "Medium"
 msgstr "Medium"
 
@@ -14091,6 +14124,9 @@ msgstr "Reset zoom"
 msgid "Reset Zoom"
 msgstr "Reset Zoom"
 
+msgid "Resets {resetDate}"
+msgstr "Resets {resetDate}"
+
 msgid "Resets at {until}"
 msgstr "Resets at {until}"
 
@@ -15892,6 +15928,10 @@ msgstr "Slug"
 msgid "Small"
 msgstr "Small"
 
+msgctxt "machine size"
+msgid "Small"
+msgstr "Small"
+
 msgid "Smoother onboarding"
 msgstr "Smoother onboarding"
 
@@ -17690,6 +17730,9 @@ msgstr "This Mac"
 
 msgid "This machine"
 msgstr "This machine"
+
+msgid "This machine size is not available for your organization. Pick another size"
+msgstr "This machine size is not available for your organization. Pick another size"
 
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
@@ -19512,6 +19555,10 @@ msgstr "Wrote"
 
 msgid "X handle"
 msgstr "X handle"
+
+msgctxt "machine size"
+msgid "X-Large"
+msgstr "X-Large"
 
 msgid "xs · sm · default · lg · icon-xs → icon-lg"
 msgstr "xs · sm · default · lg · icon-xs → icon-lg"

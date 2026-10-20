@@ -963,6 +963,9 @@ msgstr "{monthlyPrice} per utente/mese con fatturazione mensile, o {yearlyPrice}
 msgid "{months}mo ago"
 msgstr "{months}me fa"
 
+msgid "{multiple}× the cost of Medium"
+msgstr "{multiple}× il costo di Media"
+
 msgid "{myFailedCount} of your automations failed their last run"
 msgstr "Tue automazioni con l'ultima esecuzione non riuscita: {myFailedCount}"
 
@@ -1161,6 +1164,9 @@ msgstr "{uploading, plural, one {Caricamento di # file…} other {Caricamento di
 msgid "{used} used"
 msgstr "{used} utilizzato"
 
+msgid "{vcpuCount} vCPU · {memory} GB"
+msgstr "{vcpuCount} vCPU · {memory} GB"
+
 msgid "{waiting} Waiting"
 msgstr "{waiting} in attesa"
 
@@ -1344,6 +1350,10 @@ msgstr "2027"
 
 msgid "2h ago"
 msgstr "2h fa"
+
+msgctxt "machine size"
+msgid "2X-Large"
+msgstr "2X-Grande"
 
 msgid "3 archived workspaces"
 msgstr "3 workspace archiviati"
@@ -4054,6 +4064,9 @@ msgstr "Sandbox nel cloud"
 #. js-lingui-explicit-id
 msgid "serverError.cloudWorkspace.cloudSandboxesAreInternalOnly"
 msgstr "Le sandbox nel cloud non sono abilitate per {account}. Richiedi l'accesso al team Superset."
+
+msgid "Cloud usage"
+msgstr "Utilizzo del cloud"
 
 msgid "Cloud workspace"
 msgstr "Workspace cloud"
@@ -7976,6 +7989,15 @@ msgstr "Gate"
 msgid "Gates open"
 msgstr "Gate aperti"
 
+msgid "GB-hours over the plan: {overage}"
+msgstr "GB-ore oltre il piano: {overage}"
+
+msgid "GB-hours used: {used}"
+msgstr "GB-ore usate: {used}"
+
+msgid "GB-hours used: {used} of {included}"
+msgstr "GB-ore usate: {used} su {included}"
+
 msgid "General"
 msgstr "Generali"
 
@@ -9315,6 +9337,10 @@ msgstr "Lingua salvata su questo dispositivo, ma la sincronizzazione con il tuo 
 msgid "Large"
 msgstr "Grande"
 
+msgctxt "machine size"
+msgid "Large"
+msgstr "Grande"
+
 msgid "Large numbers of persistent terminals can increase CPU/memory usage. Consider killing old sessions if you notice slowdowns."
 msgstr "Un gran numero di terminali persistenti può aumentare l'uso di CPU e memoria. Valuta di terminare le sessioni vecchie se noti rallentamenti."
 
@@ -9894,6 +9920,9 @@ msgstr "Gravità bassa"
 msgid "Machine resources"
 msgstr "Risorse della macchina"
 
+msgid "Machine size: {label}"
+msgstr "Dimensione della macchina: {label}"
+
 msgid "Machine-unbound cloud workspaces that spin up in seconds and can be shared with teammates."
 msgstr "Workspace cloud slegati dalla macchina, pronti in pochi secondi e condivisibili con i colleghi."
 
@@ -10088,6 +10117,10 @@ msgstr "Tempo mediano dal ticket alla produzione sotto un giorno per il lavoro d
 msgid "Medical and dental at no cost to you, a 401(k), unlimited time off, a $5K desk stipend, and free meals in the office."
 msgstr "Assicurazione medica e dentistica senza costi per te, un 401(k), ferie illimitate, $5K per allestire la tua postazione e pasti gratuiti in ufficio."
 
+msgid "Medium"
+msgstr "Media"
+
+msgctxt "machine size"
 msgid "Medium"
 msgstr "Media"
 
@@ -14091,6 +14124,9 @@ msgstr "Reimposta lo zoom"
 msgid "Reset Zoom"
 msgstr "Reimposta lo zoom"
 
+msgid "Resets {resetDate}"
+msgstr "Si azzera il {resetDate}"
+
 msgid "Resets at {until}"
 msgstr "Si azzera alle {until}"
 
@@ -15892,6 +15928,10 @@ msgstr "Slug"
 msgid "Small"
 msgstr "Piccolo"
 
+msgctxt "machine size"
+msgid "Small"
+msgstr "Piccola"
+
 msgid "Smoother onboarding"
 msgstr "Onboarding più fluido"
 
@@ -17690,6 +17730,9 @@ msgstr "Questo Mac"
 
 msgid "This machine"
 msgstr "Questo computer"
+
+msgid "This machine size is not available for your organization. Pick another size"
+msgstr "Questa dimensione della macchina non è disponibile per la tua organizzazione. Scegli un'altra dimensione"
 
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "Questo tenant Microsoft è già collegato da {detail}. Chiedi di scollegarlo prima."
@@ -19512,6 +19555,10 @@ msgstr "Scritto"
 
 msgid "X handle"
 msgstr "Handle X"
+
+msgctxt "machine size"
+msgid "X-Large"
+msgstr "X-Grande"
 
 msgid "xs · sm · default · lg · icon-xs → icon-lg"
 msgstr "xs · sm · default · lg · icon-xs → icon-lg"

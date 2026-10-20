@@ -963,6 +963,9 @@ msgstr "{monthlyPrice} per gebruiker/mnd bij maandelijkse facturering, of {yearl
 msgid "{months}mo ago"
 msgstr "{months}mnd geleden"
 
+msgid "{multiple}× the cost of Medium"
+msgstr "{multiple}× de kosten van Middel"
+
 msgid "{myFailedCount} of your automations failed their last run"
 msgstr "Bij {myFailedCount} van je automatiseringen is de laatste run mislukt"
 
@@ -1161,6 +1164,9 @@ msgstr "{uploading, plural, one {# bestand uploaden…} other {# bestanden uploa
 msgid "{used} used"
 msgstr "{used} gebruikt"
 
+msgid "{vcpuCount} vCPU · {memory} GB"
+msgstr "{vcpuCount} vCPU · {memory} GB"
+
 msgid "{waiting} Waiting"
 msgstr "{waiting} wachten"
 
@@ -1344,6 +1350,10 @@ msgstr "2027"
 
 msgid "2h ago"
 msgstr "2u geleden"
+
+msgctxt "machine size"
+msgid "2X-Large"
+msgstr "2X-Groot"
 
 msgid "3 archived workspaces"
 msgstr "3 gearchiveerde werkruimtes"
@@ -4054,6 +4064,9 @@ msgstr "Cloudsandboxen"
 #. js-lingui-explicit-id
 msgid "serverError.cloudWorkspace.cloudSandboxesAreInternalOnly"
 msgstr "Cloudsandboxen zijn niet ingeschakeld voor {account}. Vraag het Superset-team om toegang."
+
+msgid "Cloud usage"
+msgstr "Cloudgebruik"
 
 msgid "Cloud workspace"
 msgstr "Cloudwerkruimte"
@@ -7976,6 +7989,15 @@ msgstr "Drempels"
 msgid "Gates open"
 msgstr "Open drempels"
 
+msgid "GB-hours over the plan: {overage}"
+msgstr "GB-uren boven het abonnement: {overage}"
+
+msgid "GB-hours used: {used}"
+msgstr "Gebruikte GB-uren: {used}"
+
+msgid "GB-hours used: {used} of {included}"
+msgstr "Gebruikte GB-uren: {used} van {included}"
+
 msgid "General"
 msgstr "Algemeen"
 
@@ -9315,6 +9337,10 @@ msgstr "Taal opgeslagen op dit apparaat, maar synchroniseren naar je account is 
 msgid "Large"
 msgstr "Groot"
 
+msgctxt "machine size"
+msgid "Large"
+msgstr "Groot"
+
 msgid "Large numbers of persistent terminals can increase CPU/memory usage. Consider killing old sessions if you notice slowdowns."
 msgstr "Veel blijvende terminals kunnen het CPU- en geheugengebruik verhogen. Beëindig oude sessies als je vertraging merkt."
 
@@ -9894,6 +9920,9 @@ msgstr "Lage ernst"
 msgid "Machine resources"
 msgstr "Machineresources"
 
+msgid "Machine size: {label}"
+msgstr "Machinegrootte: {label}"
+
 msgid "Machine-unbound cloud workspaces that spin up in seconds and can be shared with teammates."
 msgstr "Machine-onafhankelijke cloudwerkruimtes die in seconden opstarten en met teamgenoten te delen zijn."
 
@@ -10090,6 +10119,10 @@ msgstr "Gratis medische en tandartsverzekering, een 401(k), onbeperkt vrij, een 
 
 msgid "Medium"
 msgstr "Gemiddeld"
+
+msgctxt "machine size"
+msgid "Medium"
+msgstr "Middel"
 
 msgid "Medium severity"
 msgstr "Gemiddelde ernst"
@@ -14091,6 +14124,9 @@ msgstr "Zoom resetten"
 msgid "Reset Zoom"
 msgstr "Zoom resetten"
 
+msgid "Resets {resetDate}"
+msgstr "Wordt gereset op {resetDate}"
+
 msgid "Resets at {until}"
 msgstr "Reset om {until}"
 
@@ -15892,6 +15928,10 @@ msgstr "Slug"
 msgid "Small"
 msgstr "Klein"
 
+msgctxt "machine size"
+msgid "Small"
+msgstr "Klein"
+
 msgid "Smoother onboarding"
 msgstr "Soepelere onboarding"
 
@@ -17690,6 +17730,9 @@ msgstr "Deze Mac"
 
 msgid "This machine"
 msgstr "Deze computer"
+
+msgid "This machine size is not available for your organization. Pick another size"
+msgstr "Deze machinegrootte is niet beschikbaar voor je organisatie. Kies een andere grootte"
 
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "Deze Microsoft-tenant is al gekoppeld door {detail}. Vraag hen om eerst los te koppelen."
@@ -19512,6 +19555,10 @@ msgstr "Geschreven"
 
 msgid "X handle"
 msgstr "X-handle"
+
+msgctxt "machine size"
+msgid "X-Large"
+msgstr "X-Groot"
 
 msgid "xs · sm · default · lg · icon-xs → icon-lg"
 msgstr "xs · sm · default · lg · icon-xs → icon-lg"

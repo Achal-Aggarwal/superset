@@ -963,6 +963,9 @@ msgstr "{monthlyPrice} за пользователя в месяц при пом
 msgid "{months}mo ago"
 msgstr "{months} мес. назад"
 
+msgid "{multiple}× the cost of Medium"
+msgstr "{multiple}× стоимости среднего"
+
 msgid "{myFailedCount} of your automations failed their last run"
 msgstr "Ваши автоматизации с ошибкой при последнем запуске: {myFailedCount}"
 
@@ -1161,6 +1164,9 @@ msgstr "{uploading, plural, one {Загрузка # файла…} few {Загр
 msgid "{used} used"
 msgstr "Использовано {used}"
 
+msgid "{vcpuCount} vCPU · {memory} GB"
+msgstr "{vcpuCount} vCPU · {memory} ГБ"
+
 msgid "{waiting} Waiting"
 msgstr "Ожидают: {waiting}"
 
@@ -1344,6 +1350,10 @@ msgstr "2027"
 
 msgid "2h ago"
 msgstr "2 ч. назад"
+
+msgctxt "machine size"
+msgid "2X-Large"
+msgstr "2X-Большой"
 
 msgid "3 archived workspaces"
 msgstr "3 архивные рабочие области"
@@ -4054,6 +4064,9 @@ msgstr "Облачные песочницы"
 #. js-lingui-explicit-id
 msgid "serverError.cloudWorkspace.cloudSandboxesAreInternalOnly"
 msgstr "Облачные песочницы не включены для {account}. Запросите доступ у команды Superset."
+
+msgid "Cloud usage"
+msgstr "Использование облака"
 
 msgid "Cloud workspace"
 msgstr "Облачная рабочая область"
@@ -7976,6 +7989,15 @@ msgstr "Шлюзы"
 msgid "Gates open"
 msgstr "Шлюзов открыто"
 
+msgid "GB-hours over the plan: {overage}"
+msgstr "ГБ-часы сверх тарифа: {overage}"
+
+msgid "GB-hours used: {used}"
+msgstr "Использовано ГБ-часов: {used}"
+
+msgid "GB-hours used: {used} of {included}"
+msgstr "Использовано ГБ-часов: {used} из {included}"
+
 msgid "General"
 msgstr "Общие"
 
@@ -9315,6 +9337,10 @@ msgstr "Язык сохранён на этом устройстве, но си�
 msgid "Large"
 msgstr "Большой"
 
+msgctxt "machine size"
+msgid "Large"
+msgstr "Большая"
+
 msgid "Large numbers of persistent terminals can increase CPU/memory usage. Consider killing old sessions if you notice slowdowns."
 msgstr "Большое количество постоянных терминалов может увеличить нагрузку на CPU и память. Если заметили замедление, стоит завершить старые сессии."
 
@@ -9894,6 +9920,9 @@ msgstr "Низкая серьёзность"
 msgid "Machine resources"
 msgstr "Ресурсы машины"
 
+msgid "Machine size: {label}"
+msgstr "Размер машины: {label}"
+
 msgid "Machine-unbound cloud workspaces that spin up in seconds and can be shared with teammates."
 msgstr "Облачные рабочие области, не привязанные к машине: поднимаются за секунды, и ими можно делиться с коллегами."
 
@@ -10090,6 +10119,10 @@ msgstr "Бесплатная медицинская и стоматологич�
 
 msgid "Medium"
 msgstr "Средний"
+
+msgctxt "machine size"
+msgid "Medium"
+msgstr "Средняя"
 
 msgid "Medium severity"
 msgstr "Средняя серьёзность"
@@ -14091,6 +14124,9 @@ msgstr "Сбросить масштаб"
 msgid "Reset Zoom"
 msgstr "Сбросить масштаб"
 
+msgid "Resets {resetDate}"
+msgstr "Сброс {resetDate}"
+
 msgid "Resets at {until}"
 msgstr "Сброс в {until}"
 
@@ -15892,6 +15928,10 @@ msgstr "Slug"
 msgid "Small"
 msgstr "Маленький"
 
+msgctxt "machine size"
+msgid "Small"
+msgstr "Малая"
+
 msgid "Smoother onboarding"
 msgstr "Более гладкий онбординг"
 
@@ -17690,6 +17730,9 @@ msgstr "Этот Mac"
 
 msgid "This machine"
 msgstr "Этот компьютер"
+
+msgid "This machine size is not available for your organization. Pick another size"
+msgstr "Этот размер машины недоступен для вашей организации. Выберите другой размер"
 
 msgid "This Microsoft tenant is already connected by {detail}. Ask them to disconnect first."
 msgstr "Этот тенант Microsoft уже подключён пользователем {detail}. Попросите отключить его."
@@ -19512,6 +19555,10 @@ msgstr "Записано"
 
 msgid "X handle"
 msgstr "Хендл в X"
+
+msgctxt "machine size"
+msgid "X-Large"
+msgstr "X-Большой"
 
 msgid "xs · sm · default · lg · icon-xs → icon-lg"
 msgstr "xs · sm · default · lg · icon-xs → icon-lg"

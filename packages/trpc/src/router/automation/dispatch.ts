@@ -80,6 +80,7 @@ export type DispatchableAutomation = Pick<
 	| "environmentId"
 	| "tags"
 	| "continueAgentSession"
+	| "machineSize"
 >;
 
 /**
