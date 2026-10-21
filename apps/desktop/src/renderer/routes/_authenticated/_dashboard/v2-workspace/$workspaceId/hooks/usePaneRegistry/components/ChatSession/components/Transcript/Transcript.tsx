@@ -248,6 +248,10 @@ export function Transcript({
 		turnRunning: groups.at(-1)?.turn?.status === "running",
 		readerScrolledAway,
 	});
+	useEffect(() => {
+		if (anchorRowKey === null) return;
+		scrollerRef.current.scrollToEnd({ behavior: "smooth" });
+	}, [anchorRowKey]);
 
 	const find = useTranscriptFind({
 		rows,
@@ -319,7 +323,6 @@ export function Transcript({
 		.map((row, offset) => {
 			const index = transcriptWindow.startIndex + offset;
 			const recent = index >= rows.length - RECENT_ROWS_RENDERED_IN_FULL;
-			const scrollAnchor = row.key === anchorRowKey;
 			return (
 				<TranscriptRowItem
 					canForkToWorktree={canForkToWorktree}
@@ -341,14 +344,13 @@ export function Transcript({
 					onToggleEntry={onToggleEntry}
 					rendered={
 						recent ||
-						scrollAnchor ||
+						row.key === anchorRowKey ||
 						seenRowKeys.has(row.key) ||
 						row.key === find.currentRowKey ||
 						row.key === revealRowKey
 					}
 					row={row}
 					rowRef={transcriptWindow.rowRef(row.key)}
-					scrollAnchor={scrollAnchor}
 					snapshot={snapshot}
 				/>
 			);
