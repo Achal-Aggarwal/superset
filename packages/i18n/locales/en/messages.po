@@ -431,6 +431,10 @@ msgstr "{0} is already used for tasks in this organization."
 msgid "{0} is not a repository the GitHub App is installed on"
 msgstr "{0} is not a repository the GitHub App is installed on"
 
+#. placeholder {0}: selected.name
+msgid "{0} is not running."
+msgstr "{0} is not running."
+
 #. placeholder {0}: host.name
 msgid "{0} is offline"
 msgstr "{0} is offline"
@@ -3063,6 +3067,9 @@ msgstr "Bold"
 msgid "Bold Text"
 msgstr "Bold Text"
 
+msgid "Boot"
+msgstr "Boot"
+
 #. placeholder {0}: selected.name
 msgid "Booting {0}…"
 msgstr "Booting {0}…"
@@ -4529,6 +4536,9 @@ msgstr "Connecting GitHub is not configured on this server"
 msgid "Connecting lets your agents read and act in {name} on your behalf. Review what you are granting before you continue."
 msgstr "Connecting lets your agents read and act in {name} on your behalf. Review what you are granting before you continue."
 
+msgid "Connecting to {deviceName}…"
+msgstr "Connecting to {deviceName}…"
+
 msgid "Connecting to the desktop…"
 msgstr "Connecting to the desktop…"
 
@@ -4819,6 +4829,9 @@ msgstr "Copy relative path"
 msgid "Copy Relative Path"
 msgstr "Copy Relative Path"
 
+msgid "Copy screenshot"
+msgstr "Copy screenshot"
+
 msgid "Copy Selection"
 msgstr "Copy Selection"
 
@@ -4994,6 +5007,9 @@ msgstr "Could not open Photos"
 msgid "Could not reach {0} to look for branch \"{1}\". Check your connection and access to {2}, then try again."
 msgstr "Could not reach {0} to look for branch \"{1}\". Check your connection and access to {2}, then try again."
 
+msgid "Could not reach {deviceName}."
+msgstr "Could not reach {deviceName}."
+
 msgid "Could not reach a mobile simulator."
 msgstr "Could not reach a mobile simulator."
 
@@ -5165,6 +5181,9 @@ msgstr "Couldn't copy path"
 
 msgid "Couldn't copy the image"
 msgstr "Couldn't copy the image"
+
+msgid "Couldn't copy the screenshot"
+msgstr "Couldn't copy the screenshot"
 
 msgid "Couldn't create workspace"
 msgstr "Couldn't create workspace"
@@ -5347,6 +5366,9 @@ msgstr "Couldn't stop the background task"
 
 msgid "Couldn't stop the chat"
 msgstr "Couldn't stop the chat"
+
+msgid "Couldn't take a screenshot"
+msgstr "Couldn't take a screenshot"
 
 msgid "Couldn't unstage changes"
 msgstr "Couldn't unstage changes"
@@ -14831,8 +14853,8 @@ msgstr "Scope"
 msgid "Scoring starts once the board can see {0} days of usage."
 msgstr "Scoring starts once the board can see {0} days of usage."
 
-msgid "Screenshot"
-msgstr "Screenshot"
+msgid "Screenshot copied"
+msgstr "Screenshot copied"
 
 msgid "Screenshot copied to clipboard"
 msgstr "Screenshot copied to clipboard"

@@ -431,6 +431,10 @@ msgstr "{0} est déjà utilisé pour des tâches dans cette organisation."
 msgid "{0} is not a repository the GitHub App is installed on"
 msgstr "{0} n’est pas un dépôt sur lequel la GitHub App est installée"
 
+#. placeholder {0}: selected.name
+msgid "{0} is not running."
+msgstr "{0} n’est pas démarré."
+
 #. placeholder {0}: host.name
 msgid "{0} is offline"
 msgstr "{0} est hors ligne"
@@ -3063,6 +3067,9 @@ msgstr "Gras"
 msgid "Bold Text"
 msgstr "Texte en gras"
 
+msgid "Boot"
+msgstr "Démarrer"
+
 #. placeholder {0}: selected.name
 msgid "Booting {0}…"
 msgstr "Démarrage de {0}…"
@@ -4529,6 +4536,9 @@ msgstr "La connexion GitHub n'est pas configurée sur ce serveur"
 msgid "Connecting lets your agents read and act in {name} on your behalf. Review what you are granting before you continue."
 msgstr "La connexion permet à vos agents de lire et d'agir dans {name} en votre nom. Vérifiez ce que vous accordez avant de continuer."
 
+msgid "Connecting to {deviceName}…"
+msgstr "Connexion à {deviceName}…"
+
 msgid "Connecting to the desktop…"
 msgstr "Connexion au bureau…"
 
@@ -4819,6 +4829,9 @@ msgstr "Copier le chemin relatif"
 msgid "Copy Relative Path"
 msgstr "Copier le chemin relatif"
 
+msgid "Copy screenshot"
+msgstr "Copier la capture d’écran"
+
 msgid "Copy Selection"
 msgstr "Copier la sélection"
 
@@ -4994,6 +5007,9 @@ msgstr "Impossible d'ouvrir Photos"
 msgid "Could not reach {0} to look for branch \"{1}\". Check your connection and access to {2}, then try again."
 msgstr "Impossible de joindre {0} pour chercher la branche « {1} ». Vérifiez votre connexion et votre accès à {2}, puis réessayez."
 
+msgid "Could not reach {deviceName}."
+msgstr "Impossible de joindre {deviceName}."
+
 msgid "Could not reach a mobile simulator."
 msgstr "Impossible de joindre un simulateur mobile."
 
@@ -5165,6 +5181,9 @@ msgstr "Impossible de copier le chemin"
 
 msgid "Couldn't copy the image"
 msgstr "Impossible de copier l’image"
+
+msgid "Couldn't copy the screenshot"
+msgstr "Impossible de copier la capture d’écran"
 
 msgid "Couldn't create workspace"
 msgstr "Impossible de créer l'espace de travail"
@@ -5347,6 +5366,9 @@ msgstr "Impossible d'arrêter la tâche en arrière-plan"
 
 msgid "Couldn't stop the chat"
 msgstr "Impossible d'arrêter la discussion"
+
+msgid "Couldn't take a screenshot"
+msgstr "Impossible de faire la capture d’écran"
 
 msgid "Couldn't unstage changes"
 msgstr "Impossible de désindexer les modifications"
@@ -14831,8 +14853,8 @@ msgstr "Portée"
 msgid "Scoring starts once the board can see {0} days of usage."
 msgstr "Le score démarre une fois que le classement dispose de {0} jours d'utilisation."
 
-msgid "Screenshot"
-msgstr "Capture d’écran"
+msgid "Screenshot copied"
+msgstr "Capture d’écran copiée"
 
 msgid "Screenshot copied to clipboard"
 msgstr "Capture d'écran copiée dans le presse-papiers"
