@@ -14,7 +14,7 @@ import {
 } from "@superset/shared/cloud-agent-launch";
 import type { TRPCRouterRecord } from "@trpc/server";
 import { TRPCError } from "@trpc/server";
-import { and, asc, desc, eq, isNotNull, ne } from "drizzle-orm";
+import { and, asc, desc, eq } from "drizzle-orm";
 import { z } from "zod";
 import { organizationMachineSizes } from "../../lib/billing/plan";
 import { assertCloudAccess, assertMember } from "../../lib/cloud-guards";
@@ -39,6 +39,7 @@ import { ensureDefaultEnvironment } from "../environment/default-environment";
 import { regionForRequest } from "../environment/region-for-request";
 import {
 	canOpenWorkspace,
+	isListed,
 	loadVisibleWorkspace,
 	notFound,
 	visibleTo,
@@ -46,6 +47,7 @@ import {
 import { recordCloudWorkspaceActivity } from "./activity";
 import { queueSettleWorkspace, settleWorkspaceNow } from "./meter";
 import { nextSandboxNameFor } from "./provision";
+import { listPullRequests } from "./pull-requests";
 import { queueReap } from "./reap";
 import { cloudWorkspaceRecordRouter } from "./record";
 import { cloudWorkspaceSharingRouter } from "./sharing";
@@ -187,18 +189,7 @@ export const cloudWorkspaceRouter = {
 					and(
 						eq(cloudWorkspaces.organizationId, input.organizationId),
 						visibleTo(ctx.userId),
-						// Deleted rows are never a workspace you can open, so they
-						// are only listed when archived ones are asked for.
-						// Everything else is listed from the moment it is created:
-						// the client renders provisioning and failed rows off
-						// `status` rather than being told they don't exist yet.
-						input.archived
-							? and(
-									eq(cloudWorkspaces.status, "deleted"),
-									// Rows deleted before archiving existed have no deletedAt and no box.
-									isNotNull(cloudWorkspaces.deletedAt),
-								)
-							: ne(cloudWorkspaces.status, "deleted"),
+						isListed(input.archived),
 					),
 				)
 				.orderBy(desc(cloudWorkspaces.createdAt));
@@ -260,6 +251,19 @@ export const cloudWorkspaceRouter = {
 				primary:
 					primaryByWorkspace.get(row.cloudWorkspaceId) === row.repositoryId,
 			}));
+		}),
+
+	pullRequests: jwtProcedure
+		.input(
+			z.object({
+				organizationId: z.string().uuid(),
+				archived: z.boolean().default(false),
+			}),
+		)
+		.query(async ({ ctx, input }) => {
+			await assertCloudAccess(ctx);
+			assertMember(ctx.organizationIds, input.organizationId);
+			return listPullRequests(input.organizationId, ctx.userId, input.archived);
 		}),
 
 	machineSizes: jwtProcedure
