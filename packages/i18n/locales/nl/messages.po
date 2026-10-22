@@ -1264,6 +1264,9 @@ msgstr "+{0} −{1} · {2, plural, one {# bestand} other {# bestanden}}"
 msgid "+{hidden} more"
 msgstr "+{hidden} meer"
 
+msgid "+{hiddenCount}"
+msgstr "+{hiddenCount}"
+
 msgid "+{hiddenCount} earlier"
 msgstr "+{hiddenCount} eerder"
 
@@ -2673,6 +2676,9 @@ msgstr "Bestanden bijvoegen"
 
 msgid "Attach image"
 msgstr "Afbeelding toevoegen"
+
+msgid "Attach to chat"
+msgstr "Aan chat toevoegen"
 
 msgid "Attached"
 msgstr "Gekoppeld"
@@ -4829,9 +4835,6 @@ msgstr "Relatief pad kopiëren"
 msgid "Copy Relative Path"
 msgstr "Relatief pad kopiëren"
 
-msgid "Copy screenshot"
-msgstr "Screenshot kopiëren"
-
 msgid "Copy Selection"
 msgstr "Selectie kopiëren"
 
@@ -5152,6 +5155,9 @@ msgstr "Kon de workspace niet om een beschrijving vragen"
 msgid "Couldn't attach files"
 msgstr "Kan bestanden niet bijvoegen"
 
+msgid "Couldn't attach the screenshot"
+msgstr "Kan de screenshot niet toevoegen"
+
 msgid "Couldn't branch into a new worktree"
 msgstr "Kon niet afsplitsen naar een nieuwe worktree"
 
@@ -5258,6 +5264,9 @@ msgstr "Kan de subagent niet naar de achtergrond verplaatsen"
 
 msgid "Couldn't name \"{name}\" automatically"
 msgstr "Kon \"{name}\" niet automatisch een naam geven"
+
+msgid "Couldn't open the screenshot"
+msgstr "Kan de screenshot niet openen"
 
 msgid "Couldn't parse this diff: {patchParseError}"
 msgstr "Kan deze diff niet parsen: {patchParseError}"
@@ -16984,6 +16993,9 @@ msgstr "Besturing overnemen"
 
 msgid "Take me home"
 msgstr "Naar de homepage"
+
+msgid "Take screenshot"
+msgstr "Screenshot maken"
 
 msgid "Taken"
 msgstr "Bezet"
