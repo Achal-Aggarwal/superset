@@ -11268,9 +11268,6 @@ msgstr "Kein Treffer"
 msgid "No matches"
 msgstr "Keine Treffer"
 
-msgid "No matching files"
-msgstr "Keine passenden Dateien"
-
 msgid "No matching MCP servers"
 msgstr "Keine passenden MCP-Server"
 

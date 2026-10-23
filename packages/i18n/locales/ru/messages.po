@@ -11268,9 +11268,6 @@ msgstr "Нет совпадений"
 msgid "No matches"
 msgstr "Нет совпадений"
 
-msgid "No matching files"
-msgstr "Нет подходящих файлов"
-
 msgid "No matching MCP servers"
 msgstr "Нет подходящих серверов MCP"
 
