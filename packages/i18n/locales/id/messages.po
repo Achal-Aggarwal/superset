@@ -4413,6 +4413,9 @@ msgstr "Commit"
 msgid "Committed"
 msgstr "Sudah di-commit"
 
+msgid "Committed with the repository and shared with everyone who works on it."
+msgstr "Di-commit bersama repositori dan dibagikan ke semua orang yang mengerjakannya."
+
 msgid "Committed, starting soon."
 msgstr "Sudah pasti, segera dimulai."
 
@@ -4467,6 +4470,12 @@ msgstr "component-showcase"
 
 msgid "Composable form layout — pairs with @superset/ui/form for react-hook-form"
 msgstr "Tata letak form yang bisa dikomposisi — berpasangan dengan @superset/ui/form untuk react-hook-form"
+
+msgid "Config file contents"
+msgstr "Isi file konfigurasi"
+
+msgid "config.json must be a JSON object"
+msgstr "config.json harus berupa objek JSON"
 
 msgid "Configure"
 msgstr "Atur"
@@ -4816,6 +4825,9 @@ msgstr "Percakapan"
 
 msgid "Conversation · Message"
 msgstr "Percakapan · Pesan"
+
+msgid "Convert to config.toml"
+msgstr "Konversi ke config.toml"
 
 msgid "Convert to draft"
 msgstr "Ubah menjadi draf"
@@ -9827,6 +9839,11 @@ msgstr "Batasi ke orang yang diundang?"
 msgid "Line {0}"
 msgstr "Baris {0}"
 
+#. placeholder {0}: problem.line
+#. placeholder {1}: problem.message
+msgid "Line {0}: {1}"
+msgstr "Baris {0}: {1}"
+
 msgid "line changed"
 msgstr "baris berubah"
 
@@ -11960,6 +11977,9 @@ msgstr "Hanya pemilik host atau pemilik organisasi yang bisa menghapus host ini"
 
 msgid "Only images can be attached to a comment"
 msgstr "Hanya gambar yang dapat dilampirkan ke komentar"
+
+msgid "Only on this machine: gitignored, and applied to every worktree of this repository. Any key set here replaces the shared one."
+msgstr "Hanya di mesin ini: diabaikan git dan diterapkan ke setiap worktree repositori ini. Setiap kunci yang diatur di sini menggantikan yang dibagikan."
 
 msgid "Only organization owners can modify these settings."
 msgstr "Hanya pemilik organisasi yang bisa mengubah pengaturan ini."
@@ -15941,6 +15961,9 @@ msgstr "Bagikan workspace"
 msgid "Share."
 msgstr "Bagikan."
 
+msgid "Shared"
+msgstr "Dibagikan"
+
 msgid "Shared across sessions using this login."
 msgstr "Dibagikan di semua sesi yang menggunakan login ini."
 
@@ -17525,6 +17548,9 @@ msgstr "Workspace cloud seharusnya sudah berjalan, tetapi tidak merespons tepat 
 msgid "The code expired. Start again."
 msgstr "Kode kedaluwarsa. Mulai lagi."
 
+msgid "The commands Superset runs to set up, run and archive this project's workspaces, from .superset/config.toml."
+msgstr "Perintah yang dijalankan Superset untuk menyiapkan, menjalankan, dan mengarsipkan workspace proyek ini, dari .superset/config.toml."
+
 msgid "The company raised an $11.5M seed round led by Union Square Ventures, with Y Combinator and Paul Graham. TechCrunch named it one of the standout startups from YC Demo Day."
 msgstr "Perusahaan ini meraih pendanaan seed sebesar 11,5 juta dolar AS yang dipimpin oleh Union Square Ventures, bersama Y Combinator dan Paul Graham. TechCrunch menyebutnya sebagai salah satu startup unggulan dari YC Demo Day."
 
@@ -18084,6 +18110,9 @@ msgstr "Proyek ini sudah tidak tersedia di perangkat Anda."
 
 msgid "This project isn't linked to a GitHub repository."
 msgstr "Proyek ini tidak tertaut ke repositori GitHub."
+
+msgid "This project still uses the older config.json. It keeps working; convert it to config.toml to use the new sections."
+msgstr "Proyek ini masih memakai config.json lama. File itu tetap berfungsi; konversikan ke config.toml untuk memakai bagian-bagian baru."
 
 msgid "This project's host is offline"
 msgstr "Host proyek ini sedang offline"
@@ -18908,6 +18937,9 @@ msgstr "Pembaruan siap"
 msgid "Update Required"
 msgstr "Pembaruan Diperlukan"
 
+msgid "Update Superset on this host to edit its workspace config."
+msgstr "Perbarui Superset di host ini untuk mengedit konfigurasi workspace-nya."
+
 msgid "update the branch prefix"
 msgstr "memperbarui prefix branch"
 
@@ -19728,6 +19760,9 @@ msgstr "Agen workspace"
 
 msgid "Workspace archived"
 msgstr "Workspace diarsipkan"
+
+msgid "Workspace config"
+msgstr "Konfigurasi workspace"
 
 msgid "Workspace created"
 msgstr "Workspace dibuat"

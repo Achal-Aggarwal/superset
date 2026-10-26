@@ -4413,6 +4413,9 @@ msgstr "コミット"
 msgid "Committed"
 msgstr "コミット済み"
 
+msgid "Committed with the repository and shared with everyone who works on it."
+msgstr "リポジトリにコミットされ、作業する全員で共有されます。"
+
 msgid "Committed, starting soon."
 msgstr "着手が決まっており、まもなく開始します。"
 
@@ -4467,6 +4470,12 @@ msgstr "component-showcase"
 
 msgid "Composable form layout — pairs with @superset/ui/form for react-hook-form"
 msgstr "組み合わせ可能なフォームレイアウト — react-hook-form用の@superset/ui/formと合わせて使います"
+
+msgid "Config file contents"
+msgstr "設定ファイルの内容"
+
+msgid "config.json must be a JSON object"
+msgstr "config.json は JSON オブジェクトである必要があります"
 
 msgid "Configure"
 msgstr "設定"
@@ -4816,6 +4825,9 @@ msgstr "会話"
 
 msgid "Conversation · Message"
 msgstr "Conversation · Message"
+
+msgid "Convert to config.toml"
+msgstr "config.toml に変換"
 
 msgid "Convert to draft"
 msgstr "ドラフトに変換"
@@ -9827,6 +9839,11 @@ msgstr "招待したユーザーのみに制限しますか？"
 msgid "Line {0}"
 msgstr "{0}行目"
 
+#. placeholder {0}: problem.line
+#. placeholder {1}: problem.message
+msgid "Line {0}: {1}"
+msgstr "{0} 行目: {1}"
+
 msgid "line changed"
 msgstr "行が変更されました"
 
@@ -11960,6 +11977,9 @@ msgstr "このホストを削除できるのはホストのオーナーまたは
 
 msgid "Only images can be attached to a comment"
 msgstr "コメントに添付できるのは画像のみです"
+
+msgid "Only on this machine: gitignored, and applied to every worktree of this repository. Any key set here replaces the shared one."
+msgstr "このマシンのみ: git で無視され、このリポジトリのすべてのワークツリーに適用されます。ここで設定したキーは共有の値を置き換えます。"
 
 msgid "Only organization owners can modify these settings."
 msgstr "これらの設定を変更できるのは組織のオーナーのみです。"
@@ -15941,6 +15961,9 @@ msgstr "ワークスペースを共有"
 msgid "Share."
 msgstr "共有。"
 
+msgid "Shared"
+msgstr "共有"
+
 msgid "Shared across sessions using this login."
 msgstr "このログインを使用するセッション間で共有されます。"
 
@@ -17525,6 +17548,9 @@ msgstr "クラウドワークスペースは起動しているはずですが、
 msgid "The code expired. Start again."
 msgstr "コードの有効期限が切れました。やり直してください。"
 
+msgid "The commands Superset runs to set up, run and archive this project's workspaces, from .superset/config.toml."
+msgstr "このプロジェクトのワークスペースをセットアップ、実行、アーカイブするときに Superset が実行するコマンド（.superset/config.toml）。"
+
 msgid "The company raised an $11.5M seed round led by Union Square Ventures, with Y Combinator and Paul Graham. TechCrunch named it one of the standout startups from YC Demo Day."
 msgstr "同社は、Union Square Ventures がリードし、Y Combinator と Paul Graham が参加した 1,150 万ドルのシードラウンドを調達しました。TechCrunch は同社を YC Demo Day の注目スタートアップの 1 社に選びました。"
 
@@ -18084,6 +18110,9 @@ msgstr "このプロジェクトはお使いのデバイスでは利用できな
 
 msgid "This project isn't linked to a GitHub repository."
 msgstr "このプロジェクトは GitHub リポジトリにリンクされていません。"
+
+msgid "This project still uses the older config.json. It keeps working; convert it to config.toml to use the new sections."
+msgstr "このプロジェクトはまだ以前の config.json を使っています。引き続き動作しますが、新しいセクションを使うには config.toml に変換してください。"
 
 msgid "This project's host is offline"
 msgstr "このプロジェクトのホストはオフラインです"
@@ -18908,6 +18937,9 @@ msgstr "アップデートの準備ができました"
 msgid "Update Required"
 msgstr "アップデートが必要です"
 
+msgid "Update Superset on this host to edit its workspace config."
+msgstr "ワークスペースの設定を編集するには、このホストの Superset を更新してください。"
+
 msgid "update the branch prefix"
 msgstr "ブランチのプレフィックスを更新する"
 
@@ -19728,6 +19760,9 @@ msgstr "ワークスペースのエージェント"
 
 msgid "Workspace archived"
 msgstr "ワークスペースをアーカイブしました"
+
+msgid "Workspace config"
+msgstr "ワークスペースの設定"
 
 msgid "Workspace created"
 msgstr "ワークスペースを作成しました"

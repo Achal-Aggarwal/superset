@@ -4413,6 +4413,9 @@ msgstr "Commits"
 msgid "Committed"
 msgstr "Gecommit"
 
+msgid "Committed with the repository and shared with everyone who works on it."
+msgstr "Gecommit met de repository en gedeeld met iedereen die eraan werkt."
+
 msgid "Committed, starting soon."
 msgstr "Toegezegd, start binnenkort."
 
@@ -4467,6 +4470,12 @@ msgstr "component-showcase"
 
 msgid "Composable form layout — pairs with @superset/ui/form for react-hook-form"
 msgstr "Samenstelbare formulierlay-out — combineert met @superset/ui/form voor react-hook-form"
+
+msgid "Config file contents"
+msgstr "Inhoud van het configuratiebestand"
+
+msgid "config.json must be a JSON object"
+msgstr "config.json moet een JSON-object zijn"
 
 msgid "Configure"
 msgstr "Configureren"
@@ -4816,6 +4825,9 @@ msgstr "Gesprek"
 
 msgid "Conversation · Message"
 msgstr "Gesprek · Bericht"
+
+msgid "Convert to config.toml"
+msgstr "Omzetten naar config.toml"
 
 msgid "Convert to draft"
 msgstr "Omzetten naar concept"
@@ -9827,6 +9839,11 @@ msgstr "Beperken tot uitgenodigde personen?"
 msgid "Line {0}"
 msgstr "Regel {0}"
 
+#. placeholder {0}: problem.line
+#. placeholder {1}: problem.message
+msgid "Line {0}: {1}"
+msgstr "Regel {0}: {1}"
+
 msgid "line changed"
 msgstr "regel gewijzigd"
 
@@ -11960,6 +11977,9 @@ msgstr "Alleen eigenaren van de host of organisatie-eigenaren kunnen deze host v
 
 msgid "Only images can be attached to a comment"
 msgstr "Aan een reactie kunnen alleen afbeeldingen worden toegevoegd"
+
+msgid "Only on this machine: gitignored, and applied to every worktree of this repository. Any key set here replaces the shared one."
+msgstr "Alleen op deze machine: genegeerd door git en toegepast op elke worktree van deze repository. Elke sleutel die je hier instelt, vervangt de gedeelde."
 
 msgid "Only organization owners can modify these settings."
 msgstr "Alleen eigenaren van de organisatie kunnen deze instellingen wijzigen."
@@ -15941,6 +15961,9 @@ msgstr "Werkruimte delen"
 msgid "Share."
 msgstr "Deel."
 
+msgid "Shared"
+msgstr "Gedeeld"
+
 msgid "Shared across sessions using this login."
 msgstr "Gedeeld door sessies die deze aanmelding gebruiken."
 
@@ -17525,6 +17548,9 @@ msgstr "De cloudwerkruimte had gestart moeten zijn, maar reageerde niet op tijd.
 msgid "The code expired. Start again."
 msgstr "De code is verlopen. Begin opnieuw."
 
+msgid "The commands Superset runs to set up, run and archive this project's workspaces, from .superset/config.toml."
+msgstr "De opdrachten die Superset uitvoert om de werkruimtes van dit project in te richten, te starten en te archiveren, uit .superset/config.toml."
+
 msgid "The company raised an $11.5M seed round led by Union Square Ventures, with Y Combinator and Paul Graham. TechCrunch named it one of the standout startups from YC Demo Day."
 msgstr "Het bedrijf haalde een seedronde van 11,5 miljoen dollar op onder leiding van Union Square Ventures, met Y Combinator en Paul Graham. TechCrunch noemde het een van de opvallendste startups van YC Demo Day."
 
@@ -18084,6 +18110,9 @@ msgstr "Dit project is niet meer beschikbaar op je apparaten."
 
 msgid "This project isn't linked to a GitHub repository."
 msgstr "Dit project is niet gekoppeld aan een GitHub-repository."
+
+msgid "This project still uses the older config.json. It keeps working; convert it to config.toml to use the new sections."
+msgstr "Dit project gebruikt nog de oudere config.json. Die blijft werken; zet hem om naar config.toml om de nieuwe secties te gebruiken."
 
 msgid "This project's host is offline"
 msgstr "De host van dit project is offline"
@@ -18908,6 +18937,9 @@ msgstr "Update gereed"
 msgid "Update Required"
 msgstr "Update vereist"
 
+msgid "Update Superset on this host to edit its workspace config."
+msgstr "Werk Superset op deze host bij om de werkruimteconfiguratie te bewerken."
+
 msgid "update the branch prefix"
 msgstr "de branchprefix bijwerken"
 
@@ -19728,6 +19760,9 @@ msgstr "Werkruimte-agents"
 
 msgid "Workspace archived"
 msgstr "Werkruimte gearchiveerd"
+
+msgid "Workspace config"
+msgstr "Werkruimteconfiguratie"
 
 msgid "Workspace created"
 msgstr "Werkruimte aangemaakt"

@@ -4413,6 +4413,9 @@ msgstr "Коммиты"
 msgid "Committed"
 msgstr "Закоммичено"
 
+msgid "Committed with the repository and shared with everyone who works on it."
+msgstr "Хранится в репозитории и доступен всем, кто с ним работает."
+
 msgid "Committed, starting soon."
 msgstr "Взяли в работу, скоро начнём."
 
@@ -4467,6 +4470,12 @@ msgstr "component-showcase"
 
 msgid "Composable form layout — pairs with @superset/ui/form for react-hook-form"
 msgstr "Составная раскладка формы — сочетается с @superset/ui/form для react-hook-form"
+
+msgid "Config file contents"
+msgstr "Содержимое файла конфигурации"
+
+msgid "config.json must be a JSON object"
+msgstr "config.json должен быть объектом JSON"
 
 msgid "Configure"
 msgstr "Настроить"
@@ -4816,6 +4825,9 @@ msgstr "Диалог"
 
 msgid "Conversation · Message"
 msgstr "Диалог · сообщение"
+
+msgid "Convert to config.toml"
+msgstr "Преобразовать в config.toml"
 
 msgid "Convert to draft"
 msgstr "Перевести в черновик"
@@ -9827,6 +9839,11 @@ msgstr "Оставить доступ только приглашённым?"
 msgid "Line {0}"
 msgstr "Строка {0}"
 
+#. placeholder {0}: problem.line
+#. placeholder {1}: problem.message
+msgid "Line {0}: {1}"
+msgstr "Строка {0}: {1}"
+
 msgid "line changed"
 msgstr "строка изменена"
 
@@ -11960,6 +11977,9 @@ msgstr "Удалить этот хост могут только владель�
 
 msgid "Only images can be attached to a comment"
 msgstr "К комментарию можно прикреплять только изображения"
+
+msgid "Only on this machine: gitignored, and applied to every worktree of this repository. Any key set here replaces the shared one."
+msgstr "Только на этом компьютере: игнорируется git и применяется к каждому worktree этого репозитория. Любой заданный здесь ключ заменяет общий."
 
 msgid "Only organization owners can modify these settings."
 msgstr "Изменять эти настройки могут только владельцы организации."
@@ -15941,6 +15961,9 @@ msgstr "Поделиться рабочей областью"
 msgid "Share."
 msgstr "Поделитесь."
 
+msgid "Shared"
+msgstr "Общий"
+
 msgid "Shared across sessions using this login."
 msgstr "Общий лимит для сеансов с этим аккаунтом."
 
@@ -17525,6 +17548,9 @@ msgstr "Облачная рабочая область должна была з�
 msgid "The code expired. Start again."
 msgstr "Срок действия кода истёк. Начните заново."
 
+msgid "The commands Superset runs to set up, run and archive this project's workspaces, from .superset/config.toml."
+msgstr "Команды, которые Superset выполняет при подготовке, запуске и архивации рабочих областей этого проекта, из .superset/config.toml."
+
 msgid "The company raised an $11.5M seed round led by Union Square Ventures, with Y Combinator and Paul Graham. TechCrunch named it one of the standout startups from YC Demo Day."
 msgstr "Компания привлекла 11,5 млн долларов в посевном раунде под руководством Union Square Ventures при участии Y Combinator и Пола Грэма. TechCrunch назвал её одним из самых заметных стартапов YC Demo Day."
 
@@ -18084,6 +18110,9 @@ msgstr "Этот проект больше недоступен на ваших 
 
 msgid "This project isn't linked to a GitHub repository."
 msgstr "Этот проект не связан с репозиторием GitHub."
+
+msgid "This project still uses the older config.json. It keeps working; convert it to config.toml to use the new sections."
+msgstr "Этот проект всё ещё использует старый config.json. Он продолжает работать; преобразуйте его в config.toml, чтобы использовать новые разделы."
 
 msgid "This project's host is offline"
 msgstr "Хост этого проекта офлайн"
@@ -18908,6 +18937,9 @@ msgstr "Обновление готово"
 msgid "Update Required"
 msgstr "Требуется обновление"
 
+msgid "Update Superset on this host to edit its workspace config."
+msgstr "Обновите Superset на этом хосте, чтобы изменить конфигурацию рабочей области."
+
 msgid "update the branch prefix"
 msgstr "обновить префикс ветки"
 
@@ -19728,6 +19760,9 @@ msgstr "Агенты рабочей области"
 
 msgid "Workspace archived"
 msgstr "Рабочая область в архиве"
+
+msgid "Workspace config"
+msgstr "Конфигурация рабочей области"
 
 msgid "Workspace created"
 msgstr "Рабочая область создана"

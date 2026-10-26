@@ -4413,6 +4413,9 @@ msgstr "Commit"
 msgid "Committed"
 msgstr "Đã commit"
 
+msgid "Committed with the repository and shared with everyone who works on it."
+msgstr "Được commit cùng repository và chia sẻ với mọi người cùng làm việc trên đó."
+
 msgid "Committed, starting soon."
 msgstr "Đã cam kết, sắp bắt đầu."
 
@@ -4467,6 +4470,12 @@ msgstr "component-showcase"
 
 msgid "Composable form layout — pairs with @superset/ui/form for react-hook-form"
 msgstr "Bố cục form ghép được — dùng chung với @superset/ui/form cho react-hook-form"
+
+msgid "Config file contents"
+msgstr "Nội dung tệp cấu hình"
+
+msgid "config.json must be a JSON object"
+msgstr "config.json phải là một đối tượng JSON"
 
 msgid "Configure"
 msgstr "Cấu hình"
@@ -4816,6 +4825,9 @@ msgstr "Cuộc thảo luận"
 
 msgid "Conversation · Message"
 msgstr "Hội thoại · Tin nhắn"
+
+msgid "Convert to config.toml"
+msgstr "Chuyển sang config.toml"
 
 msgid "Convert to draft"
 msgstr "Chuyển thành bản nháp"
@@ -9827,6 +9839,11 @@ msgstr "Chỉ cho những người được mời?"
 msgid "Line {0}"
 msgstr "Dòng {0}"
 
+#. placeholder {0}: problem.line
+#. placeholder {1}: problem.message
+msgid "Line {0}: {1}"
+msgstr "Dòng {0}: {1}"
+
 msgid "line changed"
 msgstr "dòng đã thay đổi"
 
@@ -11960,6 +11977,9 @@ msgstr "Chỉ chủ sở hữu host hoặc chủ sở hữu tổ chức mới x�
 
 msgid "Only images can be attached to a comment"
 msgstr "Chỉ có thể đính kèm hình ảnh vào bình luận"
+
+msgid "Only on this machine: gitignored, and applied to every worktree of this repository. Any key set here replaces the shared one."
+msgstr "Chỉ trên máy này: được git bỏ qua và áp dụng cho mọi worktree của repository này. Mọi khóa đặt ở đây sẽ thay thế khóa dùng chung."
 
 msgid "Only organization owners can modify these settings."
 msgstr "Chỉ chủ sở hữu tổ chức mới sửa được các cài đặt này."
@@ -15941,6 +15961,9 @@ msgstr "Chia sẻ workspace"
 msgid "Share."
 msgstr "Chia sẻ."
 
+msgid "Shared"
+msgstr "Dùng chung"
+
 msgid "Shared across sessions using this login."
 msgstr "Dùng chung giữa các phiên sử dụng tài khoản đăng nhập này."
 
@@ -17525,6 +17548,9 @@ msgstr "Workspace cloud lẽ ra đã khởi động nhưng không phản hồi k
 msgid "The code expired. Start again."
 msgstr "Mã đã hết hạn. Hãy bắt đầu lại."
 
+msgid "The commands Superset runs to set up, run and archive this project's workspaces, from .superset/config.toml."
+msgstr "Các lệnh Superset chạy để thiết lập, chạy và lưu trữ các workspace của dự án này, từ .superset/config.toml."
+
 msgid "The company raised an $11.5M seed round led by Union Square Ventures, with Y Combinator and Paul Graham. TechCrunch named it one of the standout startups from YC Demo Day."
 msgstr "Công ty đã gọi được vòng hạt giống 11,5 triệu USD do Union Square Ventures dẫn dắt, cùng Y Combinator và Paul Graham. TechCrunch đã chọn công ty là một trong những startup nổi bật tại YC Demo Day."
 
@@ -18084,6 +18110,9 @@ msgstr "Dự án này không còn khả dụng trên các thiết bị của b�
 
 msgid "This project isn't linked to a GitHub repository."
 msgstr "Dự án này chưa được liên kết với kho lưu trữ GitHub."
+
+msgid "This project still uses the older config.json. It keeps working; convert it to config.toml to use the new sections."
+msgstr "Dự án này vẫn dùng config.json cũ. Nó vẫn hoạt động; hãy chuyển sang config.toml để dùng các phần mới."
 
 msgid "This project's host is offline"
 msgstr "Host của dự án này đang ngoại tuyến"
@@ -18908,6 +18937,9 @@ msgstr "Bản cập nhật đã sẵn sàng"
 msgid "Update Required"
 msgstr "Cần cập nhật"
 
+msgid "Update Superset on this host to edit its workspace config."
+msgstr "Hãy cập nhật Superset trên máy chủ này để chỉnh sửa cấu hình workspace."
+
 msgid "update the branch prefix"
 msgstr "cập nhật tiền tố nhánh"
 
@@ -19728,6 +19760,9 @@ msgstr "Agent của workspace"
 
 msgid "Workspace archived"
 msgstr "Đã lưu trữ workspace"
+
+msgid "Workspace config"
+msgstr "Cấu hình workspace"
 
 msgid "Workspace created"
 msgstr "Đã tạo workspace"

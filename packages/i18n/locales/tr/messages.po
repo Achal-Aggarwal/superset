@@ -4413,6 +4413,9 @@ msgstr "Commit'ler"
 msgid "Committed"
 msgstr "Commit'lenmiş"
 
+msgid "Committed with the repository and shared with everyone who works on it."
+msgstr "Depoyla birlikte commit edilir ve üzerinde çalışan herkesle paylaşılır."
+
 msgid "Committed, starting soon."
 msgstr "Kararlaştırıldı, yakında başlıyor."
 
@@ -4467,6 +4470,12 @@ msgstr "component-showcase"
 
 msgid "Composable form layout — pairs with @superset/ui/form for react-hook-form"
 msgstr "Birleştirilebilir form düzeni — react-hook-form için @superset/ui/form ile birlikte kullanılır"
+
+msgid "Config file contents"
+msgstr "Yapılandırma dosyasının içeriği"
+
+msgid "config.json must be a JSON object"
+msgstr "config.json bir JSON nesnesi olmalıdır"
 
 msgid "Configure"
 msgstr "Yapılandır"
@@ -4816,6 +4825,9 @@ msgstr "Konuşma"
 
 msgid "Conversation · Message"
 msgstr "Konuşma · Mesaj"
+
+msgid "Convert to config.toml"
+msgstr "config.toml'a dönüştür"
 
 msgid "Convert to draft"
 msgstr "Taslağa dönüştür"
@@ -9827,6 +9839,11 @@ msgstr "Davet edilen kişilerle sınırlansın mı?"
 msgid "Line {0}"
 msgstr "{0}. satır"
 
+#. placeholder {0}: problem.line
+#. placeholder {1}: problem.message
+msgid "Line {0}: {1}"
+msgstr "Satır {0}: {1}"
+
 msgid "line changed"
 msgstr "satır değişti"
 
@@ -11960,6 +11977,9 @@ msgstr "Bu host'u yalnızca host sahipleri veya kuruluş sahipleri silebilir"
 
 msgid "Only images can be attached to a comment"
 msgstr "Bir yoruma yalnızca görsel eklenebilir"
+
+msgid "Only on this machine: gitignored, and applied to every worktree of this repository. Any key set here replaces the shared one."
+msgstr "Yalnızca bu makinede: git tarafından yok sayılır ve bu deponun her worktree'sine uygulanır. Burada ayarlanan her anahtar paylaşılanın yerini alır."
 
 msgid "Only organization owners can modify these settings."
 msgstr "Bu ayarları yalnızca kuruluş sahipleri değiştirebilir."
@@ -15941,6 +15961,9 @@ msgstr "Çalışma alanını paylaş"
 msgid "Share."
 msgstr "Paylaşın."
 
+msgid "Shared"
+msgstr "Paylaşılan"
+
 msgid "Shared across sessions using this login."
 msgstr "Bu hesabı kullanan oturumlar arasında paylaşılır."
 
@@ -17525,6 +17548,9 @@ msgstr "Bulut çalışma alanının başlamış olması gerekiyordu ancak zaman�
 msgid "The code expired. Start again."
 msgstr "Kodun süresi doldu. Yeniden başlayın."
 
+msgid "The commands Superset runs to set up, run and archive this project's workspaces, from .superset/config.toml."
+msgstr "Superset'in bu projenin çalışma alanlarını hazırlamak, çalıştırmak ve arşivlemek için çalıştırdığı komutlar (.superset/config.toml)."
+
 msgid "The company raised an $11.5M seed round led by Union Square Ventures, with Y Combinator and Paul Graham. TechCrunch named it one of the standout startups from YC Demo Day."
 msgstr "Şirket, Union Square Ventures liderliğinde, Y Combinator ve Paul Graham'ın katılımıyla 11,5 milyon dolarlık tohum yatırımı aldı. TechCrunch, şirketi YC Demo Day'in öne çıkan girişimlerinden biri olarak gösterdi."
 
@@ -18084,6 +18110,9 @@ msgstr "Bu proje artık cihazlarınızda kullanılamıyor."
 
 msgid "This project isn't linked to a GitHub repository."
 msgstr "Bu proje bir GitHub deposuna bağlı değil."
+
+msgid "This project still uses the older config.json. It keeps working; convert it to config.toml to use the new sections."
+msgstr "Bu proje hâlâ eski config.json dosyasını kullanıyor. Çalışmaya devam eder; yeni bölümleri kullanmak için config.toml'a dönüştürün."
 
 msgid "This project's host is offline"
 msgstr "Bu projenin host'u çevrimdışı"
@@ -18908,6 +18937,9 @@ msgstr "Güncelleme hazır"
 msgid "Update Required"
 msgstr "Güncelleme gerekli"
 
+msgid "Update Superset on this host to edit its workspace config."
+msgstr "Çalışma alanı yapılandırmasını düzenlemek için bu ana bilgisayardaki Superset'i güncelleyin."
+
 msgid "update the branch prefix"
 msgstr "dal ön ekini güncelleme"
 
@@ -19728,6 +19760,9 @@ msgstr "Çalışma alanı ajanları"
 
 msgid "Workspace archived"
 msgstr "Çalışma alanı arşivlendi"
+
+msgid "Workspace config"
+msgstr "Çalışma alanı yapılandırması"
 
 msgid "Workspace created"
 msgstr "Çalışma alanı oluşturuldu"

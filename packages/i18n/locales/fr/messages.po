@@ -4413,6 +4413,9 @@ msgstr "Commits"
 msgid "Committed"
 msgstr "Commités"
 
+msgid "Committed with the repository and shared with everyone who works on it."
+msgstr "Versionné avec le dépôt et partagé avec toutes les personnes qui y travaillent."
+
 msgid "Committed, starting soon."
 msgstr "Engagé, démarrage imminent."
 
@@ -4467,6 +4470,12 @@ msgstr "component-showcase"
 
 msgid "Composable form layout — pairs with @superset/ui/form for react-hook-form"
 msgstr "Disposition de formulaire composable — s'associe à @superset/ui/form pour react-hook-form"
+
+msgid "Config file contents"
+msgstr "Contenu du fichier de configuration"
+
+msgid "config.json must be a JSON object"
+msgstr "config.json doit être un objet JSON"
 
 msgid "Configure"
 msgstr "Configurer"
@@ -4816,6 +4825,9 @@ msgstr "Conversation"
 
 msgid "Conversation · Message"
 msgstr "Conversation · Message"
+
+msgid "Convert to config.toml"
+msgstr "Convertir en config.toml"
 
 msgid "Convert to draft"
 msgstr "Convertir en brouillon"
@@ -9827,6 +9839,11 @@ msgstr "Limiter aux personnes invitées ?"
 msgid "Line {0}"
 msgstr "Ligne {0}"
 
+#. placeholder {0}: problem.line
+#. placeholder {1}: problem.message
+msgid "Line {0}: {1}"
+msgstr "Ligne {0} : {1}"
+
 msgid "line changed"
 msgstr "ligne modifiée"
 
@@ -11960,6 +11977,9 @@ msgstr "Seuls les propriétaires de l'hôte ou les propriétaires de l'organisat
 
 msgid "Only images can be attached to a comment"
 msgstr "Seules des images peuvent être jointes à un commentaire"
+
+msgid "Only on this machine: gitignored, and applied to every worktree of this repository. Any key set here replaces the shared one."
+msgstr "Uniquement sur cette machine : ignoré par git et appliqué à chaque worktree de ce dépôt. Toute clé définie ici remplace la clé partagée."
 
 msgid "Only organization owners can modify these settings."
 msgstr "Seuls les propriétaires de l'organisation peuvent modifier ces paramètres."
@@ -15941,6 +15961,9 @@ msgstr "Partager l’espace de travail"
 msgid "Share."
 msgstr "Partagez."
 
+msgid "Shared"
+msgstr "Partagé"
+
 msgid "Shared across sessions using this login."
 msgstr "Partagé entre les sessions utilisant cette connexion."
 
@@ -17525,6 +17548,9 @@ msgstr "L'espace de travail cloud aurait dû démarrer, mais n'a pas répondu à
 msgid "The code expired. Start again."
 msgstr "Le code a expiré. Recommencez."
 
+msgid "The commands Superset runs to set up, run and archive this project's workspaces, from .superset/config.toml."
+msgstr "Les commandes que Superset exécute pour préparer, lancer et archiver les espaces de travail de ce projet, depuis .superset/config.toml."
+
 msgid "The company raised an $11.5M seed round led by Union Square Ventures, with Y Combinator and Paul Graham. TechCrunch named it one of the standout startups from YC Demo Day."
 msgstr "L’entreprise a levé un tour de table d’amorçage de 11,5 millions de dollars mené par Union Square Ventures, avec Y Combinator et Paul Graham. TechCrunch l’a citée parmi les startups les plus remarquables du YC Demo Day."
 
@@ -18084,6 +18110,9 @@ msgstr "Ce projet n'est plus disponible sur vos appareils."
 
 msgid "This project isn't linked to a GitHub repository."
 msgstr "Ce projet n'est lié à aucun dépôt GitHub."
+
+msgid "This project still uses the older config.json. It keeps working; convert it to config.toml to use the new sections."
+msgstr "Ce projet utilise encore l'ancien config.json. Il fonctionne toujours ; convertissez-le en config.toml pour utiliser les nouvelles sections."
 
 msgid "This project's host is offline"
 msgstr "L'hôte de ce projet est hors ligne"
@@ -18908,6 +18937,9 @@ msgstr "Mise à jour prête"
 msgid "Update Required"
 msgstr "Mise à jour requise"
 
+msgid "Update Superset on this host to edit its workspace config."
+msgstr "Mettez à jour Superset sur cet hôte pour modifier la configuration de l'espace de travail."
+
 msgid "update the branch prefix"
 msgstr "mettre à jour le préfixe de branche"
 
@@ -19728,6 +19760,9 @@ msgstr "Agents des espaces de travail"
 
 msgid "Workspace archived"
 msgstr "Espace de travail archivé"
+
+msgid "Workspace config"
+msgstr "Configuration de l'espace de travail"
 
 msgid "Workspace created"
 msgstr "Espace de travail créé"

@@ -4413,6 +4413,9 @@ msgstr "Commits"
 msgid "Committed"
 msgstr "Committed"
 
+msgid "Committed with the repository and shared with everyone who works on it."
+msgstr "Committed with the repository and shared with everyone who works on it."
+
 msgid "Committed, starting soon."
 msgstr "Committed, starting soon."
 
@@ -4467,6 +4470,12 @@ msgstr "component-showcase"
 
 msgid "Composable form layout — pairs with @superset/ui/form for react-hook-form"
 msgstr "Composable form layout — pairs with @superset/ui/form for react-hook-form"
+
+msgid "Config file contents"
+msgstr "Config file contents"
+
+msgid "config.json must be a JSON object"
+msgstr "config.json must be a JSON object"
 
 msgid "Configure"
 msgstr "Configure"
@@ -4816,6 +4825,9 @@ msgstr "Conversation"
 
 msgid "Conversation · Message"
 msgstr "Conversation · Message"
+
+msgid "Convert to config.toml"
+msgstr "Convert to config.toml"
 
 msgid "Convert to draft"
 msgstr "Convert to draft"
@@ -9827,6 +9839,11 @@ msgstr "Limit to people invited?"
 msgid "Line {0}"
 msgstr "Line {0}"
 
+#. placeholder {0}: problem.line
+#. placeholder {1}: problem.message
+msgid "Line {0}: {1}"
+msgstr "Line {0}: {1}"
+
 msgid "line changed"
 msgstr "line changed"
 
@@ -11960,6 +11977,9 @@ msgstr "Only host owners or organization owners can delete this host"
 
 msgid "Only images can be attached to a comment"
 msgstr "Only images can be attached to a comment"
+
+msgid "Only on this machine: gitignored, and applied to every worktree of this repository. Any key set here replaces the shared one."
+msgstr "Only on this machine: gitignored, and applied to every worktree of this repository. Any key set here replaces the shared one."
 
 msgid "Only organization owners can modify these settings."
 msgstr "Only organization owners can modify these settings."
@@ -15941,6 +15961,9 @@ msgstr "Share workspace"
 msgid "Share."
 msgstr "Share."
 
+msgid "Shared"
+msgstr "Shared"
+
 msgid "Shared across sessions using this login."
 msgstr "Shared across sessions using this login."
 
@@ -17525,6 +17548,9 @@ msgstr "The cloud workspace should have started but didn't answer in time. The n
 msgid "The code expired. Start again."
 msgstr "The code expired. Start again."
 
+msgid "The commands Superset runs to set up, run and archive this project's workspaces, from .superset/config.toml."
+msgstr "The commands Superset runs to set up, run and archive this project's workspaces, from .superset/config.toml."
+
 msgid "The company raised an $11.5M seed round led by Union Square Ventures, with Y Combinator and Paul Graham. TechCrunch named it one of the standout startups from YC Demo Day."
 msgstr "The company raised an $11.5M seed round led by Union Square Ventures, with Y Combinator and Paul Graham. TechCrunch named it one of the standout startups from YC Demo Day."
 
@@ -18084,6 +18110,9 @@ msgstr "This project is no longer available on your devices."
 
 msgid "This project isn't linked to a GitHub repository."
 msgstr "This project isn't linked to a GitHub repository."
+
+msgid "This project still uses the older config.json. It keeps working; convert it to config.toml to use the new sections."
+msgstr "This project still uses the older config.json. It keeps working; convert it to config.toml to use the new sections."
 
 msgid "This project's host is offline"
 msgstr "This project's host is offline"
@@ -18908,6 +18937,9 @@ msgstr "Update ready"
 msgid "Update Required"
 msgstr "Update Required"
 
+msgid "Update Superset on this host to edit its workspace config."
+msgstr "Update Superset on this host to edit its workspace config."
+
 msgid "update the branch prefix"
 msgstr "update the branch prefix"
 
@@ -19728,6 +19760,9 @@ msgstr "Workspace agents"
 
 msgid "Workspace archived"
 msgstr "Workspace archived"
+
+msgid "Workspace config"
+msgstr "Workspace config"
 
 msgid "Workspace created"
 msgstr "Workspace created"
