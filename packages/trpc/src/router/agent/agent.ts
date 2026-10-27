@@ -1,5 +1,10 @@
+import {
+	interruptTurn,
+	MAX_PROMPT_CHARS,
+} from "@superset/agent-harness/session";
 import { db, dbWs } from "@superset/db/client";
 import {
+	agentSessions,
 	agents,
 	agentTurns,
 	channelMembers,
@@ -11,12 +16,16 @@ import {
 	isDevAvatar,
 	randomDevAvatar,
 } from "@superset/shared/dev-avatar";
+import { signAgentSessionTicket } from "@superset/shared/usercontent";
 import type { TRPCRouterRecord } from "@trpc/server";
 import { and, asc, desc, eq, exists, isNull, sql } from "drizzle-orm";
 import { z } from "zod";
+import { env } from "../../env";
+import { agentTemporal } from "../../lib/agent-runtime";
 import { protectedProcedure } from "../../trpc";
 import { agentNotFound, loadAgentAccess, loadManagedAgent } from "./access";
 import { ensureDirectMessage } from "./direct-message";
+import { submitPrompt } from "./turns";
 
 const agentIdSchema = z.object({ agentId: z.string().uuid() });
 const avatarSchema = z.custom<DevAvatar>(isDevAvatar, "Invalid avatar");
@@ -213,4 +222,123 @@ export const agentRouter = {
 			);
 			return ensureDirectMessage(agent, ctx.session.user.id);
 		}),
+
+	/** Where the person in a DM reads its live session log. */
+	sessionStream: protectedProcedure
+		.input(z.object({ sessionId: z.string().uuid() }))
+		.mutation(async ({ ctx, input }) => {
+			const session = await loadOwnSession(
+				ctx.session.user.id,
+				input.sessionId,
+			);
+			const expiresInSeconds = 15 * 60;
+			const ticket = await signAgentSessionTicket(env.AGENT_SESSION_SECRET, {
+				sessionId: session.id,
+				scope: "read",
+				userId: ctx.session.user.id,
+				exp: Math.floor(Date.now() / 1000) + expiresInSeconds,
+			});
+			return {
+				url: `${env.REALTIME_URL}/v2/agent-runtime/sessions/${session.id}/stream`,
+				baseUrl: `${env.REALTIME_URL}/v2/agent-runtime`,
+				ticket,
+				expiresInSeconds,
+			};
+		}),
+
+	interruptTurn: protectedProcedure
+		.input(z.object({ sessionId: z.string().uuid() }))
+		.mutation(async ({ ctx, input }) => {
+			const session = await loadOwnSession(
+				ctx.session.user.id,
+				input.sessionId,
+			);
+			await interruptTurn(await agentTemporal(), session.id);
+			return { interrupted: true };
+		}),
+
+	/** The person's DM sessions, newest first; a cloud workspace narrows them to that box. */
+	listSessions: protectedProcedure
+		.input(
+			z.object({
+				organizationId: z.string().uuid().optional(),
+				cloudWorkspaceId: z.string().uuid().optional(),
+			}),
+		)
+		.query(async ({ ctx, input }) => {
+			const userId = ctx.session.user.id;
+			return db
+				.select({
+					sessionId: agentSessions.id,
+					agentId: agents.id,
+					agentName: agents.name,
+					cloudWorkspaceId: agentSessions.cloudWorkspaceId,
+					lastActivityAt: agentSessions.lastActivityAt,
+					running: sql<boolean>`exists (select 1 from ${agentTurns} where ${agentTurns.sessionId} = ${agentSessions.id} and ${agentTurns.status} = 'running')`,
+				})
+				.from(agentSessions)
+				.innerJoin(agents, eq(agents.id, agentSessions.agentId))
+				.where(
+					and(
+						input.organizationId
+							? eq(agentSessions.organizationId, input.organizationId)
+							: undefined,
+						eq(agentSessions.kind, "dm"),
+						eq(agentSessions.userId, userId),
+						isNull(agents.archivedAt),
+						input.cloudWorkspaceId
+							? eq(agentSessions.cloudWorkspaceId, input.cloudWorkspaceId)
+							: undefined,
+					),
+				)
+				.orderBy(desc(agentSessions.lastActivityAt));
+		}),
+
+	/** A message in a session the person already has open, as chat sends it. */
+	promptSession: protectedProcedure
+		.input(
+			z.object({
+				sessionId: z.string().uuid(),
+				promptId: z.string().min(1).max(200),
+				text: z.string().trim().min(1).max(MAX_PROMPT_CHARS),
+			}),
+		)
+		.mutation(async ({ ctx, input }) => {
+			const userId = ctx.session.user.id;
+			const session = await loadOwnSession(userId, input.sessionId);
+			const [agent] = await db
+				.select({ id: agents.id, organizationId: agents.organizationId })
+				.from(agents)
+				.where(eq(agents.id, session.agentId))
+				.limit(1);
+			if (!agent) throw agentNotFound();
+			const turn = await submitPrompt({
+				agent,
+				sessionId: session.id,
+				actingUserId: userId,
+				promptId: input.promptId,
+				text: input.text,
+				reason: "direct_message",
+			});
+			return { sessionId: session.id, ...turn };
+		}),
 } satisfies TRPCRouterRecord;
+
+/** A DM session belongs to the person it is with; anything else reads as not found. */
+async function loadOwnSession(userId: string, sessionId: string) {
+	const [session] = await db
+		.select({ id: agentSessions.id, agentId: agentSessions.agentId })
+		.from(agentSessions)
+		.innerJoin(agents, eq(agents.id, agentSessions.agentId))
+		.where(
+			and(
+				eq(agentSessions.id, sessionId),
+				eq(agentSessions.kind, "dm"),
+				eq(agentSessions.userId, userId),
+				isNull(agents.archivedAt),
+			),
+		)
+		.limit(1);
+	if (!session) throw agentNotFound();
+	return session;
+}

@@ -1,3 +1,4 @@
+import { startTurn, steerTurn } from "@superset/agent-harness/session";
 import { db } from "@superset/db/client";
 import {
 	agentSessions,
@@ -6,31 +7,49 @@ import {
 	type SelectAgent,
 } from "@superset/db/schema";
 import { and, eq, inArray, isNull, or, sql } from "drizzle-orm";
+import { agentTemporal } from "../../lib/agent-runtime";
 import { agentNotFound } from "./access";
 
 type TurnReason = (typeof agentTurns.$inferInsert)["reason"];
 
 export type TurnOutcome =
-	| { turnId: string; outcome: "started" | "duplicate" }
-	| { turnId: string; outcome: "joined"; steerSeq: number };
+	| { turnId: string; outcome: "started" }
+	| { turnId: string; outcome: "joined"; steerSeq: number }
+	| { turnId: string; outcome: "duplicate"; running: boolean };
 
-/**
- * Starts a turn in the session, or joins the running one as a steer. A
- * prompt id already seen changes nothing. Retries when the running turn
- * settles between the insert and the join.
- */
-export async function startOrJoinTurn(input: {
-	agent: SelectAgent;
+interface Prompt {
+	agent: { id: string; organizationId: string };
 	sessionId: string;
 	actingUserId: string;
 	promptId: string;
+	text: string;
 	reason: TurnReason;
 	triggerMessageId?: string;
-}): Promise<TurnOutcome> {
-	const { agent, sessionId, promptId } = input;
+}
+
+/**
+ * Records a prompt as a turn and hands it to the session's workflow: it
+ * starts a turn, or joins the running one as a steer. A prompt id already
+ * seen records nothing new. A prompt the workflow never got is undone, so
+ * the same prompt id can be sent again.
+ */
+export async function submitPrompt(prompt: Prompt): Promise<TurnOutcome> {
+	const turn = await recordTurn(prompt);
+	try {
+		await deliver(prompt.sessionId, turn, prompt);
+	} catch (error) {
+		await forgetUndelivered(turn, prompt.promptId);
+		throw error;
+	}
+	return turn;
+}
+
+/** Retries when the running turn settles between the insert and the join. */
+async function recordTurn(prompt: Prompt): Promise<TurnOutcome> {
+	const { agent, sessionId, promptId } = prompt;
 	for (let attempt = 0; attempt < 3; attempt++) {
 		const [duplicate] = await db
-			.select({ id: agentTurns.id })
+			.select({ id: agentTurns.id, status: agentTurns.status })
 			.from(agentTurns)
 			.where(
 				and(
@@ -42,17 +61,23 @@ export async function startOrJoinTurn(input: {
 				),
 			)
 			.limit(1);
-		if (duplicate) return { turnId: duplicate.id, outcome: "duplicate" };
+		if (duplicate) {
+			return {
+				turnId: duplicate.id,
+				outcome: "duplicate",
+				running: duplicate.status === "running",
+			};
+		}
 		const [started] = await db
 			.insert(agentTurns)
 			.values({
 				organizationId: agent.organizationId,
 				agentId: agent.id,
 				sessionId,
-				reason: input.reason,
-				actingUserId: input.actingUserId,
+				reason: prompt.reason,
+				actingUserId: prompt.actingUserId,
 				promptId,
-				triggerMessageId: input.triggerMessageId ?? null,
+				triggerMessageId: prompt.triggerMessageId ?? null,
 			})
 			.onConflictDoNothing()
 			.returning({ id: agentTurns.id });
@@ -80,11 +105,53 @@ export async function startOrJoinTurn(input: {
 	throw agentNotFound();
 }
 
+/**
+ * A resent prompt for a turn still running goes again, since the first send
+ * may not have landed; the workflow drops prompt ids it has seen.
+ */
+async function deliver(sessionId: string, turn: TurnOutcome, prompt: Prompt) {
+	if (turn.outcome === "duplicate" && !turn.running) return;
+	const temporal = await agentTemporal();
+	const { promptId, text, actingUserId } = prompt;
+	if (turn.outcome === "started") {
+		await startTurn(temporal, sessionId, {
+			turnId: turn.turnId,
+			promptId,
+			text,
+			actingUserId,
+		});
+		return;
+	}
+	await steerTurn(temporal, sessionId, {
+		turnId: turn.turnId,
+		promptId,
+		text,
+	});
+}
+
+/** A new turn is removed; a steer is taken off its turn so settling does not wait for it. */
+async function forgetUndelivered(turn: TurnOutcome, promptId: string) {
+	if (turn.outcome === "started") {
+		await db
+			.delete(agentTurns)
+			.where(
+				and(eq(agentTurns.id, turn.turnId), eq(agentTurns.status, "running")),
+			);
+	} else if (turn.outcome === "joined") {
+		await db
+			.update(agentTurns)
+			.set({
+				steerPromptIds: sql`array_remove(${agentTurns.steerPromptIds}, ${promptId})`,
+			})
+			.where(eq(agentTurns.id, turn.turnId));
+	}
+}
+
 /** A person wrote in their DM with a Dev: the Dev takes it as a turn, unless paused. */
 async function startTurnForDirectMessage(
 	channelId: string,
 	userId: string,
-	messageId: string,
+	message: { id: string; body: string },
 ) {
 	const [row] = await db
 		.select({ sessionId: agentSessions.id, agent: agents })
@@ -101,13 +168,14 @@ async function startTurnForDirectMessage(
 		)
 		.limit(1);
 	if (!row) return null;
-	return startOrJoinTurn({
+	return submitPrompt({
 		agent: row.agent,
 		sessionId: row.sessionId,
 		actingUserId: userId,
-		promptId: messageId,
+		promptId: message.id,
+		text: message.body,
 		reason: "direct_message",
-		triggerMessageId: messageId,
+		triggerMessageId: message.id,
 	});
 }
 
@@ -121,13 +189,14 @@ export async function startTurnsForMessage(
 	channel: { id: string; kind: "channel" | "dm" },
 	message: {
 		id: string;
+		body: string;
 		threadRootId: string | null;
 		mentionedIds: string[];
 	},
 	userId: string,
 ) {
 	if (channel.kind === "dm") {
-		await startTurnForDirectMessage(channel.id, userId, message.id);
+		await startTurnForDirectMessage(channel.id, userId, message);
 		return;
 	}
 	const threadRootId = message.threadRootId ?? message.id;
@@ -171,11 +240,12 @@ export async function startTurnsForMessage(
 				channel.id,
 				threadRootId,
 			);
-			return startOrJoinTurn({
+			return submitPrompt({
 				agent,
 				sessionId,
 				actingUserId: userId,
 				promptId: message.id,
+				text: message.body,
 				reason,
 				triggerMessageId: message.id,
 			});

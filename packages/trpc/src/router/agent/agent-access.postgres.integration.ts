@@ -1,4 +1,4 @@
-import { afterAll, beforeAll, describe, expect, test } from "bun:test";
+import { afterAll, beforeAll, describe, expect, mock, test } from "bun:test";
 import { eq } from "drizzle-orm";
 
 const databaseUrl = process.env.AGENT_ACCESS_TEST_DATABASE_URL;
@@ -14,6 +14,8 @@ suite("agent access against a migrated PostgreSQL", () => {
 	const outsider = crypto.randomUUID();
 	let privateChannel: string;
 	let otherChannel: string;
+	/** Prompts handed to the session workflow; Temporal is not running here. */
+	const delivered: { kind: string; sessionId: string; text: string }[] = [];
 
 	const person = (userId: string) =>
 		createCaller(
@@ -77,6 +79,27 @@ suite("agent access against a migrated PostgreSQL", () => {
 
 	beforeAll(async () => {
 		if (!databaseUrl) throw Error("A migrated test database is required");
+		const session = await import("@superset/agent-harness/session");
+		mock.module("@superset/agent-harness/session", () => ({
+			...session,
+			startTurn: async (
+				_client: unknown,
+				sessionId: string,
+				input: { text: string },
+			) => {
+				delivered.push({ kind: "start", sessionId, text: input.text });
+			},
+			steerTurn: async (
+				_client: unknown,
+				sessionId: string,
+				input: { text: string },
+			) => {
+				delivered.push({ kind: "steer", sessionId, text: input.text });
+			},
+		}));
+		mock.module("../../lib/agent-runtime", () => ({
+			agentTemporal: async () => ({}),
+		}));
 		process.env.DATABASE_URL = databaseUrl;
 		process.env.DATABASE_URL_UNPOOLED = databaseUrl;
 		({ db } = await import("@superset/db/client"));
@@ -232,9 +255,16 @@ suite("agent access against a migrated PostgreSQL", () => {
 			promptId: sent.id,
 			triggerMessageId: sent.id,
 		});
-		const { token } = await worker().agentWorker.turnToken({
+		expect(delivered).toContainEqual({
+			kind: "start",
+			sessionId,
+			text: "hello",
+		});
+		const credentials = await worker().agentWorker.turnCredentials({
 			turnId: turn?.id ?? "",
 		});
+		expect(credentials.room).toEqual({ channelId, threadRootId: null });
+		const token = credentials.agentToken;
 		const post = { channelId, body: "hi there", idempotencyKey: "call-1" };
 		const reply = await asAgent(token).agentApi.postMessage(post);
 		expect(reply.authorId).toBe(agent.id);
@@ -350,6 +380,14 @@ suite("agent access against a migrated PostgreSQL", () => {
 		});
 		expect(await turns()).toEqual([
 			{ reason: "mention", steers: [reply.id], threadRootId: root.id },
+		]);
+		expect(
+			delivered.filter((prompt) =>
+				["@Mentioned @Outside look at this", "and this"].includes(prompt.text),
+			),
+		).toMatchObject([
+			{ kind: "start", text: "@Mentioned @Outside look at this" },
+			{ kind: "steer", text: "and this" },
 		]);
 	});
 

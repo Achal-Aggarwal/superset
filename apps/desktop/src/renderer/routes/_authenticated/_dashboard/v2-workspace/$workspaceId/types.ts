@@ -112,6 +112,8 @@ export interface ChatPaneData {
 	chatModelLabel?: string;
 	chatModeId?: string;
 	chatTitle?: string;
+	/** A Paradev agent's session: the pane reads it from the agent session store, not the host. */
+	agentSession?: { id: string; agentName: string };
 }
 
 export interface DesktopPaneData {
