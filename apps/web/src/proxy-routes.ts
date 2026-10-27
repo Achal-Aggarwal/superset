@@ -31,6 +31,22 @@ export function isAuthPageRoute(pathname: string): boolean {
 	return authPageRoutes.some((route) => matchesRouteOrChild(pathname, route));
 }
 
+/** Resolve before checking: URL parsing drops tabs and newlines, so `/\t/host` is another origin. */
+export function safeRedirectUrl(
+	redirect: string | null,
+	origin: string,
+): URL | null {
+	if (!redirect?.startsWith("/")) return null;
+	let url: URL;
+	try {
+		url = new URL(redirect, origin);
+	} catch {
+		return null;
+	}
+	if (url.origin !== origin || isAuthPageRoute(url.pathname)) return null;
+	return url;
+}
+
 export function isInternalRoute(pathname: string): boolean {
 	return internalRoutes.some((route) => matchesRouteOrChild(pathname, route));
 }
