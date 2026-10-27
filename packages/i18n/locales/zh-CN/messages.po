@@ -1206,6 +1206,9 @@ msgstr "{reason}"
 msgid "{received} of {total}"
 msgstr "{received}/{total}"
 
+msgid "{remaining} tokens left"
+msgstr "剩余 {remaining} 个 token"
+
 msgid "{repositoryFullName} isn't on {installedAccountLogin}, where this organization's GitHub App is installed."
 msgstr "{repositoryFullName} 不在 {installedAccountLogin} 上，而本组织的 GitHub App 安装在那里。"
 
@@ -1304,6 +1307,9 @@ msgstr "{uploading, plural, other {正在上传 # 个文件…}}"
 msgid "{used} of {limit} environments"
 msgstr "已用 {used}/{limit} 个环境"
 
+msgid "{used} of {size} tokens"
+msgstr "{used} / {size} 个 token"
+
 msgid "{used} used"
 msgstr "已使用 {used}"
 
@@ -1312,6 +1318,9 @@ msgstr "{vcpuCount} vCPU · {memory} GB"
 
 msgid "{waiting} Waiting"
 msgstr "{waiting}人等待"
+
+msgid "{windowLabel} limit {percent} used"
+msgstr "{windowLabel} 限额：已使用 {percent}"
 
 msgid "{workspaceName}: host is unavailable"
 msgstr "{workspaceName}：主机不可用"
@@ -3054,6 +3063,9 @@ msgstr "工单到PR的自主流水线"
 msgid "Available"
 msgstr "可用"
 
+msgid "Available when the agent is idle."
+msgstr "智能体空闲时可用。"
+
 msgid "Avatar"
 msgstr "头像"
 
@@ -4572,6 +4584,9 @@ msgstr "沟通"
 msgid "Community"
 msgstr "社区"
 
+msgid "Compact now"
+msgstr "立即压缩"
+
 msgid "Company"
 msgstr "公司"
 
@@ -4913,6 +4928,12 @@ msgstr "上下文"
 
 msgid "Context Menu"
 msgstr "右键菜单"
+
+msgid "Context window"
+msgstr "上下文窗口"
+
+msgid "Context window: {percent} used"
+msgstr "上下文窗口：已使用 {percent}"
 
 msgid "Continue"
 msgstr "继续"
@@ -10916,6 +10937,9 @@ msgstr "移动应用"
 msgid "Mobile App"
 msgstr "移动应用"
 
+msgid "Mode"
+msgstr "模式"
+
 msgid "model"
 msgstr "模型"
 
@@ -12106,6 +12130,9 @@ msgstr "不在此版本中"
 msgid "Not receiving events yet: Microsoft Graph refused the notification subscriptions. Check the app's admin consent and protected API approval, then reconnect."
 msgstr "尚未接收到事件：Microsoft Graph拒绝了通知订阅。请检查应用的管理员同意和受保护API的审批，然后重新连接。"
 
+msgid "Not reported yet"
+msgstr "尚未报告"
+
 msgid "Not reviewed by you"
 msgstr "你还没有审查"
 
@@ -12263,6 +12290,9 @@ msgstr "离线/本地优先模式"
 
 msgid "Older"
 msgstr "更早"
+
+msgid "On"
+msgstr "开启"
 
 msgid "on {offScopeHostName} — won't run here"
 msgstr "在{offScopeHostName}上，不会在这里运行"
@@ -14362,6 +14392,9 @@ msgstr "为{appName}评分"
 msgid "Rate limit exceeded."
 msgstr "超出速率限制。"
 
+msgid "Rate limits"
+msgstr "用量限制"
+
 msgid "Reach this Mac from anywhere via the Paradev relay, or spin up cloud workspaces. Connect from any client."
 msgstr "通过Paradev中继从任何地方连接这台Mac，或启动云工作区。可以从任何客户端连接。"
 
@@ -14665,6 +14698,9 @@ msgstr "迁移项目？"
 
 msgid "Relocating…"
 msgstr "正在迁移…"
+
+msgid "Remaining"
+msgstr "剩余"
 
 msgid "rematch"
 msgstr "再来一局"
@@ -16296,6 +16332,12 @@ msgstr "会话"
 msgid "Session {0}"
 msgstr "会话{0}"
 
+msgid "Session cost"
+msgstr "会话费用"
+
+msgid "Session cost: {cost}"
+msgstr "会话费用：{cost}"
+
 msgid "Session details"
 msgstr "会话详情"
 
@@ -16316,6 +16358,9 @@ msgstr "会话已重命名为 {trimmed}"
 
 msgid "Session snapshots & revert"
 msgstr "会话快照与回退"
+
+msgid "Session status"
+msgstr "会话状态"
 
 msgid "Sessions"
 msgstr "会话"
@@ -17515,6 +17560,9 @@ msgstr "Paradev与受监控的终端进程树占用的CPU总和。超过100%表�
 
 msgid "Summarize the changes in this workspace"
 msgstr "总结此工作区中的更改"
+
+msgid "Summarizes the chat to free up context."
+msgstr "总结对话以腾出上下文空间。"
 
 msgid "Summary"
 msgstr "摘要"
@@ -19696,6 +19744,9 @@ msgstr "使用语音转写和按住说话功能。"
 msgid "Use your existing agent subscriptions and API keys. Paradev never proxies model calls or locks your workflow to one provider."
 msgstr "使用你已有的智能体订阅和API密钥。Paradev从不代理模型调用，也不会把你的工作流锁死在某一家提供商上。"
 
+msgid "Used"
+msgstr "已使用"
+
 msgid "Used in URLs and APIs."
 msgstr "用于URL和API。"
 
@@ -20263,6 +20314,10 @@ msgstr "宽度 · 并行会话数"
 
 msgid "Window"
 msgstr "窗口"
+
+msgctxt "context window size"
+msgid "Window"
+msgstr "大小"
 
 msgid "With action"
 msgstr "带操作"

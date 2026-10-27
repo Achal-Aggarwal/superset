@@ -1206,6 +1206,9 @@ msgstr "{reason}"
 msgid "{received} of {total}"
 msgstr "{received} z {total}"
 
+msgid "{remaining} tokens left"
+msgstr "Pozostałe tokeny: {remaining}"
+
 msgid "{repositoryFullName} isn't on {installedAccountLogin}, where this organization's GitHub App is installed."
 msgstr "{repositoryFullName} nie należy do {installedAccountLogin}, gdzie zainstalowana jest GitHub App tej organizacji."
 
@@ -1304,6 +1307,9 @@ msgstr "{uploading, plural, one {Przesyłanie # pliku…} few {Przesyłanie # pl
 msgid "{used} of {limit} environments"
 msgstr "{used} z {limit} środowisk"
 
+msgid "{used} of {size} tokens"
+msgstr "{used} z {size} tokenów"
+
 msgid "{used} used"
 msgstr "Wykorzystano {used}"
 
@@ -1312,6 +1318,9 @@ msgstr "{vcpuCount} vCPU · {memory} GB"
 
 msgid "{waiting} Waiting"
 msgstr "{waiting} oczekuje"
+
+msgid "{windowLabel} limit {percent} used"
+msgstr "Limit {windowLabel}: wykorzystano {percent}"
 
 msgid "{workspaceName}: host is unavailable"
 msgstr "{workspaceName}: host jest niedostępny"
@@ -3054,6 +3063,9 @@ msgstr "Autonomiczny potok od zgłoszenia do PR"
 msgid "Available"
 msgstr "Dostępny"
 
+msgid "Available when the agent is idle."
+msgstr "Dostępne, gdy agent nie pracuje."
+
 msgid "Avatar"
 msgstr "Awatar"
 
@@ -4572,6 +4584,9 @@ msgstr "Komunikacja"
 msgid "Community"
 msgstr "Społeczność"
 
+msgid "Compact now"
+msgstr "Kompaktuj teraz"
+
 msgid "Company"
 msgstr "Firma"
 
@@ -4913,6 +4928,12 @@ msgstr "Kontekst"
 
 msgid "Context Menu"
 msgstr "Menu kontekstowe"
+
+msgid "Context window"
+msgstr "Okno kontekstu"
+
+msgid "Context window: {percent} used"
+msgstr "Okno kontekstu: wykorzystano {percent}"
 
 msgid "Continue"
 msgstr "Kontynuuj"
@@ -10916,6 +10937,9 @@ msgstr "Aplikacja mobilna"
 msgid "Mobile App"
 msgstr "Aplikacja mobilna"
 
+msgid "Mode"
+msgstr "Tryb"
+
 msgid "model"
 msgstr "model"
 
@@ -12106,6 +12130,9 @@ msgstr "Nie ma w tej wersji"
 msgid "Not receiving events yet: Microsoft Graph refused the notification subscriptions. Check the app's admin consent and protected API approval, then reconnect."
 msgstr "Brak zdarzeń: Microsoft Graph odrzucił subskrypcje powiadomień. Sprawdź zgodę administratora i zatwierdzenie chronionych API, a potem połącz ponownie."
 
+msgid "Not reported yet"
+msgstr "Jeszcze nie zgłoszono"
+
 msgid "Not reviewed by you"
 msgstr "Nieprzejrzane przez Ciebie"
 
@@ -12263,6 +12290,9 @@ msgstr "Tryb offline / local-first"
 
 msgid "Older"
 msgstr "Starsze"
+
+msgid "On"
+msgstr "Wł."
 
 msgid "on {offScopeHostName} — won't run here"
 msgstr "na {offScopeHostName} — nie uruchomi się tutaj"
@@ -14362,6 +14392,9 @@ msgstr "Oceń {appName}"
 msgid "Rate limit exceeded."
 msgstr "Przekroczono limit żądań."
 
+msgid "Rate limits"
+msgstr "Limity użycia"
+
 msgid "Reach this Mac from anywhere via the Paradev relay, or spin up cloud workspaces. Connect from any client."
 msgstr "Sięgnij po tego Maca z dowolnego miejsca przez przekaźnik Paradev albo uruchom obszary robocze w chmurze. Połącz się z dowolnego klienta."
 
@@ -14665,6 +14698,9 @@ msgstr "Przenieść projekt?"
 
 msgid "Relocating…"
 msgstr "Przenoszenie…"
+
+msgid "Remaining"
+msgstr "Pozostało"
 
 msgid "rematch"
 msgstr "rewanż"
@@ -16296,6 +16332,12 @@ msgstr "Sesja"
 msgid "Session {0}"
 msgstr "Sesja {0}"
 
+msgid "Session cost"
+msgstr "Koszt sesji"
+
+msgid "Session cost: {cost}"
+msgstr "Koszt sesji: {cost}"
+
 msgid "Session details"
 msgstr "Szczegóły sesji"
 
@@ -16316,6 +16358,9 @@ msgstr "Zmieniono nazwę sesji na {trimmed}"
 
 msgid "Session snapshots & revert"
 msgstr "Migawki sesji i cofanie"
+
+msgid "Session status"
+msgstr "Stan sesji"
 
 msgid "Sessions"
 msgstr "Sesje"
@@ -17515,6 +17560,9 @@ msgstr "Suma CPU zużywanego przez Paradev i monitorowane drzewa procesów termi
 
 msgid "Summarize the changes in this workspace"
 msgstr "Podsumuj zmiany w tym obszarze roboczym"
+
+msgid "Summarizes the chat to free up context."
+msgstr "Podsumowuje czat, aby zwolnić kontekst."
 
 msgid "Summary"
 msgstr "Podsumowanie"
@@ -19696,6 +19744,9 @@ msgstr "Transkrypcja głosu i funkcje push-to-talk."
 msgid "Use your existing agent subscriptions and API keys. Paradev never proxies model calls or locks your workflow to one provider."
 msgstr "Korzystaj z własnych subskrypcji agentów i kluczy API. Paradev nigdy nie pośredniczy w wywołaniach modeli ani nie przywiązuje Twojego procesu do jednego dostawcy."
 
+msgid "Used"
+msgstr "Wykorzystano"
+
 msgid "Used in URLs and APIs."
 msgstr "Używany w adresach URL i API."
 
@@ -20263,6 +20314,10 @@ msgstr "Szerokość · równoległe sesje"
 
 msgid "Window"
 msgstr "Okno"
+
+msgctxt "context window size"
+msgid "Window"
+msgstr "Rozmiar"
 
 msgid "With action"
 msgstr "Z akcją"
