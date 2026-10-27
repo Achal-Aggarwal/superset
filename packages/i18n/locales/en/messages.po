@@ -1921,6 +1921,9 @@ msgstr "Add files, apps, and more"
 msgid "Add files, apps, and more (@)"
 msgstr "Add files, apps, and more (@)"
 
+msgid "Add instructions"
+msgstr "Add instructions"
+
 #. placeholder {0}: issue.issueNumber
 msgid "Add issue #{0} to workspace"
 msgstr "Add issue #{0} to workspace"
@@ -2024,6 +2027,9 @@ msgstr "Add to sidebar"
 msgid "Add to workspace"
 msgstr "Add to workspace"
 
+msgid "Add what it does"
+msgstr "Add what it does"
+
 msgid "Add your own terminal agent to this device."
 msgstr "Add your own terminal agent to this device."
 
@@ -2114,6 +2120,9 @@ msgstr "Agent is working"
 
 msgid "Agent launch configuration"
 msgstr "Agent launch configuration"
+
+msgid "Agent not found"
+msgstr "Agent not found"
 
 msgid "Agent picker (Claude, Codex, Cursor…) used by every session-creation flow"
 msgstr "Agent picker (Claude, Codex, Cursor…) used by every session-creation flow"
@@ -2735,6 +2744,9 @@ msgstr "apps/web/src/app/design/components/LayoutSection/LayoutSection.tsx"
 
 msgid "Archive"
 msgstr "Archive"
+
+msgid "Archive {name}?"
+msgstr "Archive {name}?"
 
 #. placeholder {0}: channel.name
 msgid "Archive #{0}?"
@@ -5676,6 +5688,9 @@ msgstr "Couldn't save edits"
 msgid "Couldn't save the change"
 msgstr "Couldn't save the change"
 
+msgid "Couldn't save the Dev"
+msgstr "Couldn't save the Dev"
+
 msgid "Couldn't send comment"
 msgstr "Couldn't send comment"
 
@@ -5771,6 +5786,9 @@ msgstr "Create \"{newLabel}\""
 
 msgid "Create a channel"
 msgstr "Create a channel"
+
+msgid "Create a Dev"
+msgstr "Create a Dev"
 
 msgid "Create a native provider fork with the same conversation context. The original session stays unchanged."
 msgstr "Create a native provider fork with the same conversation context. The original session stays unchanged."
@@ -5938,6 +5956,9 @@ msgstr "Created {0} · Last used {1}"
 msgid "Created {ago}"
 msgstr "Created {ago}"
 
+msgid "Created {created}"
+msgstr "Created {created}"
+
 msgid "Created {createdAgo}"
 msgstr "Created {createdAgo}"
 
@@ -6101,6 +6122,12 @@ msgstr "Custom provider"
 
 msgid "Custom themes"
 msgstr "Custom themes"
+
+msgid "Customize"
+msgstr "Customize"
+
+msgid "Customize {devName}"
+msgstr "Customize {devName}"
 
 msgid "Customize commands"
 msgstr "Customize commands"
@@ -6538,6 +6565,9 @@ msgstr "Details are not available here, but the link still opens."
 msgid "Dev"
 msgstr "Dev"
 
+msgid "Dev options"
+msgstr "Dev options"
+
 msgid "Dev sign in"
 msgstr "Dev sign in"
 
@@ -6564,6 +6594,9 @@ msgstr "Device: {selectedLabel}"
 
 msgid "Devices"
 msgstr "Devices"
+
+msgid "Devs"
+msgstr "Devs"
 
 msgid "DevTools"
 msgstr "DevTools"
@@ -6609,6 +6642,12 @@ msgstr "diff in new tab"
 
 msgid "Digital Product Designer"
 msgstr "Digital Product Designer"
+
+msgid "Direct message"
+msgstr "Direct message"
+
+msgid "Direct messages"
+msgstr "Direct messages"
 
 msgid "Direct mode"
 msgstr "Direct mode"
@@ -7471,6 +7510,9 @@ msgstr "Extra high"
 msgid "Extra small"
 msgstr "Extra small"
 
+msgid "Eyes"
+msgstr "Eyes"
+
 msgid "F4 gate · {F4_GATE_SHARE}%"
 msgstr "F4 gate · {F4_GATE_SHARE}%"
 
@@ -8182,8 +8224,8 @@ msgstr "Find in Terminal"
 msgid "Find in this chat"
 msgstr "Find in this chat"
 
-msgid "Find people"
-msgstr "Find people"
+msgid "Find people and Devs"
+msgstr "Find people and Devs"
 
 msgid "Finder"
 msgstr "Finder"
@@ -9050,6 +9092,9 @@ msgstr "How grouped commands open."
 msgid "How is Paradev different from just running Claude Code in a terminal?"
 msgstr "How is Paradev different from just running Claude Code in a terminal?"
 
+msgid "How it should work and what to avoid"
+msgstr "How it should work and what to avoid"
+
 msgid "How it works"
 msgstr "How it works"
 
@@ -9672,6 +9717,9 @@ msgstr "It can't be brought back."
 
 msgid "It keeps the title from your prompt."
 msgstr "It keeps the title from your prompt."
+
+msgid "It loses all its access at once. Its chats and the work it made are kept."
+msgstr "It loses all its access at once. Its chats and the work it made are kept."
 
 msgid "It may be asleep"
 msgstr "It may be asleep"
@@ -10790,6 +10838,9 @@ msgstr "Memory share"
 msgid "Mention."
 msgstr "Mention."
 
+msgid "Mentioned in a channel"
+msgstr "Mentioned in a channel"
+
 msgid "Menubar"
 msgstr "Menubar"
 
@@ -10850,6 +10901,9 @@ msgstr "Merging…"
 
 msgid "Mesh Gradient"
 msgstr "Mesh Gradient"
+
+msgid "Message {name}"
+msgstr "Message {name}"
 
 msgid "Message {name}…"
 msgstr "Message {name}…"
@@ -12204,6 +12258,9 @@ msgstr "Nothing running"
 msgid "Nothing was missed"
 msgstr "Nothing was missed"
 
+msgid "Nothing yet"
+msgstr "Nothing yet"
+
 msgid "Notice"
 msgstr "Notice"
 
@@ -12421,6 +12478,9 @@ msgstr "Only host owners or organization owners can delete this host"
 msgid "Only images can be attached to a comment"
 msgstr "Only images can be attached to a comment"
 
+msgid "Only its creator or an organization admin can change this agent"
+msgstr "Only its creator or an organization admin can change this agent"
+
 msgid "Only on this machine: gitignored, and applied to every worktree of this repository. Any key set here replaces the shared one."
 msgstr "Only on this machine: gitignored, and applied to every worktree of this repository. Any key set here replaces the shared one."
 
@@ -12441,6 +12501,9 @@ msgstr "Only owners can manage billing"
 
 msgid "Only owners can update organization settings"
 msgstr "Only owners can update organization settings"
+
+msgid "Only people can manage a channel"
+msgstr "Only people can manage a channel"
 
 msgid "Only people in this organization can join"
 msgstr "Only people in this organization can join"
@@ -13674,6 +13737,9 @@ msgstr "Pick the worktree folder on {hostName}."
 msgid "Pick your agent for a one-line install, or copy the config by hand. Every client, including OAuth and API key setup, is covered in the <0>full MCP server docs</0>."
 msgstr "Pick your agent for a one-line install, or copy the config by hand. Every client, including OAuth and API key setup, is covered in the <0>full MCP server docs</0>."
 
+msgid "Picked by the channel"
+msgstr "Picked by the channel"
+
 msgid "PID"
 msgstr "PID"
 
@@ -14501,6 +14567,12 @@ msgstr "Reading usage…"
 msgid "Reading your local usage…"
 msgstr "Reading your local usage…"
 
+msgid "Reads and posts"
+msgstr "Reads and posts"
+
+msgid "Ready"
+msgstr "Ready"
+
 msgid "Ready for review"
 msgstr "Ready for review"
 
@@ -14754,6 +14826,9 @@ msgstr "Remove {label}"
 
 msgid "Remove {label}?"
 msgstr "Remove {label}?"
+
+msgid "Remove {name}"
+msgstr "Remove {name}"
 
 msgid "Remove {repositoryName}"
 msgstr "Remove {repositoryName}"
@@ -16484,6 +16559,9 @@ msgstr "shadcn/ui tooltip recipe"
 msgid "Shade is relative to this developer's busiest day"
 msgstr "Shade is relative to this developer's busiest day"
 
+msgid "Shape"
+msgstr "Shape"
+
 msgid "Share"
 msgstr "Share"
 
@@ -17616,6 +17694,9 @@ msgstr "Support rate limiting is not configured"
 msgid "Support the project with a GitHub star"
 msgstr "Support the project with a GitHub star"
 
+msgid "Surprise me"
+msgstr "Surprise me"
+
 msgid "Suspended"
 msgstr "Suspended"
 
@@ -17806,6 +17887,9 @@ msgstr "Taking a look…"
 
 msgid "Taking longer than usual. It keeps going if you leave."
 msgstr "Taking longer than usual. It keeps going if you leave."
+
+msgid "Talk to it"
+msgstr "Talk to it"
 
 msgid "Talk to Paradev"
 msgstr "Talk to Paradev"
@@ -18905,6 +18989,9 @@ msgstr "Thread in #{channelName}"
 
 msgid "Thread not found"
 msgstr "Thread not found"
+
+msgid "Thread reply"
+msgstr "Thread reply"
 
 msgid "Threads"
 msgstr "Threads"
@@ -20215,6 +20302,9 @@ msgstr "What is Paradev Enterprise?"
 msgid "What is wrong?"
 msgstr "What is wrong?"
 
+msgid "What it does"
+msgstr "What it does"
+
 msgid "What platforms does Paradev run on?"
 msgstr "What platforms does Paradev run on?"
 
@@ -20360,6 +20450,9 @@ msgstr "with or without attachments"
 msgid "With the Paradev mobile app, I can address production issues from anywhere."
 msgstr "With the Paradev mobile app, I can address production issues from anywhere."
 
+msgid "Woke itself"
+msgstr "Woke itself"
+
 msgid "Wordmark, black"
 msgstr "Wordmark, black"
 
@@ -20406,6 +20499,9 @@ msgstr "Working for {0}m {1}s"
 
 msgid "Working for {seconds}s"
 msgstr "Working for {seconds}s"
+
+msgid "Working on"
+msgstr "Working on"
 
 msgid "Working…"
 msgstr "Working…"
