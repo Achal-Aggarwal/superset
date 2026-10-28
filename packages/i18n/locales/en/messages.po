@@ -2541,6 +2541,12 @@ msgstr "Answer this question on desktop, or skip it."
 msgid "Answered"
 msgstr "Answered"
 
+msgid "Answered {who} in #{channel}"
+msgstr "Answered {who} in #{channel}"
+
+msgid "Answered you in #{channel}"
+msgstr "Answered you in #{channel}"
+
 msgid "Anthropic rejected this API key."
 msgstr "Anthropic rejected this API key."
 
@@ -5619,6 +5625,9 @@ msgstr "Couldn't load earlier messages. Retry"
 msgid "Couldn't load issues: {msg}"
 msgstr "Couldn't load issues: {msg}"
 
+msgid "Couldn't load its activity"
+msgstr "Couldn't load its activity"
+
 msgid "Couldn't load pages"
 msgstr "Couldn't load pages"
 
@@ -6675,9 +6684,6 @@ msgstr "diff in new tab"
 
 msgid "Digital Product Designer"
 msgstr "Digital Product Designer"
-
-msgid "Direct message"
-msgstr "Direct message"
 
 msgid "Direct messages"
 msgstr "Direct messages"
@@ -8385,6 +8391,12 @@ msgstr "Follow us on LinkedIn"
 
 msgid "Follow us on X/Twitter"
 msgstr "Follow us on X/Twitter"
+
+msgid "Followed up with {who} in #{channel}"
+msgstr "Followed up with {who} in #{channel}"
+
+msgid "Followed up with you in #{channel}"
+msgstr "Followed up with you in #{channel}"
 
 msgid "Font family"
 msgstr "Font family"
@@ -10876,9 +10888,6 @@ msgstr "Memory share"
 
 msgid "Mention."
 msgstr "Mention."
-
-msgid "Mentioned in a channel"
-msgstr "Mentioned in a channel"
 
 msgid "Menubar"
 msgstr "Menubar"
@@ -13773,9 +13782,6 @@ msgstr "Pick the worktree folder on {hostName}."
 msgid "Pick your agent for a one-line install, or copy the config by hand. Every client, including OAuth and API key setup, is covered in the <0>full MCP server docs</0>."
 msgstr "Pick your agent for a one-line install, or copy the config by hand. Every client, including OAuth and API key setup, is covered in the <0>full MCP server docs</0>."
 
-msgid "Picked by the channel"
-msgstr "Picked by the channel"
-
 msgid "PID"
 msgstr "PID"
 
@@ -15076,6 +15082,9 @@ msgstr "Replaced {replaced} files in {where}"
 msgid "Replaced 1 file in {where}"
 msgstr "Replaced 1 file in {where}"
 
+msgid "Replied to your DM"
+msgstr "Replied to your DM"
+
 msgid "Reply"
 msgstr "Reply"
 
@@ -15088,8 +15097,14 @@ msgstr "Reply to thread…"
 msgid "Reply…"
 msgstr "Reply…"
 
+msgid "Replying in a thread"
+msgstr "Replying in a thread"
+
 msgid "Replying to {replyingTo}"
 msgstr "Replying to {replyingTo}"
+
+msgid "Replying to a DM"
+msgstr "Replying to a DM"
 
 msgid "repo"
 msgstr "repo"
@@ -16784,6 +16799,9 @@ msgstr "Show me the last 10 runs of my Linear triage automation"
 msgid "Show more"
 msgstr "Show more"
 
+msgid "Show older"
+msgstr "Show older"
+
 msgid "Show on Sidebar"
 msgstr "Show on Sidebar"
 
@@ -17149,6 +17167,9 @@ msgstr "Some v1 items did not come over"
 
 msgid "Some v1 work needs your attention"
 msgstr "Some v1 work needs your attention"
+
+msgid "someone"
+msgstr "someone"
 
 msgid "Someone"
 msgstr "Someone"
@@ -19020,9 +19041,6 @@ msgstr "Thread in #{channelName}"
 msgid "Thread not found"
 msgstr "Thread not found"
 
-msgid "Thread reply"
-msgstr "Thread reply"
-
 msgid "Threads"
 msgstr "Threads"
 
@@ -20477,9 +20495,6 @@ msgstr "with or without attachments"
 msgid "With the Paradev mobile app, I can address production issues from anywhere."
 msgstr "With the Paradev mobile app, I can address production issues from anywhere."
 
-msgid "Woke itself"
-msgstr "Woke itself"
-
 msgid "Wordmark, black"
 msgstr "Wordmark, black"
 
@@ -20527,8 +20542,8 @@ msgstr "Working for {0}m {1}s"
 msgid "Working for {seconds}s"
 msgstr "Working for {seconds}s"
 
-msgid "Working on"
-msgstr "Working on"
+msgid "Working on a mention"
+msgstr "Working on a mention"
 
 msgid "Working…"
 msgstr "Working…"
