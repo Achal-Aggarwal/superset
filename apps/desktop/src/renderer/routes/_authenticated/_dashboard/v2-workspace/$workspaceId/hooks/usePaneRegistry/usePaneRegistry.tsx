@@ -21,6 +21,7 @@ import {
 	Globe,
 	MessageSquare,
 	Monitor,
+	Plus,
 	Smartphone,
 } from "lucide-react";
 import { useCallback, useMemo } from "react";
@@ -50,6 +51,7 @@ import { useWorkspace } from "renderer/routes/_authenticated/_dashboard/v2-works
 import { useCollections } from "renderer/routes/_authenticated/providers/CollectionsProvider";
 import { getV2NotificationSourcesForPane } from "renderer/stores/v2-notifications";
 import type { StoreApi } from "zustand/vanilla";
+import { RightPaneNewTab } from "../../components/RightPaneNewTab";
 import { V2NotificationStatusIndicator } from "../../components/V2NotificationStatusIndicator";
 import {
 	getDocument,
@@ -61,6 +63,7 @@ import {
 	type CommentPaneData,
 	type DevtoolsPaneData,
 	type FilePaneData,
+	NEW_TAB_PANE_KIND,
 	type PagePaneData,
 	type PagesListPaneData,
 	type PaneViewerData,
@@ -78,6 +81,7 @@ import {
 	focusTerminalPane,
 } from "../../utils/focusTerminalPane";
 import { openPagePaneInStore } from "../../utils/openPagePaneInStore";
+import { replaceNewTabPane } from "../../utils/replaceNewTabPane";
 import { useAgentSessionLauncher } from "../useAgentSessionLauncher";
 import type { OpenReviewDiff } from "../useReviewCommentNavigation";
 import type { TerminalLauncher } from "../useV2TerminalLauncher";
@@ -826,6 +830,22 @@ export function usePaneRegistry({
 						workspaceId={workspaceId}
 						onCreateNewAgentSession={createNewAgentSession}
 						onFocusAgentTerminal={focusAgentTerminal}
+					/>
+				),
+			},
+			[NEW_TAB_PANE_KIND]: {
+				getIcon: () => <Plus className="size-3.5" />,
+				getTitle: () => t({ message: "New Tab" }),
+				hideHeader: (ctx) => ctx.pane.parentDirection === null,
+				renderPane: (ctx: RendererContext<PaneViewerData>) => (
+					<RightPaneNewTab
+						onOpen={(pane) =>
+							replaceNewTabPane(
+								ctx.store,
+								{ tabId: ctx.tab.id, paneId: ctx.pane.id },
+								pane,
+							)
+						}
 					/>
 				),
 			},
