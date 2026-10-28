@@ -4758,6 +4758,9 @@ msgstr "Collega GitHub nelle Impostazioni per agire sulle pull request a tuo nom
 msgid "Connect GitHub to continue"
 msgstr "Collega GitHub per continuare"
 
+msgid "Connect GitHub to see review comments as yourself."
+msgstr "Collega GitHub per vedere i commenti di revisione a tuo nome."
+
 msgid "Connect GitHub…"
 msgstr "Collega GitHub…"
 
@@ -5526,6 +5529,9 @@ msgstr "Non è stato possibile diramare in un nuovo worktree"
 
 msgid "Couldn't branch the conversation"
 msgstr "Non è stato possibile diramare la conversazione"
+
+msgid "Couldn't check"
+msgstr "Impossibile verificare"
 
 msgid "Couldn't check what removing this member affects"
 msgstr "Impossibile verificare cosa comporta la rimozione di questo membro"

@@ -4758,6 +4758,9 @@ msgstr "Conecta GitHub en Configuración para actuar en las pull requests como t
 msgid "Connect GitHub to continue"
 msgstr "Conecta GitHub para continuar"
 
+msgid "Connect GitHub to see review comments as yourself."
+msgstr "Conecta GitHub para ver los comentarios de revisión como tú mismo."
+
 msgid "Connect GitHub…"
 msgstr "Conectar GitHub…"
 
@@ -5526,6 +5529,9 @@ msgstr "No se pudo bifurcar en un nuevo worktree"
 
 msgid "Couldn't branch the conversation"
 msgstr "No se pudo bifurcar la conversación"
+
+msgid "Couldn't check"
+msgstr "No se pudo comprobar"
 
 msgid "Couldn't check what removing this member affects"
 msgstr "No se pudo comprobar qué afecta la eliminación de este miembro"

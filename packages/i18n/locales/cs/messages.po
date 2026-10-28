@@ -4758,6 +4758,9 @@ msgstr "Připojte GitHub v Nastavení, abyste s pull requesty pracovali sami za 
 msgid "Connect GitHub to continue"
 msgstr "Pro pokračování připojte GitHub"
 
+msgid "Connect GitHub to see review comments as yourself."
+msgstr "Připojte GitHub, abyste viděli komentáře z revize pod svým jménem."
+
 msgid "Connect GitHub…"
 msgstr "Připojit GitHub…"
 
@@ -5526,6 +5529,9 @@ msgstr "Nepodařilo se rozvětvit do nového worktree"
 
 msgid "Couldn't branch the conversation"
 msgstr "Konverzaci se nepodařilo rozvětvit"
+
+msgid "Couldn't check"
+msgstr "Nepodařilo se ověřit"
 
 msgid "Couldn't check what removing this member affects"
 msgstr "Nepodařilo se zjistit, čeho se odebrání tohoto člena dotkne"

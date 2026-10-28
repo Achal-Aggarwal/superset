@@ -10,9 +10,12 @@ import {
 	type PullRequestDiff,
 } from "../pull-request-diff";
 import {
+	type ConversationQueryResult,
+	type PullRequestIssueComment,
 	type PullRequestReviewThread,
+	parseConversationComments,
 	parseReviewThreads,
-	REVIEW_THREADS_QUERY,
+	REVIEW_THREADS_AND_CONVERSATION_QUERY,
 	type ReviewThreadsQueryResult,
 } from "../pull-request-threads";
 
@@ -39,6 +42,7 @@ export type PullRequestMergeMethod = "merge" | "squash" | "rebase";
 
 export interface PullRequestThreads {
 	reviewThreads: PullRequestReviewThread[];
+	conversationComments: PullRequestIssueComment[];
 	/** True when GitHub failed the read; an empty list then means "unknown", not "none". */
 	fetchFailed: boolean;
 }
@@ -79,20 +83,31 @@ export function pullRequestOnGithub(
 				options,
 			),
 
-		threads: async (): Promise<PullRequestThreads> => {
+		threads: async (
+			onError: (error: unknown) => void = () => {},
+		): Promise<PullRequestThreads> => {
 			try {
-				const result = await client.graphql<ReviewThreadsQueryResult>(
-					REVIEW_THREADS_QUERY,
-					{ owner: pr.owner, name: pr.repo, prNumber: pr.number },
-				);
+				const result = await client.graphql<
+					ReviewThreadsQueryResult & ConversationQueryResult
+				>(REVIEW_THREADS_AND_CONVERSATION_QUERY, {
+					owner: pr.owner,
+					name: pr.repo,
+					prNumber: pr.number,
+				});
 				return {
 					reviewThreads: parseReviewThreads(result),
+					conversationComments: parseConversationComments(result),
 					fetchFailed: false,
 				};
-			} catch {
+			} catch (error) {
+				onError(error);
 				// Empty rather than an error, so the diff still shows when only
 				// its comments failed.
-				return { reviewThreads: [], fetchFailed: true };
+				return {
+					reviewThreads: [],
+					conversationComments: [],
+					fetchFailed: true,
+				};
 			}
 		},
 
@@ -126,6 +141,18 @@ export function pullRequestOnGithub(
 				throw new Error("GitHub did not return a pull request diff");
 			}
 			return { patch: data };
+		},
+
+		/** One REST request: for a row in a list, where the full detail read would be wasted. */
+		diffstat: async () => {
+			const { data } = await client.request(
+				"GET /repos/{owner}/{repo}/pulls/{pull_number}",
+				rest,
+			);
+			return {
+				additions: field<number>(data, "additions") ?? 0,
+				deletions: field<number>(data, "deletions") ?? 0,
+			};
 		},
 
 		comment: async (body: string) => {
@@ -174,6 +201,7 @@ export function pullRequestOnGithub(
 			return {
 				merged: field<boolean>(data, "merged") ?? false,
 				sha: field<string>(data, "sha") ?? null,
+				message: field<string>(data, "message") ?? null,
 			};
 		},
 

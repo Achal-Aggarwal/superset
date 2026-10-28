@@ -4758,6 +4758,9 @@ msgstr "Подключите GitHub в настройках, чтобы рабо
 msgid "Connect GitHub to continue"
 msgstr "Подключите GitHub, чтобы продолжить"
 
+msgid "Connect GitHub to see review comments as yourself."
+msgstr "Подключите GitHub, чтобы видеть комментарии ревью от своего имени."
+
 msgid "Connect GitHub…"
 msgstr "Подключить GitHub…"
 
@@ -5526,6 +5529,9 @@ msgstr "Не удалось ответвить в новый worktree"
 
 msgid "Couldn't branch the conversation"
 msgstr "Не удалось ответвить разговор"
+
+msgid "Couldn't check"
+msgstr "Не удалось проверить"
 
 msgid "Couldn't check what removing this member affects"
 msgstr "Не удалось проверить, на что повлияет удаление этого участника"

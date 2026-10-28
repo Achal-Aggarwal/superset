@@ -4758,6 +4758,9 @@ msgstr "Kết nối GitHub trong Cài đặt để thao tác với pull request 
 msgid "Connect GitHub to continue"
 msgstr "Kết nối GitHub để tiếp tục"
 
+msgid "Connect GitHub to see review comments as yourself."
+msgstr "Kết nối GitHub để xem bình luận review dưới tên của bạn."
+
 msgid "Connect GitHub…"
 msgstr "Kết nối GitHub…"
 
@@ -5526,6 +5529,9 @@ msgstr "Không thể tạo nhánh sang worktree mới"
 
 msgid "Couldn't branch the conversation"
 msgstr "Không thể tạo nhánh hội thoại"
+
+msgid "Couldn't check"
+msgstr "Không thể kiểm tra"
 
 msgid "Couldn't check what removing this member affects"
 msgstr "Không kiểm tra được việc gỡ thành viên này ảnh hưởng đến những gì"

@@ -4758,6 +4758,9 @@ msgstr "Connect GitHub in Settings to act on pull requests as yourself"
 msgid "Connect GitHub to continue"
 msgstr "Connect GitHub to continue"
 
+msgid "Connect GitHub to see review comments as yourself."
+msgstr "Connect GitHub to see review comments as yourself."
+
 msgid "Connect GitHub…"
 msgstr "Connect GitHub…"
 
@@ -5526,6 +5529,9 @@ msgstr "Couldn't branch into a new worktree"
 
 msgid "Couldn't branch the conversation"
 msgstr "Couldn't branch the conversation"
+
+msgid "Couldn't check"
+msgstr "Couldn't check"
 
 msgid "Couldn't check what removing this member affects"
 msgstr "Couldn't check what removing this member affects"

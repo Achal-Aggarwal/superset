@@ -4758,6 +4758,9 @@ msgstr "Pull request'lerde kendi adınıza işlem yapmak için Ayarlar'dan GitHu
 msgid "Connect GitHub to continue"
 msgstr "Devam etmek için GitHub'ı bağlayın"
 
+msgid "Connect GitHub to see review comments as yourself."
+msgstr "İnceleme yorumlarını kendi adınıza görmek için GitHub'ı bağlayın."
+
 msgid "Connect GitHub…"
 msgstr "GitHub'ı bağla…"
 
@@ -5526,6 +5529,9 @@ msgstr "Yeni bir worktree'ye çatallanamadı"
 
 msgid "Couldn't branch the conversation"
 msgstr "Konuşma çatallanamadı"
+
+msgid "Couldn't check"
+msgstr "Kontrol edilemedi"
 
 msgid "Couldn't check what removing this member affects"
 msgstr "Bu üyeyi kaldırmanın nelere etki edeceği kontrol edilemedi"
