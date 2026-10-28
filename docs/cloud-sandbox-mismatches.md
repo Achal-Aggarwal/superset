@@ -704,6 +704,16 @@ Alpine) and only the pinned version ships prebuilds at all; better-sqlite3 must
 match what host-service was built against or it crashes on load. The image
 asserts the prebuild exists rather than letting something compile silently.
 
+**The desktop's native modules compile for Electron, and bookworm's compilers
+cannot.** No better-sqlite3 prebuild exists for Electron 44 on linux-x64, so
+`install:deps` (run by the root postinstall) builds it from source. Electron
+44's V8 headers fail on gcc 12 and on clang 14 (`std::source_location`), so
+`bun install` exited 1 and `bun run dev` in `apps/desktop` died on "Could not
+locate the bindings file". Postinstall uses `clang-16` when `CC` is unset. The
+image does not carry it, since only this repo needs it: the internal
+environment's setup hook (`satya-setup.sh`) installs it, and any other
+environment that builds the desktop has to install it too.
+
 **Local dev cannot exercise a sandbox, and the failure mode if you force it is
 silent.** `setup.local.sh` copies `.env.local.example` to `.env`, which sets
 `VERCEL_SANDBOX_TOKEN=fake-vercel-sandbox-token` — so provisioning fails at the
